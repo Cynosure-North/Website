@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{{ partial "partials/head.html" }}
+		{{ partial "partials/head.html" . }}
 	</head>
 
 	<body onload="init()" onresize="resize()">
 		<div id="column">
 			<div id="tags">
-				{{ partial "partials/header.html" }}
+				{{ partial "partials/header.html" . }}
 				<ul>
 				{{ range .Pages.ByDate.Reverse }}
 					<li>
@@ -15,7 +15,7 @@
 					</li>
 				{{ end }}
 				</ul>	
-				{{ partial "partials/footer.html" }}
+				{{ partial "partials/footer.html" . }}
 			</div>
 		</div>
 	</body>

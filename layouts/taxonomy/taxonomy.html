@@ -1,18 +1,13 @@
----
-title: tags
----
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{% include head.html %}
+		{{ partial "partials/head.html" . }}
 	</head>
 
 	<body>
 		<div id="column">
-			{% include header.html %}
-			
-			{% include footer.html %}
+			{{ partial "partials/header.html" . }}
+			{{ partial "partials/footer.html" . }}
 		</div>
 	</body>
 	<script>0</script> <!-- Firefox FOUS hack -->

@@ -11,8 +11,8 @@
 			<a href="/tags/{{ . }}">{{.}}</a>
 		{{ end }}
 	{{ else }}
-		{{ range sort .Site.Taxonomies.tags "value" "desc" }}
-			<a href="/tags/{{ . }}">{{.}} ({{ .Count . }})</a>
+		{{ range .Site.Taxonomies.tags }}
+			<a href="/tags/{{ .Page.Title }}">{{ .Page.Title }}&nbsp;{{ .Count }}</a>
 		{{ end }}
 	{{ end }}
 </footer>
