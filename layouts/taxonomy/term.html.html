@@ -1,23 +1,23 @@
-{{/*
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{% partial "partial/head.html" %}
+		{{ partial "partials/head.html" }}
 	</head>
 
 	<body onload="init()" onresize="resize()">
 		<div id="column">
 			<div id="tags">
-				{% include header.html %}
+				{{ partial "partials/header.html" }}
 				<ul>
-				{% for post in page.posts %}
-					<li ><a href="{{ post.url }}">{{ post.title }}</a>      {{ post.date | date_to_string }} | {{ post | tags }}</li>
-				{% endfor %}
+				{{ range .Pages.ByDate.Reverse }}
+					<li>
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+					</li>
+				{{ end }}
 				</ul>	
-				{% include footer.html %}
+				{{ partial "partials/footer.html" }}
 			</div>
 		</div>
 	</body>
 	<script>0</script> <!-- Firefox FOUS hack -->
 </html>
-*/}}

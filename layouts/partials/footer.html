@@ -1,13 +1,18 @@
 <footer>
 	<hr>
-	<p> Posted: <time datetime="{{ .Date }}"> {{ .Date.Format "2 January 2006" }}</time></p>
-	{{ if ne .Lastmod .Date }}
-		<p> Edited: <time datetime="{{ .Date }}"> {{ .Lastmod.Format "2 January 2006" }}</time></p>
-	{{ end }}	
-	{{/*  {{ if .isPage }}
-		{{ range $i, $tag := (.Param "tags" | sort) }}
-			<a href="/tag/{{ $tag.name }}">{{ $tag.name }}</a>
+	{{ if .IsPage }}
+		{{ $dateFormatted := .Date.Format "2 January 2006" }}
+		{{ $updateFormatted := .Lastmod.Format "2 January 2006" }}
+		<p> Posted: <time datetime="{{ .Date }}"> {{ $dateFormatted }}</time></p>
+		{{ if ne $dateFormatted $updateFormatted}}
+			<p> Edited: <time datetime="{{ .Date }}"> {{ $updateFormatted }}</time></p>
+		{{ end }}	
+		{{ range sort .Params.tags }}
+			<a href="/tags/{{ . }}">{{.}}</a>
 		{{ end }}
 	{{ else }}
-	{{ end }}  */}}
+		{{ range sort .Site.Taxonomies.tags "value" "desc" }}
+			<a href="/tags/{{ . }}">{{.}} ({{ .Count . }})</a>
+		{{ end }}
+	{{ end }}
 </footer>
