@@ -1,0 +1,21 @@
+baseURL : "http://Cynsosure.page"
+languageCode : "en-nz"
+title : "Cynosure"
+enableGitInfo: true
+
+markup:
+  highlight:
+    lineNos: true
+    lineNumbersInTable: false
+    hl_inline: true
+    anchorLineNos: true
+    noClasses: false
+
+taxonomies:
+  tag: tags
+
+security:
+  exec:
+    allow:
+      - ^go$
+      - ^asciidoctor$

@@ -1,0 +1,80 @@
+@import url(modules/logo.css);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Mono&family=IBM+Plex+Mono:wght@200&family=Righteous&display=swap');
+
+* {
+	color: #fff;
+}
+
+#logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 80px;
+	width: 80px;
+}
+
+#column {
+	width: min(1000px, 96%);
+	margin: 0 auto;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(122deg, #222 0%, #111 100%);
+	height: 100%;
+
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	color: white;
+	font-size: 7em;
+	font-family: 'arial';
+	margin: 35px 0px 35px 0px;
+	text-align: center;
+}
+
+#title-container {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+footer {
+	padding: 20px 0px 20px 0px;
+}
+
+footer a {
+	font-family: 'Fira Code', 'monospace';
+}
+
+#tags ul {
+	list-style-type: none;
+}
+
+#tags li {
+	padding: 10px 0px 10px 0px;
+	font-size: 1.1em;
+	white-space: pre;
+}
+
+code {
+	font-family: 'Fira Mono', monospace;
+	/* padding: 1px 5px 1px 5px; */
+	border-radius: 2px;
+	/* user-select: none; */
+	white-space: pre;
+}
+
+p {
+	font-family: 'Fira Code', 'monospace';
+	line-height: 1.4;
+}

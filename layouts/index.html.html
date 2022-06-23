@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{{ partial "partials/head.html" }}
+	<title>Cynosure - Home </title>
+	<link rel="stylesheet" type="text/css" href="/Styles/index.css" />
+</head>
+
+<body>
+	<div id="title-container">
+		<h1 id="title" class="glitch text-flicker" content="░𝚈 _ ∴ / ⮇ℝ!">
+			CYNOSURE
+		</h1>
+	</div>
+	<div id="column">
+		{{ partial "partials/logo.html" }}
+		<p>Hi there. I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a>, and this website is a hub for my
+			projects.<br>
+			It's a little sparse right now, because it's very new. But there's lots to come<br>
+		</p>
+		<p>Lorem Ipsum: <a href="{{ ref . "0001-01-01-Test.adoc" }}">Test</a></p>
+	</div>
+</body>
+<script>0</script> <!-- Firefox FOUS hack -->
+
+</html>

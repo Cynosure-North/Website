@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		{{ partialCached "head.html" . }}
+	</head>	 
+
+	<body>
+		<div id="column">
+			{{ partialCached "header.html" . }}
+	
+			{{ .Content }}
+	
+			{{ partial "footer.html" . }}
+		</div>
+	</body>
+	<script>0</script> <!-- Firefox FOUS hack -->
+</html>

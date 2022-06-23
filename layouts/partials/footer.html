@@ -1,0 +1,13 @@
+<footer>
+	<hr>
+	<p> Posted: <time datetime="{{ .Date }}"> {{ .Date.Format "2 January 2006" }}</time></p>
+	{{ if ne .Lastmod .Date }}
+		<p> Edited: <time datetime="{{ .Date }}"> {{ .Lastmod.Format "2 January 2006" }}</time></p>
+	{{ end }}	
+	{{/*  {{ if .isPage }}
+		{{ range $i, $tag := (.Param "tags" | sort) }}
+			<a href="/tag/{{ $tag.name }}">{{ $tag.name }}</a>
+		{{ end }}
+	{{ else }}
+	{{ end }}  */}}
+</footer>
