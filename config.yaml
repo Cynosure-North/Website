@@ -3,6 +3,9 @@ languageCode : "en-nz"
 title : "Cynosure"
 enableGitInfo: true
 
+permalinks:
+  posts: /:2/:3/:4/:title
+
 markup:
   highlight:
     lineNos: true

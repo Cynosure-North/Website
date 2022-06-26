@@ -10,7 +10,6 @@ tags:
   
 image::/Images/me.png["A person wearing sunglasses, lipstick, and a hoodie."]
 
-## Contact Me!
 mailto:contact@cynosure.page[contact@cynosure.page]
 
 Hi, I'm North (they/them). I'm at uni right now studying Computer Science and Theatre.

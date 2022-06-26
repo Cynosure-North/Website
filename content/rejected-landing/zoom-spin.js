@@ -21,7 +21,7 @@ function step(timestamp){
 
 		prev = timestamp;
 
-		if (scale > 2.65*window.innerHeight){
+		if (scale > 2.69*window.innerHeight){
 			scale = 5;
 		}
 		scale += (2 + 0.000001*scale*scale)*(elapsed/60);
