@@ -18,6 +18,11 @@
 	margin: 0 auto;
 }
 
+#title-container {
+	width: fit-content;
+	margin: 0 auto;
+}
+
 html {
 	height: 100%;
 }
@@ -37,11 +42,6 @@ h1 {
 	font-family: 'arial';
 	margin: 35px 0px 35px 0px;
 	text-align: center;
-}
-
-#title-container {
-	width: fit-content;
-	margin: 0 auto;
 }
 
 footer {
@@ -66,8 +66,22 @@ hr {
 	white-space: pre;
 	scrollbar-width: thin;
 	scrollbar-color: #333 #222;
+
+
+	/* Unsetting the inline code stuff */
+	background-color: #0000;
+	padding: 0;
+	border-radius: 0;
+	font-weight: 500;
 }
 
+code {
+	font-family: 'Fira Mono', monospace;
+	background-color: #333;
+	padding: 1px 3px 1px 5px;
+	border-radius: 2px;
+	font-weight: 300;
+}
 
 p {
 	font-family: 'Fira Code', 'monospace';
