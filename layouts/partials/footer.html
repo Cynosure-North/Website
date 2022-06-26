@@ -6,7 +6,7 @@
 		<p> Posted: <time datetime="{{ .Date }}"> {{ $dateFormatted }}</time></p>
 		{{ if ne $dateFormatted $updateFormatted}}
 			<p> Edited: <time datetime="{{ .Date }}"> {{ $updateFormatted }}</time></p>
-		{{ end }}	
+		{{ end }}
 		{{ range sort .Params.tags }}
 			<a href="/tags/{{ . }}">{{.}}</a>
 		{{ end }}

@@ -68,15 +68,10 @@ hr {
 	font-family: 'Fira Mono', monospace;
 	border-radius: 2px;
 	white-space: pre;
-	/* width: max(100%, 550px); */
-	width: 740px;
-	display: inline-block; 
-	overflow-x: auto;
+	scrollbar-width: thin;
+	scrollbar-color: dark;
 }
 
-code span {
-	/* overflow: visible; */
-}
 
 p {
 	font-family: 'Fira Code', 'monospace';

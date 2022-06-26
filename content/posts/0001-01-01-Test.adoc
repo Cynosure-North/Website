@@ -39,7 +39,7 @@ int main(void)
             printf("number=%d", i);
         printf("\n");
     }
-cccccccccccccccccccccccccccccccccccccccccccccccccccccthisis80columnshere
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccthisis80columnshere
     return 0;
 }
 {{< / highlight >}}

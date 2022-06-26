@@ -1,6 +1,7 @@
 
 
 /* Anchor target */ .chroma :target { background-color: #f2f2f2; border-radius: 2px;}
+/* Code block */ .chroma code { width: 100%; display: block; overflow-x: auto; }
 /* Background */ .bg { color: #d0d0d0; background-color: #202020 }
 /* PreWrapper */ .chroma { color: #d0d0d0; background-color: #202020; padding: 5px 0px 5px 0px; border-radius: 6px }
 /* Other */ .chroma .x {  }
@@ -10,8 +11,8 @@
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
 /* LineHighlight */ .chroma .hl { background-color: #303030 }
 /* LineNumbersTable */ .chroma .lnt { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #686868 }
-/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; margin-top: -150px; padding: 150px 0.4em 0 0.4em;color: #686868 }
-/* Line */ .chroma .line { display: flex; overflow-y: hidden; }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; margin-top: -150px; padding: 150px 0.4em 0 0.4em;color: #686868; }
+/* Line */ .chroma .line { display: block; overflow-x:visible; overflow-y: clip; }
 /* Keyword */ .chroma .k { color: #6ab825; font-weight: bold }
 /* KeywordConstant */ .chroma .kc { color: #6ab825; font-weight: bold }
 /* KeywordDeclaration */ .chroma .kd { color: #6ab825; font-weight: bold }
