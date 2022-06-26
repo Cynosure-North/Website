@@ -8,7 +8,7 @@ tags:
   - personal
 ---
   
-image::../../Images/me.png["A person wearing sunglasses, lipstick, and a hoodie."]
+image::/Images/me.png["A person wearing sunglasses, lipstick, and a hoodie."]
 
 ## Contact Me!
 mailto:contact@cynosure.page[contact@cynosure.page]
