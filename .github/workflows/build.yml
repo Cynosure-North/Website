@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Hugo
         run: |
-          alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
+          alias asciidoctor="asciidoctor --attribute=icons=font"
           hugo
 
       - name: Deploy
