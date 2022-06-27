@@ -10,9 +10,14 @@
 				{{ partial "partials/header.html" . }}
 				<ul>
 				{{ range .Pages.ByDate.Reverse }}
-					<li>
-						<a href="{{ .Permalink }}">{{ .Title }}</a>
-					</li>
+					<a href="{{ .Permalink }}">
+						<li>
+							<div class="info-bar"><p>{{ .Title }}</p>
+							<time datetime="{{ .Date }}"> {{ .Date.Format "2 January 2006" }}</time>
+							</div>
+							<p>{{ .Summary }}</p>
+						</li>
+					</a>
 				{{ end }}
 				</ul>	
 				{{ partial "partials/footer.html" . }}
