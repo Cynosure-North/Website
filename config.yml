@@ -10,7 +10,7 @@ markup:
   highlight:
     lineNos: true
     lineNumbersInTable: false
-    hl_inline: true
+    # hl_inline: true
     anchorLineNos: true
     noClasses: false
 
