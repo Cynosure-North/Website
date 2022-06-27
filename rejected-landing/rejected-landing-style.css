@@ -1,0 +1,22 @@
+#landing-title{
+	font-family: Courier New;
+	font-size: 8em;
+	color: #000;
+	
+
+	text-align: center;
+	position: fixed;
+	top: 23%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+body{
+	overflow: hidden;
+}

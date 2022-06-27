@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<title>Cynosure - Lorem Ipsum</title>
+	
+	<meta charset="UTF-8"/>
+	<meta name="author" content="North">
+	<meta name="description" content="Now in rainbow">
+	
+	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
+
+	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/modules/glitch.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
+	</head>
+
+	<body>
+		<div id="column">
+			<header>
+	<a href="/index.html" id="logo" alt="Compass Logo"><img id="compass" src="/Icons/Compass-Rose-White-Background.svg" aria-hidden="true" class="glitch-shadow"><img id="needle" src="/Icons/Compass-Rose-White-Needle.svg" aria-hidden="true"></a> 
+	<div id="title-container">
+		<h1 class="glitch" content="Lorem Ipsum ">Lorem Ipsum</h1>
+	</div>
+</header>
+	
+			<div class="paragraph">
+<p>Lorem ipsum dolor sit amet, <code>This is an inline code block</code> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <code>As is this</code> Sagittis eu volutpat odio facilisis mauris sit amet. In egestas erat imperdiet sed euismod nisi porta lorem. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Condimentum vitae sapien pellentesque habitant morbi. Molestie nunc non blandit massa enim nec dui nunc mattis. Fringilla urna porttitor rhoncus dolor purus non enim. Lacus vestibulum sed arcu non odio euismod lacinia at. Tellus mauris a diam maecenas sed enim. At tellus at urna condimentum mattis.</p>
+</div>
+<div class="paragraph">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="ln" id="1"><a style="outline: none; text-decoration:none; color:inherit" href="#1"> 1</a></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="ln" id="2"><a style="outline: none; text-decoration:none; color:inherit" href="#2"> 2</a></span><span class="cp"></span>
+<span class="ln" id="3"><a style="outline: none; text-decoration:none; color:inherit" href="#3"> 3</a></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="ln" id="4"><a style="outline: none; text-decoration:none; color:inherit" href="#4"> 4</a></span><span class="p">{</span>
+<span class="ln" id="5"><a style="outline: none; text-decoration:none; color:inherit" href="#5"> 5</a></span>    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+<span class="ln" id="6"><a style="outline: none; text-decoration:none; color:inherit" href="#6"> 6</a></span>    <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="ln" id="7"><a style="outline: none; text-decoration:none; color:inherit" href="#7"> 7</a></span>    <span class="p">{</span>
+<span class="hl"><span class="ln" id="8"><a style="outline: none; text-decoration:none; color:inherit" href="#8"> 8</a></span>        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class="hl"><span class="ln" id="9"><a style="outline: none; text-decoration:none; color:inherit" href="#9"> 9</a></span>            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Fizz&#34;</span><span class="p">);</span>
+</span><span class="hl"><span class="ln" id="10"><a style="outline: none; text-decoration:none; color:inherit" href="#10">10</a></span>        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</span><span class="ln" id="11"><a style="outline: none; text-decoration:none; color:inherit" href="#11">11</a></span>            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Buzz&#34;</span><span class="p">);</span>
+<span class="hl"><span class="ln" id="12"><a style="outline: none; text-decoration:none; color:inherit" href="#12">12</a></span>        <span class="k">if</span> <span class="p">((</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">))</span>
+</span><span class="ln" id="13"><a style="outline: none; text-decoration:none; color:inherit" href="#13">13</a></span>            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;number=%d&#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+<span class="ln" id="14"><a style="outline: none; text-decoration:none; color:inherit" href="#14">14</a></span>        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+<span class="ln" id="15"><a style="outline: none; text-decoration:none; color:inherit" href="#15">15</a></span>    <span class="p">}</span>
+<span class="ln" id="16"><a style="outline: none; text-decoration:none; color:inherit" href="#16">16</a></span><span class="n">cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccthisis80columnshere</span>
+<span class="ln" id="17"><a style="outline: none; text-decoration:none; color:inherit" href="#17">17</a></span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="ln" id="18"><a style="outline: none; text-decoration:none; color:inherit" href="#18">18</a></span><span class="p">}</span></code></pre></div>
+</div>
+<div class="paragraph">
+<p>Consequat semper viverra nam libero. Non sodales neque sodales ut etiam sit amet nisl purus. Massa tincidunt dui ut ornare lectus sit amet est placerat. Nisl condimentum id venenatis a condimentum vitae. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Tellus orci ac auctor augue mauris augue neque. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Dignissim sodales ut eu sem. Tristique nulla aliquet enim tortor at auctor urna nunc. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Purus faucibus ornare suspendisse sed nisi.</p>
+</div>
+<div class="paragraph">
+<p>Convallis a cras semper auctor neque vitae tempus quam. Donec adipiscing tristique risus nec feugiat in. Habitant morbi tristique senectus et netus et malesuada fames. Nibh cras pulvinar mattis nunc. Nam aliquam sem et tortor consequat id porta nibh venenatis. Facilisis sed odio morbi quis commodo odio. Nam at lectus urna duis convallis convallis tellus id interdum. Est lorem ipsum dolor sit amet. Urna porttitor rhoncus dolor purus. Commodo nulla facilisi nullam vehicula ipsum a arcu. Non sodales neque sodales ut etiam. At risus viverra adipiscing at in tellus integer feugiat. Mauris rhoncus aenean vel elit scelerisque mauris. Ipsum faucibus vitae aliquet nec ullamcorper. Morbi tristique senectus et netus et malesuada fames.</p>
+</div>
+<div class="paragraph">
+<p>Id consectetur purus ut faucibus pulvinar. Nulla aliquet enim tortor at auctor urna nunc. Lacinia at quis risus sed vulputate odio ut. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Neque vitae tempus quam pellentesque nec nam aliquam sem. Lorem mollis aliquam ut porttitor leo a. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Nam at lectus urna duis convallis convallis tellus id interdum. Dui id ornare arcu odio ut. Nisl pretium fusce id velit ut.</p>
+</div>
+<div class="paragraph">
+<p>Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Suspendisse interdum consectetur libero id faucibus nisl. Odio euismod lacinia at quis risus sed vulputate. Amet consectetur adipiscing elit pellentesque habitant morbi. Eget nullam non nisi est sit amet. Urna neque viverra justo nec. Sit amet cursus sit amet dictum sit. In iaculis nunc sed augue lacus viverra vitae congue eu. Quisque sagittis purus sit amet volutpat consequat mauris. Diam sit amet nisl suscipit adipiscing bibendum est. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Congue nisi vitae suscipit tellus mauris a. Sed id semper risus in hendrerit. At erat pellentesque adipiscing commodo elit at imperdiet dui. Eget est lorem ipsum dolor sit amet consectetur. Duis tristique sollicitudin nibh sit amet. Sit amet est placerat in egestas erat imperdiet sed. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Lacinia at quis risus sed. Faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+</div>
+<div class="paragraph">
+<p>Sem integer vitae justo eget. Mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Nibh venenatis cras sed felis. Risus ultricies tristique nulla aliquet enim tortor at auctor. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Augue mauris augue neque gravida in fermentum et. Sed arcu non odio euismod lacinia at quis risus. Odio eu feugiat pretium nibh ipsum. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Sed arcu non odio euismod lacinia. Vitae aliquet nec ullamcorper sit amet risus. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Duis convallis convallis tellus id interdum velit. Enim facilisis gravida neque convallis a cras semper auctor neque. Urna condimentum mattis pellentesque id nibh. Eget egestas purus viverra accumsan. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Et tortor at risus viverra adipiscing at. Tempus urna et pharetra pharetra massa.</p>
+</div>
+<div class="paragraph">
+<p>Mattis vulputate enim nulla aliquet. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Tortor posuere ac ut consequat semper viverra nam libero. Rhoncus dolor purus non enim praesent elementum facilisis leo. Metus dictum at tempor commodo ullamcorper. Vulputate sapien nec sagittis aliquam malesuada. Dolor sed viverra ipsum nunc aliquet bibendum. Lorem dolor sed viverra ipsum. Amet nisl suscipit adipiscing bibendum est.</p>
+</div>
+<div class="paragraph">
+<p>Rhoncus mattis rhoncus urna neque viverra justo nec. Sed elementum tempus egestas sed sed risus pretium quam. Tellus molestie nunc non blandit massa enim. Sed vulputate odio ut enim. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Viverra mauris in aliquam sem fringilla ut. Ut faucibus pulvinar elementum integer enim neque volutpat. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Aliquet bibendum enim facilisis gravida neque convallis a cras. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Nec feugiat in fermentum posuere urna. Et sollicitudin ac orci phasellus egestas tellus. Elementum integer enim neque volutpat. Enim ut sem viverra aliquet. Neque sodales ut etiam sit amet nisl. A diam maecenas sed enim ut. Quis vel eros donec ac.</p>
+</div>
+<div class="paragraph">
+<p>Nec dui nunc mattis enim ut tellus elementum. Habitant morbi tristique senectus et netus et malesuada. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nunc consequat interdum varius sit amet mattis vulputate enim. Pharetra pharetra massa massa ultricies. In est ante in nibh mauris. Leo urna molestie at elementum. Diam quam nulla porttitor massa id neque. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Neque aliquam vestibulum morbi blandit cursus. Habitant morbi tristique senectus et netus et malesuada fames ac. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Nullam ac tortor vitae purus. Eget lorem dolor sed viverra. Eget gravida cum sociis natoque. Nec feugiat in fermentum posuere urna nec. Nunc mi ipsum faucibus vitae. Nullam ac tortor vitae purus faucibus ornare suspendisse sed.</p>
+</div>
+<div class="paragraph">
+<p>Accumsan sit amet nulla facilisi morbi tempus. Id diam maecenas ultricies mi eget. Nulla facilisi morbi tempus iaculis urna. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Eu scelerisque felis imperdiet proin fermentum leo. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Pellentesque id nibh tortor id. Consectetur a erat nam at. Risus pretium quam vulputate dignissim suspendisse in est ante. Ut porttitor leo a diam sollicitudin. Gravida quis blandit turpis cursus in. Est lorem ipsum dolor sit amet consectetur. Purus faucibus ornare suspendisse sed nisi lacus. Varius duis at consectetur lorem donec. Blandit libero volutpat sed cras ornare arcu. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Fermentum odio eu feugiat pretium nibh ipsum. Nisl tincidunt eget nullam non nisi est sit amet. Ipsum dolor sit amet consectetur. Urna porttitor rhoncus dolor purus non.</p>
+</div>
+
+	
+			<footer>
+	<hr>
+	
+		
+		
+		<p> Posted: <time datetime="0001-01-01 00:00:00 &#43;0000 UTC"> 1 January 0001</time></p>
+		
+			
+				<p> Edited: <time datetime="0001-01-01 00:00:00 &#43;0000 UTC"> 27 June 2022</time></p>
+			
+		
+		
+			<a href="/tags/meta">meta</a>
+		
+	
+</footer>
+		</div>
+	</body>
+	<script>0</script> 
+</html>

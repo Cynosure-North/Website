@@ -1,0 +1,130 @@
+@import url(modules/logo.css);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Mono&family=IBM+Plex+Mono:wght@200&family=Righteous&display=swap');
+
+* {
+	color: #fff;
+}
+
+/* Background */
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(122deg, #222222, #212121, #202020, #1f1f1f, #1e1e1e, #1d1d1d, #1c1c1c, #1b1b1b,
+		#1a1a1a, #191919, #181818, #171717, #161616, #151515, #141414, #131313, #121212, #111111 );
+	margin: 0;
+
+	/* Chrome hack */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/* General */
+#logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 80px;
+	width: 80px;
+}
+
+#column {
+	width: min(1000px, 96%);
+	margin: 0 auto;
+}
+
+#title-container {
+	width: fit-content;
+	margin: 0 auto;
+}
+
+/* Text */
+h1 {
+	color: white;
+	font-size: 7em;
+	font-family: 'arial';
+	margin: 35px 0px 35px 0px;
+	text-align: center;
+}
+
+p {
+	font-family: 'Fira Code', 'monospace';
+	line-height: 1.4;
+}
+
+/* Footer */
+footer {
+	padding: 20px 0px 20px 0px;
+}
+
+footer a {
+	font-family: 'Fira Code', 'monospace';
+	margin: 10px;
+	/* font-size: 1.1em; */
+}
+footer a:first-of-type{ margin-left: 0; }
+
+hr {
+	width: 104%;
+	margin-left: -2%;
+}
+
+
+/* Code */
+.chroma code {
+	font-family: 'Fira Mono', monospace;
+	border-radius: 2px;
+	white-space: pre;
+	scrollbar-width: thin;
+	scrollbar-color: #333 #222;
+
+
+	/* Unsetting the inline code stuff */
+	background-color: #0000;
+	padding: 0;
+	border-radius: 0;
+	font-weight: 500;
+}
+
+code {
+	font-family: 'Fira Mono', monospace;
+	background-color: #333;
+	padding: 1px 3px 1px 5px;
+	border-radius: 2px;
+	font-weight: 300;
+}
+
+
+/* Tag pages */
+#tags ul {
+	list-style-type: none;
+	font-family: 'Fira Code', 'monospace';
+	padding-left: 0;
+}
+
+#tags li {
+	padding: 10px;
+	margin-top: 15px;
+	background-color: #2229;
+	border-radius: 2px;
+	font-size: 0.9em;
+}
+
+#tags li .info-bar p {
+	float: left;
+	font-size: 1em;
+}
+
+#tags li .info-bar time {
+	float: right;
+	padding-top: 15px;
+}
+
+#tags li p {
+	clear: both;
+}
+
+#tags a {
+	text-decoration: none;
+}
