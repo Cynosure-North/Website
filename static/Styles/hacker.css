@@ -108,12 +108,14 @@ code {
 	margin-top: 15px;
 	background-color: #2229;
 	border-radius: 2px;
+}
+
+#tags li div {
 	font-size: 0.9em;
 }
 
 #tags li .info-bar p {
 	float: left;
-	font-size: 1em;
 }
 
 #tags li .info-bar time {
