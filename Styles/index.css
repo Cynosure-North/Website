@@ -1,13 +1,11 @@
-#title {
+#title-container h1 {
 	font-size: min(10em, 14vw);
-	margin-top: 150px;
-    margin-bottom: 200px;
+	margin: 200px 3px 200px 3px;
     text-align: center;
+	display: inline-block;
 }
 
-.glitch::before, .glitch::after {
-    top: -20px;
-}
+
 
 p{
     text-align: center;
