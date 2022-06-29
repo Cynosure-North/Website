@@ -12,10 +12,10 @@
 				{{ range .Pages.ByDate.Reverse }}
 					<a href="{{ .Permalink }}">
 						<li>
-							<div class="info-bar"><p>{{ .Title }}</p>
-							<time datetime="{{ .Date }}"> {{ .Date.Format "2 January 2006" }}</time>
+							<div class="info-bar"><h2>{{ .Title }}</h2>
+							<h2> {{ .Date.Format "2 January 2006" }}</h2>
 							</div>
-							<p>{{ .Summary }}</p>
+							<p class="summary">{{ .Summary }}</p>
 						</li>
 					</a>
 				{{ end }}
