@@ -97,6 +97,7 @@ code {
 #tags ul {
 	list-style-type: none;
 	font-family: 'Fira Code', 'monospace';
+	text-size-adjust: none;
 	padding-left: 0;
 }
 
@@ -111,5 +112,6 @@ code {
 
 .summary { clear: both; }
 
+.info-bar { text-size-adjust: none; padding-left: 0; }
 .info-bar :first-child { float: left; }
 .info-bar :last-child { float: right; padding-right: 10px; }
