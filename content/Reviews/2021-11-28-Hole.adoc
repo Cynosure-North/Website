@@ -1,6 +1,6 @@
 ---
 title: Hole Review
-description: It takes time, but it gets to your heart
+summary: It takes time, but it gets to your heart
 type: post
 tags: 
   - theatre

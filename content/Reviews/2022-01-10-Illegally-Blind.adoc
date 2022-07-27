@@ -1,6 +1,6 @@
 ---
 title: Illegally Blind Review
-description: Good intentions aren't enough to make a good show
+summary: Good intentions aren't enough to make a good show
 // type: post
 tags:
  - theatre

@@ -1,6 +1,6 @@
 ---
 title: Crossbow Cat
-description: I'm playing the cat 
+summary: I'm playing the cat 
 // type: post
 tags:
  - theatre
