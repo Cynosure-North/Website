@@ -36,6 +36,10 @@ body {
 	margin: 0 auto;
 }
 
+img {
+	max-width: 1000px;
+}
+
 /* Text */
 h1 {
 	color: white;
