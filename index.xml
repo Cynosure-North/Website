@@ -13,9 +13,10 @@
       <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/23-06-2022/about-me/</guid>
-      <description>  contact@cynosure.page
- Hi, I’m North (they/them). I’m at uni right now studying Computer Science and Theatre. You may notice things are a bit barren right now. That’s because I haven’t finished this.
- </description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -24,7 +25,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/reviews/2022-02-25-pamela-hancox/</guid>
-      <description>Perhaps I’m too youong to geth the humour, maybe it went way over my head and I’m going to look like a fool as soon as I publish this. I now understand the bravery it requires to get on stage with that as your set. I can see myself enjoying this around a dinner with friends and family, as everyone is a little drunk and full, and only half paying attention.</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Do old people like puns more?&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -33,8 +37,22 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/01-01-1/crossbow-cat/</guid>
-      <description>I’m currently rehearsing for Crossbow Cat, to be performed soon. I’m playing Cinnamon, who happens to be a cat. Cinnamon gained the ability to walk and talk when Martha shot her in the head with a crossbow, and now she’s back for revenge.
- It’s been fascinating playing a cat, I was inspired by The Cat from Coraline and Cheshire Cat, but with more resentment. Cats are extremely mobile, and it turns out I love to move this way.</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;I’m playing the cat&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hadestown Broadway 2019 Scenography</title>
+      <link>http://Cynosure.page/reviews/2022-07-22-hadestown-sceno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://Cynosure.page/reviews/2022-07-22-hadestown-sceno/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;I mean, you already know it’s great&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -43,8 +61,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/reviews/2021-11-28-hole/</guid>
-      <description>Written by Lynda Chanwai-Earle Directed by Kerryn Palmer and Sally Richards Music Composed by Gareth Farr Starring Sepe Mua’au, Stevie Hancox-Monk, and Elle Wootton Viewed on 28/11/2021
- I wasn’t really sure what I was in for when I saw Hole. What I got was a rich exploration of the way personal relationships can spill into the wider world. The play follows Stella, an atmospheric scientist investigating the recent ozone hole.</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;It takes time, but it gets to your heart&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -53,7 +73,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/reviews/2022-01-10-illegally-blind/</guid>
-      <description>The line &amp;#39;A token effort has been made to include the abled as well’ appears in the marketing material, I believe this is what they intended. Alas, this like most of the show falls flat. The story follows Susan as they navigate their life dealing with bigotry in all forms. In doing so it asks able bodied audiences to not be cunts, to show that the minorities are in fact people who are working their hardest, and need to be empowered.</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Good intentions aren’t enough to make a good show&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>
@@ -62,7 +85,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://Cynosure.page/01-01-1/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, This is an inline code block consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. As is this Sagittis eu volutpat odio facilisis mauris sit amet. In egestas erat imperdiet sed euismod nisi porta lorem. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Condimentum vitae sapien pellentesque habitant morbi. Molestie nunc non blandit massa enim nec dui nunc mattis.</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;Test 123&lt;/p&gt;
+&lt;/div&gt;
+</description>
     </item>
     
   </channel>
