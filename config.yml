@@ -4,7 +4,7 @@ title : "Cynosure"
 enableGitInfo: true
 
 permalinks:
-  blog: /:day-:month-:year/:title
+  blog: blog/:day-:month-:year/:title
 
 markup:
   highlight:
