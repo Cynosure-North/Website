@@ -4,6 +4,7 @@
 
 * {
 	color: #fff;
+	scrollbar-color: #333 #222;
 }
 
 body {
@@ -78,7 +79,6 @@ hr {
 	border-radius: 2px;
 	white-space: pre;
 	scrollbar-width: thin;
-	scrollbar-color: #333 #222;
 
 
 	/* Unsetting the inline code stuff */
