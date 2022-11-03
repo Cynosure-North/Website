@@ -1,6 +1,11 @@
 <header>
 	{{ partial "logo.html" }}
 	<div id="title-container">
-		<h1 class="glitch" content="{{ title .Title }} ">{{ title .Title }}</h1>
+		<h1 class="glitch" content="{{ title .Title }} "
+		{{if gt (len .Title) 20}}
+		{{/* The css parser doesn't like brackets in the string, but nothing is actually wrong*/}}
+		style="font-size:{{ math.Floor ( math.Sqrt (len .Title) ) }}em"
+		{{end}}
+		>{{ title .Title }}</h1>
 	</div>
 </header>
