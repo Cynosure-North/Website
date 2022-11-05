@@ -32,16 +32,23 @@ body {
 	margin: 0 auto;
 }
 
-#title-container {
-	width: fit-content;
-	margin: 0 auto;
-}
 
 img {
 	width: min(1000px, 100%);
 }
 
-/* Text */
+/* Header */
+#title-container {
+	width: fit-content;
+	margin: 0 auto;
+	pointer-events: none;
+}
+
+header{
+	max-width: 80vw;
+	margin: 0 auto;
+}
+
 h1 {
 	color: white;
 	font-size: 7em;
@@ -50,6 +57,7 @@ h1 {
 	text-align: center;
 }
 
+/* Text */
 p {
 	font-family: 'Fira Code', 'monospace';
 	line-height: 1.4;
