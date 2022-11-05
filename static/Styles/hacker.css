@@ -5,6 +5,7 @@
 * {
 	color: #fff;
 	scrollbar-color: #333 #222;
+	font-family: 'Fira Code', 'monospace';
 }
 
 body {
@@ -59,7 +60,6 @@ h1 {
 
 /* Text */
 p {
-	font-family: 'Fira Code', 'monospace';
 	line-height: 1.4;
 }
 
@@ -71,7 +71,7 @@ footer {
 footer a {
 	font-family: 'Fira Code', 'monospace';
 	margin: 10px;
-	/* font-size: 1.1em; */
+	font-size: 1em;
 }
 footer a:first-of-type{ margin-left: 0; }
 
