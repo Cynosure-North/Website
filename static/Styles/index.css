@@ -1,11 +1,12 @@
 #title-container h1 {
 	font-size: min(10em, 14vw);
-	margin: 200px 3px 200px 3px;
+	margin-top: calc(170px + 4vh);
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: calc(120px + 2vh);
     text-align: center;
 	display: inline-block;
 }
-
-
 
 p{
     text-align: center;
