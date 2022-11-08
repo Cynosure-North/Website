@@ -1,6 +1,6 @@
 @import url('modules/logo.css');
 @import url('modules/glitch.css');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
 
 * {
 	color: #fff;
@@ -83,11 +83,14 @@ hr {
 
 
 /* Code */
+.highlight{
+	margin: 2vh 0 2vh 0;
+}
+
 .chroma code {
 	border-radius: 2px;
-	white-space: pre;
 	scrollbar-width: thin;
-
+	text-size-adjust: 200%;
 
 	/* Unsetting the inline code stuff */
 	background-color: #0000;
