@@ -1,6 +1,6 @@
 @import url('modules/logo.css');
 @import url('modules/glitch.css');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500');
 
 * {
 	color: #fff;
