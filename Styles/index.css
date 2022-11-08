@@ -1,8 +1,15 @@
-#title-container h1 {
+#title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+}
+
+h1 {
 	font-size: min(10em, 14vw);
 	margin-top: calc(170px + 4vh);
-	margin-left: 3px;
-	margin-right: 3px;
+	margin-left: 16px;
+	margin-right: 16px;
 	margin-bottom: calc(120px + 2vh);
     text-align: center;
 	display: inline-block;
@@ -10,4 +17,5 @@
 
 p{
     text-align: center;
+	font-size: 1.4em;
 }

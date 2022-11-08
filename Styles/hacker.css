@@ -1,11 +1,11 @@
 @import url('modules/logo.css');
 @import url('modules/glitch.css');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Mono&family=IBM+Plex+Mono:wght@200&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500');
 
 * {
 	color: #fff;
 	scrollbar-color: #333 #222;
-	font-family: 'Fira Code', 'monospace';
+	font-family: 'Fira Mono', 'monospace';
 }
 
 body {
@@ -71,7 +71,6 @@ footer {
 }
 
 footer a {
-	font-family: 'Fira Code', 'monospace';
 	margin: 10px;
 	font-size: 1em;
 }
@@ -85,7 +84,6 @@ hr {
 
 /* Code */
 .chroma code {
-	font-family: 'Fira Mono', monospace;
 	border-radius: 2px;
 	white-space: pre;
 	scrollbar-width: thin;
@@ -99,7 +97,6 @@ hr {
 }
 
 code {
-	font-family: 'Fira Mono', monospace;
 	background-color: #333;
 	padding: 1px 3px 1px 5px;
 	border-radius: 2px;
