@@ -7,7 +7,11 @@
 
 h1 {
 	font-size: min(10em, 14vw);
-	margin: 200px 16px 200px 16px;
+	margin-top: calc(170px + 4vh);
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: calc(120px + 2vh);
+    text-align: center;
 	display: inline-block;
 }
 
