@@ -1,16 +1,34 @@
+@media (prefers-color-scheme: dark) {
+	.chroma {
+		--background: #202020;
+		--line-highlight: #303030;
+		--text: #d0d0d0;
+		--anchor: #f2f2f2;
+		--line-number: #686868;
+	}
+}
 
+@media (prefers-color-scheme: light) {
+	.chroma {
+		--background: #fafafa;
+		--line-highlight: #e1e1e1;
+		--text: #111111;
+		--anchor: #2f2f2f;
+		--line-number: #c8c8c8;
+	}
+}
 
-/* Anchor target */ .chroma :target { background-color: #f2f2f2; border-radius: 2px;}
+/* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px;}
 /* Code block */ .chroma code { display: block; overflow-x: auto; text-size-adjust: 200%; }
-/* Background */ .bg { color: #d0d0d0; background-color: #202020 }
-/* PreWrapper */ .chroma { color: #d0d0d0; background-color: #202020; padding: 5px 0px 5px 0px; border-radius: 6px }
+/* Background */ .bg { color: var(--text);}
+/* PreWrapper */ .chroma { color: var(--text); background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 6px }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* CodeLine */ .chroma .cl {  }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
-/* LineHighlight */ .chroma .hl { background-color: #303030; display: block; width: 100%; }
-/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; margin-top: -250px; padding: 250px 0.4em 0 0.4em;color: #686868; }
+/* LineHighlight */ .chroma .hl { background-color: var(--line-highlight); display: block; width: 100%; }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; margin-top: -250px; padding: 250px 0.4em 0 0.4em;color: var(--line-number); }
 /* Line */ .chroma .line { display: block; overflow-x:visible; overflow-y: clip; }
 /* Keyword */ .chroma .k { color: #6ab825; font-weight: bold }
 /* KeywordConstant */ .chroma .kc { color: #6ab825; font-weight: bold }
