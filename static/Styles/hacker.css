@@ -29,7 +29,7 @@
 		--semi-transparent-background: #eee8;
 	}
 
-	#logo{
+	#logo, hr{
 		filter: invert(100%);
 	}
 }
