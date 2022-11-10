@@ -91,7 +91,7 @@ h1 {
 }
 
 /* Text */
-h2, h3, h4, h5, h6, p, a {
+h2, h3, h4, h5, h6, p, a, code {
 	color: var(--text-color);
 	font-family: 'Fira Mono', 'monospace';
 }
@@ -123,9 +123,7 @@ hr {
 }
 
 code {
-	border-radius: 2px;
 	text-size-adjust: 200%;
-	/* font-family: 'Fira Mono', 'Monospace'; */
 }
 
 .chroma code {
@@ -135,6 +133,7 @@ code {
 :not(.chroma) > code {
 	background-color: var(--code-inline-background);
 	padding: 1px 3px 1px 5px;
+	border-radius: 4px;
 }
 
 
