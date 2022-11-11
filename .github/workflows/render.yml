@@ -26,11 +26,13 @@ jobs:
         with:
           ruby-version: 2.7
 
-      - run: gem install asciidoctor-html5s
+      - run: |
+          gem install asciidoctor
+          gem install asciidoctor-html5s
 
       - name: Run Hugo
         run: |
-          # alias asciidoctor="asciidoctor-html5s --attribute=icons=font"
+          alias asciidoctor="asciidoctor -r asciidoctor-html5s -b html5s --attribute=icons=font"
           hugo
 
       - name: Deploy
