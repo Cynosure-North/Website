@@ -1,12 +1,11 @@
 ---
 title: Crossbow Cat
 summary: I'm playing the cat 
-// type: post
 tags:
  - theatre
  - personal
  - news
-suppressEdited: true
+Lastmod: "2021-09-13"
 ---
 
 I'm currently rehearsing for Crossbow Cat, to be performed soon. I'm playing Cinnamon, who happens to be a cat.

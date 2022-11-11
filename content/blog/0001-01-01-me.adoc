@@ -1,7 +1,6 @@
 ---
 title: About Me
 summary: Here are some facts and a lovely dithered image
-// type: post
 date: 2022-06-23
 tags:
   - meta

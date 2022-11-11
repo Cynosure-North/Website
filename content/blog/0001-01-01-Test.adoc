@@ -1,7 +1,6 @@
 ---
 title: Lorem Ipsum 
 summary: Test 123
-// type: post
 tags: 
   - meta
 

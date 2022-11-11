@@ -1,13 +1,11 @@
 <footer>
 	<hr>
 	{{ if .IsPage }}
-		{{ $dateFormatted := .Date.Format "2 January 2006" }}
+		{{ $dateFormatted := .PublishDate.Format "2 January 2006" }}
 		{{ $updateFormatted := .Lastmod.Format "2 January 2006" }}
-		<p> Posted: <time datetime="{{ .Date }}"> {{ $dateFormatted }}</time></p>
+		<p> Posted: <time datetime="{{ .PublishDate.Format "2006-01-02" }}"> {{ $dateFormatted }}</time></p>
 		{{ if ne $dateFormatted $updateFormatted}}
-			{{ if not .Params.suppressEdited}}
-				<p> Edited: <time datetime="{{ .Date }}"> {{ $updateFormatted }}</time></p>
-			{{ end }}
+			<p> Edited: <time datetime="{{ .Lastmod.Format "2006-01-02" }}"> {{ $updateFormatted }}</time></p>
 		{{ end }}
 		{{ range sort .Params.tags }}
 			<a href="/tags/{{ . }}">{{.}}</a>
