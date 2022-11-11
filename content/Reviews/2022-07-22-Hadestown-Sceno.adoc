@@ -1,11 +1,11 @@
 ---
 title: Hadestown Broadway 2019 Scenography
 summary: I mean, you already know it's great
-// type: post
 tags:
   - theatre
   - review
   - class
+Lastmod: "2022-07-22"
 ---
 
 I'm hardly original when I say that I loved Hadestown. I crave the feeling of being swept away, and Hadestown absolutely did it. Much has been made of the excellent songs, so I want to talk about the scenography (also that's the assignment).

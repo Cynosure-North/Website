@@ -3,6 +3,24 @@ languageCode : "en-nz"
 title : "Cynosure"
 enableGitInfo: true
 
+frontmatter:
+  date:
+  - date
+  - publishDate
+  - lastmod
+  - :filename
+  expiryDate:
+  - expiryDate
+  lastmod:
+  - lastmod
+  - :git
+  - date
+  - publishDate
+  publishDate:
+  - :filename
+  - publishDate
+  - date
+
 permalinks:
   blog: blog/:day-:month-:year/:title
 
