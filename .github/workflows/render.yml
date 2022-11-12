@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Hugo
         run: |
-          # alias asciidoctor="asciidoctor -r asciidoctor-html5s -b html5s --attribute=icons=font"
+          # alias asciidoctor=" --attribute=icons=font"
           hugo
 
       - name: Deploy

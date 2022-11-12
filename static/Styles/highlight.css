@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
 	.chroma {
-		--background: #202020;
-		--line-highlight: #303030;
+		--background: #20202090;
+		--line-highlight: #3030309f;
 		--text: #d0d0d0;
 		--anchor: #f2f2f2;
 		--line-number: #686868;
@@ -11,8 +11,8 @@
 
 @media (prefers-color-scheme: light) {
 	.chroma {
-		--background: #fafafa;
-		--line-highlight: #e1e1e1;
+		--background: #fafafa70;
+		--line-highlight: #cfcfcf9f;
 		--text: #111111;
 		--anchor: #2f2f2f;
 		--line-number: #c8c8c8;

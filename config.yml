@@ -30,6 +30,12 @@ markup:
     lineNumbersInTable: false
     anchorLineNos: true
     noClasses: false
+  asciidocExt:
+    backend: html5s
+    extensions: ["asciidoctor-html5s"]
+    attributes: {
+      "icons":"font"
+    }
 
 taxonomies:
   tag: tags
