@@ -1,8 +1,11 @@
 @import url('modules/logo.css');
 @import url('modules/glitch.css');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@font-face {
+  font-family: 'Fira Code VF';
+  src: url('Fonts/FiraCode-VF.woff2') format('woff2-variations');
+  font-weight: 100 700;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,7 +14,6 @@
 		--text-color: #fff;
 		--scrollbar-background: #333;
 		--scrollbar-foreground: #222;
-		--code-block-background: #000;
 		--code-inline-background: #333;
 		--semi-transparent-background: #2229;
 	}
@@ -24,7 +26,6 @@
 		--text-color: #000;
 		--scrollbar-background: #eee;
 		--scrollbar-foreground: #ddd;
-		--code-block-background: #000;
 		--code-inline-background: #bbb;
 		--semi-transparent-background: #eee8;
 	}
@@ -91,9 +92,24 @@ h1 {
 }
 
 /* Text */
-h2, h3, h4, h5, h6, p, a, code {
+h2, h3, h4, h5, h6, p, a {
 	color: var(--text-color);
-	font-family: 'Fira Mono', 'monospace';
+	font-family: 'Fira Code', 'monospace';
+	font-weight: 500;
+	font-feature-settings:
+		"ss05",		/* @ symbol with long tail */
+		"zero",		/* Zero with a dot in it */
+		"ss07",		/* Approx equals */
+		"cv30",		/* Tall pipe */
+		"ss03",		/* traditional ampersand */
+		"ss09"		/* Arrows instead of logic */
+		;
+}
+
+code {
+	color: var(--text-color);
+	font-family: 'Courier Prime', monospace;
+
 }
 
 p {
@@ -120,10 +136,6 @@ hr {
 /* Code */
 .highlight{
 	margin: 2vh 0 2vh 0;
-}
-
-code {
-	text-size-adjust: 200%;
 }
 
 .chroma code {
