@@ -26,14 +26,13 @@ jobs:
         with:
           ruby-version: 2.7
 
-      - run: |
+      - name: install gems
+        run: |
           gem install asciidoctor
-          # gem install asciidoctor-html5s
+          gem install asciidoctor-html5s
 
       - name: Run Hugo
-        run: |
-          # alias asciidoctor=" --attribute=icons=font"
-          hugo
+        run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
