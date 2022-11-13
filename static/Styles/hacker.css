@@ -1,6 +1,5 @@
 @import url('modules/logo.css');
 @import url('modules/glitch.css');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @font-face {
   font-family: 'Fira Code';
   src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
@@ -108,7 +107,8 @@ h2, h3, h4, h5, h6, p, a {
 
 code {
 	color: var(--text-color);
-	font-family: 'Courier Prime', monospace;
+	font-family: 'Fira Code', monospace;
+	font-weight: 400;
 
 }
 
