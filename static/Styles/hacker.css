@@ -37,8 +37,7 @@
 
 html {
 	scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
-	background: var(--scrollbar-background);
-
+	background: var(--scrollbar-background);	/* Fallback */
 }
 
 body::before {		/* Janky Hack because background-attachment: fixed doesn't work properly on mobile */
@@ -167,7 +166,7 @@ hr {
 /* Tag pages */
 #tags ul {
 	list-style-type: none;
-	text-size-adjust: none;
+	text-size-adjust: none;		/* TODO: This is only until I can sort it out properly */
 	padding-left: 0;
 }
 
@@ -182,6 +181,6 @@ hr {
 
 .summary { clear: both; }
 
-.info-bar { text-size-adjust: none; padding-left: 0; }
+.info-bar { padding-left: 0; }
 .info-bar :first-child { float: left; }
 .info-bar :last-child { float: right; padding-right: 10px; }
