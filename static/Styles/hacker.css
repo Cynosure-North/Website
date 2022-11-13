@@ -2,8 +2,8 @@
 @import url('modules/glitch.css');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @font-face {
-  font-family: 'Fira Code VF';
-  src: url('Fonts/FiraCode-VF.woff2') format('woff2-variations');
+  font-family: 'Fira Code';
+  src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
   font-weight: 100 700;
   font-style: normal;
 }
@@ -37,17 +37,17 @@
 
 html{
 	scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+	background: var(--background-gradient);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
 }
 
 body {
-	background: var(--background-gradient);
 	margin: 0;
 	overflow-x: hidden;		/* TODO: DO I need this? */
 
 	/* Chrome hack */
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	height: 100%;
 }
 
 /* General */
