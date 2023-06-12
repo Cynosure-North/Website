@@ -17,6 +17,7 @@
 	opacity: 0.8;
 	user-select: none;
 	pointer-events: none;
+	animation-delay: inherit !important;
 }
 
 .glitch::before {
