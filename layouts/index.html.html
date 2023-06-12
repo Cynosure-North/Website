@@ -10,14 +10,14 @@
 <body>
 	{{ partial "partials/logo.html" }}
 	<div id="title">
-		<h1 class="glitch" content="░"> C </h1>
-		<h1 class="glitch" content="𝚈"> Y </h1>
-		<h1 class="glitch" content="_"> N </h1>
-		<h1 class="glitch" content="∴"> O </h1>
-		<h1 class="glitch" content="/-"> S </h1>
-		<h1 class="glitch" content="⮇"> U </h1>
-		<h1 class="glitch" content="ℝ"> R </h1>
-		<h1 class="glitch" content="!!"> E </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 51 }}s;" content="░"> C </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 13 }}s;" content="𝚈"> Y </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 32 }}s;" content="_"> N </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 47 }}s;" content="∴"> O </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix  2 }}s;" content="/-"> S </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 17 }}s;" content="⮇"> U </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix 11 }}s;" content="ℝ"> R </h1>
+		<h1 class="glitch" style="animation-delay: -{{ mod now.Unix  7 }}s;" content="!!"> E </h1>
 	</div>
 	<div id="column">
 		<p>Hi there. I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a>, and this website is a hub for my
