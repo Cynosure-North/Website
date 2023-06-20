@@ -6,10 +6,12 @@
 #needle{
 	height: 100%;
 	position: absolute;
-	pointer-events: none;
 	transition: transform 1.5s ease-in-out;
 }
 
-#logo:hover > #needle{
-	transform: rotate(180deg);
+@media (prefers-reduced-motion: no-preference) {
+	#logo:hover > #needle{
+		transform: rotate(180deg);
+	}
 }
+
