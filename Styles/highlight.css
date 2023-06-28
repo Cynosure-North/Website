@@ -21,7 +21,7 @@
 }
 
 /* Line Anchor */ .chroma .lnlink { text-decoration: none; }
-/* Anchor target */ .chroma a:target { background-color: var(--anchor); border-radius: 2px; }
+/* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
 /* Focus target */ .chroma a:focus { color: var(--target) !important; }
 /* Code block */ .chroma code { display: block; overflow-x: auto; }
 /* Background */ .bg { color: var(--text);}
