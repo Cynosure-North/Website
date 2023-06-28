@@ -109,6 +109,37 @@ func main() {
     runFarm(4)
     fmt.Println("done")
 }
+            fmt.Println("Farmer heard a moo of relief from cow number", moo.Cow)
+            hungryCows--
+        } else {
+            fmt.Println("Farmer heard a", moo.Sound, "from cow number", moo.Cow)
+            time.Sleep(2e9)
+            fmt.Println("Farmer starts feeding cow number", moo.Cow)
+            moo.Tube <- true
+        }
+    }
+    fmt.Println("Farmer doesn't hear a single moo anymore. All done!")
+    farmertube <- "yey!"
+}
+
+// The farm starts out with mooing cows that wants to be fed
+func runFarm(numcows int) {
+    farmertube := make(chan string)
+    mootube := make(chan Moo)
+    for cownum := 0; cownum < numcows; cownum++ {
+        go cow(cownum, mootube)
+    }
+    go farmer(numcows, mootube, farmertube)
+    farmerSaid := <-farmertube
+    if farmerSaid == "yey!" {
+        fmt.Println("All cows are happy.")
+    }
+}
+
+func main() {
+    runFarm(4)
+    fmt.Println("done")
+}
 {{</highlight>}}
 
 Id consectetur purus ut faucibus pulvinar. Nulla aliquet enim tortor at auctor urna nunc. Lacinia at quis risus sed vulputate odio ut. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Neque vitae tempus quam pellentesque nec nam aliquam sem. Lorem mollis aliquam ut porttitor leo a. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Nam at lectus urna duis convallis convallis tellus id interdum. Dui id ornare arcu odio ut. Nisl pretium fusce id velit ut.
