@@ -2,10 +2,17 @@
 	{{ partial "logo.html" }}
 	<div id="title-container">
 		<h1 class="glitch" content="{{ title .Title }} "
-		{{if gt (len .Title) 20}}
-		{{/* The css parser doesn't like brackets in the string, but nothing is actually wrong*/}}
-		style="font-size:{{ len .Title | math.Log | math.Floor | add 2 }}em"
-		{{end}}
+		{{/* The css linter doesn't like brackets in the string, but nothing is actually wrong*/}}
+		style="
+			{{ if lt (len .Title) 20 }}
+				font-size:500%
+			{{end}}
+			{{ if gt (len .Title) 60 }}
+				font-size:
+			{{end}}
+			{{ if and (gt (len .Title) 20) (lt (len .Title) 60) }}
+				font-size:{{ len .Title | math.Log | mul -170 | add 1000 | mul 0.025 | math.Floor | mul 40 }}
+			{{end}}"
 		>{{ title .Title }}</h1>
 	</div>
 </header>
