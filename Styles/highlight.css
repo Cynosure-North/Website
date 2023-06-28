@@ -20,7 +20,8 @@
 	}
 }
 
-/* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
+/* Line Anchor */ .chroma .lnlink { text-decoration: none; }
+/* Anchor target */ .chroma a:target { background-color: var(--anchor); border-radius: 2px; }
 /* Focus target */ .chroma a:focus { color: var(--target) !important; }
 /* Code block */ .chroma code { display: block; overflow-x: auto; }
 /* Background */ .bg { color: var(--text);}
@@ -31,7 +32,7 @@
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
 /* LineHighlight */ .chroma .hl { background-color: var(--line-highlight); display: block; width: max(100%, 84ch); }
-/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; text-decoration: none; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; color: var(--line-number); }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; color: var(--line-number); }
 /* Line */ .chroma .line { display: block; overflow-x:visible; overflow-y: clip; }
 /* Keyword */ .chroma .k { color: #6ab825; font-weight: bold }
 /* KeywordConstant */ .chroma .kc { color: #6ab825; font-weight: bold }
