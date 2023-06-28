@@ -20,7 +20,7 @@
 	}
 }
 
-/* Line Anchor */ .chroma .lnlink { text-decoration: none; }
+/* Line Anchor */ .chroma .lnlinks { text-decoration: none; }
 /* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
 /* Focus target */ .chroma a:focus { color: var(--target) !important; }
 /* Code block */ .chroma code { display: block; overflow-x: auto; }
