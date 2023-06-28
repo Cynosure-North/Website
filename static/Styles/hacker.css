@@ -68,13 +68,14 @@ body {
 	position: absolute;
 	top: 5px;
 	left: 5px;
-	height: 80px;
-	width: 80px;
+	height: 70px;
+	width: 70px;
 }
 
 #column {
 	width: min(1000px, 96%);
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 
@@ -99,7 +100,7 @@ header{
 h1 {
 	color: var(--text-color);
 	font-family: 'arial';
-	font-size: 7em;
+	/* font-size: 5em; */
 	margin: 35px 0px 35px 0px;
 	text-align: center;
 }
@@ -137,14 +138,8 @@ footer {
 
 footer a {
 	margin: 10px;
-	font-size: 1em;
 }
 footer a:first-of-type{ margin-left: 0; }
-
-hr {
-	width: 104%;
-	margin-left: -2%;
-}
 
 
 /* Code */
@@ -166,7 +161,6 @@ hr {
 /* Tag pages */
 #tags ul {
 	list-style-type: none;
-	text-size-adjust: none;		/* TODO: This is only until I can sort it out properly */
 	padding-left: 0;
 }
 
