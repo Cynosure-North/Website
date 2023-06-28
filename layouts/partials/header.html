@@ -5,13 +5,11 @@
 		{{/* The css linter doesn't like brackets in the string, but nothing is actually wrong*/}}
 		style="
 			{{ if lt (len .Title) 20 }}
-				font-size:500%
-			{{end}}
-			{{ if gt (len .Title) 60 }}
-				font-size:
-			{{end}}
-			{{ if and (gt (len .Title) 20) (lt (len .Title) 60) }}
-				font-size:{{ len .Title | math.Log | mul -170 | add 1000 | mul 0.025 | math.Floor | mul 40 }}
+				font-size:15vmin
+			{{ else if gt (len .Title) 60 }}
+				font-size:8vmin
+			{{ else }}
+				font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor  }}vmin
 			{{end}}"
 		>{{ title .Title }}</h1>
 	</div>
