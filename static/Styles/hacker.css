@@ -139,7 +139,6 @@ footer {
 footer a {
 	margin: 5px;
 	padding: 2px;
-	text-decoration: none;
 	border-radius: 3px;
 	background-color: var(--semi-transparent-background);
 }
