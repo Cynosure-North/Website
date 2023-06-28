@@ -68,13 +68,14 @@ body {
 	position: absolute;
 	top: 5px;
 	left: 5px;
-	height: 80px;
-	width: 80px;
+	height: 70px;
+	width: 70px;
 }
 
 #column {
 	width: min(1000px, 96%);
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 
@@ -99,7 +100,7 @@ header{
 h1 {
 	color: var(--text-color);
 	font-family: 'arial';
-	font-size: 7em;
+	/* font-size: 5em; */
 	margin: 35px 0px 35px 0px;
 	text-align: center;
 }
@@ -136,15 +137,13 @@ footer {
 }
 
 footer a {
-	margin: 10px;
-	font-size: 1em;
+	margin: 5px;
+	padding: 2px;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: var(--semi-transparent-background);
 }
 footer a:first-of-type{ margin-left: 0; }
-
-hr {
-	width: 104%;
-	margin-left: -2%;
-}
 
 
 /* Code */
@@ -159,14 +158,13 @@ hr {
 :not(.chroma) > code {
 	background-color: var(--code-inline-background);
 	padding: 1px 3px 1px 5px;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 
 /* Tag pages */
 #tags ul {
 	list-style-type: none;
-	text-size-adjust: none;		/* TODO: This is only until I can sort it out properly */
 	padding-left: 0;
 }
 
@@ -174,13 +172,7 @@ hr {
 	padding: 10px;
 	margin-top: 15px;
 	background-color: var(--semi-transparent-background);
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 #tags a { text-decoration: none; }
-
-.summary { clear: both; }
-
-.info-bar { padding-left: 0; }
-.info-bar :first-child { float: left; }
-.info-bar :last-child { float: right; padding-right: 10px; }
