@@ -124,7 +124,15 @@ code {
 	color: var(--text-color);
 	font-family: 'Fira Code', monospace;
 	font-weight: 400;
-
+	font-variant-ligatures: none;
+	font-feature-settings:
+		"ss05",		/* @ symbol with long tail */
+		"zero",		/* Zero with a dot in it */
+		"ss07",		/* Approx equals */
+		"cv30",		/* Tall pipe */
+		"ss03",		/* traditional ampersand */
+		"ss09"		/* Arrows instead of logic */
+		;
 }
 
 p {
@@ -139,7 +147,6 @@ footer {
 footer a {
 	margin: 5px;
 	padding: 2px;
-	text-decoration: none;
 	border-radius: 3px;
 	background-color: var(--semi-transparent-background);
 }
