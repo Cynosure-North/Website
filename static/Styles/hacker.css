@@ -137,7 +137,11 @@ footer {
 }
 
 footer a {
-	margin: 10px;
+	margin: 5px;
+	padding: 2px;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: var(--semi-transparent-background);
 }
 footer a:first-of-type{ margin-left: 0; }
 
@@ -154,7 +158,7 @@ footer a:first-of-type{ margin-left: 0; }
 :not(.chroma) > code {
 	background-color: var(--code-inline-background);
 	padding: 1px 3px 1px 5px;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 
@@ -168,13 +172,7 @@ footer a:first-of-type{ margin-left: 0; }
 	padding: 10px;
 	margin-top: 15px;
 	background-color: var(--semi-transparent-background);
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 #tags a { text-decoration: none; }
-
-.summary { clear: both; }
-
-.info-bar { padding-left: 0; }
-.info-bar :first-child { float: left; }
-.info-bar :last-child { float: right; padding-right: 10px; }

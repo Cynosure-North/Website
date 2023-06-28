@@ -12,10 +12,8 @@
 				{{ range .Pages.ByDate.Reverse }}
 					<a href="{{ .Permalink }}">
 						<li>
-							<div class="info-bar"><h2>{{ .Title }}</h2>
-							<h2> {{ .Lastmod.Format "2 January 2006" }}</h2>
-							</div>
-							<p class="summary">{{ .Summary }}</p>
+							<h2>{{ .Title }}</h2>
+							<p>{{ .Summary }}</p>
 						</li>
 					</a>
 				{{ end }}
