@@ -2,10 +2,8 @@
 	.chroma {
 		--background: #20202090;
 		--line-highlight: #3030309f;
-		--text: #d0d0d0;
 		--anchor: #f2f2f2;
 		--line-number: #686868;
-		--target: #aaaaaa;
 	}
 }
 
@@ -13,27 +11,20 @@
 	.chroma {
 		--background: #fafafa70;
 		--line-highlight: #cfcfcf9f;
-		--text: #111111;
 		--anchor: #2f2f2f;
 		--line-number: #c8c8c8;
-		--target: #5a5a5a;
 	}
 }
 
-/* Line Anchor */ .chroma .lnlinks, .chroma .ln a { text-decoration: none; user-select: none; color: var(--line-number) }
+/* Code block */ .chroma code { display: block; overflow-x: auto; background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 4px }
+/* Line - Number section */ .chroma .ln { user-select: none; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; }
+/* Line - Number (anchor) */ .chroma .lnlinks { text-decoration: none; color: var(--line-number) }
 /* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
-/* Focus target */ .chroma a:focus { color: var(--target) !important; }
-/* Code block */ .chroma code { display: block; overflow-x: auto; }
-/* Background */ .bg { color: var(--text);}
-/* PreWrapper */ .chroma { color: var(--text); background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 4px }
-/* Other */ .chroma .x {  }
-/* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
-/* CodeLine */ .chroma .cl {  }
-/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
-/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
-/* LineHighlight */ .chroma .hl { background-color: var(--line-highlight); display: block; width: max(100%, 84ch); }
-/* LineNumbers */ .chroma .ln { white-space: pre; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; }
+/* Line - Code section */ .chroma .cl {  }
 /* Line */ .chroma .line { display: block; overflow-x:visible; overflow-y: clip; }
+/* Highlighted Line */ .chroma .hl { background-color: var(--line-highlight); width: max(100%, 84ch); }
+
+/* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* Keyword */ .chroma .k { color: #6ab825; font-weight: bold }
 /* KeywordConstant */ .chroma .kc { color: #6ab825; font-weight: bold }
 /* KeywordDeclaration */ .chroma .kd { color: #6ab825; font-weight: bold }
