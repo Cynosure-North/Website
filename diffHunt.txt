@@ -1,9 +1,0 @@
-I've encountered an issue builidng this site. There are some subtle differences in the rendering when rendering locally vs when rendering on github pages, and that it causing an error.
-It's specifically in the code blocks, so Chroma may be at fault.
-Local:
-	The links for the line numbers generate as <a style="outline: none; text-decoration:none; color:inherit" href="#cows-9">  9</a>
-GH-Pages:
-	<a class="lnlinks" href="#cows-9">  9</a>
-
-Notice that GH-Pages has no inline style and instead has the class lnlinks.
-Also there is the issue of the spacing before the numbers, but one thing at a time
