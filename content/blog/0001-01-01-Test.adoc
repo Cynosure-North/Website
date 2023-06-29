@@ -9,7 +9,6 @@ date: 0001-01-01
 
 Lorem ipsum dolor sit amet, `This is an inline code block` consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `The quick brown fox jumped over the lazy dog` The quick brown fox jumped over the lazy dog Sagittis eu volutpat odio facilisis mauris sit amet. In egestas erat imperdiet sed euismod nisi porta lorem. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Condimentum vitae sapien pellentesque habitant morbi. Molestie nunc non blandit massa enim nec dui nunc mattis. Fringilla urna porttitor rhoncus dolor purus non enim. Lacus vestibulum sed |-|--| arcu non odio euismod lacinia at. Tellus mauris a diam maecenas sed enim. At tellus at urna condimentum mattis. 0 & =~ -- @ --- >>= /= ||= >=>> == -| /=/ |=> | ~~> `~~>`
 
-++++
 {{<highlight c "hl_lines=8-10 12">}}
 0 & =~ -- @ --- >>= /= ||= >=>> == -| /=/ |=> | ~~> 
 #include <stdio.h>
@@ -31,7 +30,6 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccthisis80columnshere
     return 0;
 }
 {{</highlight>}}
-++++
 
 Consequat semper viverra nam libero. Non sodales neque sodales ut etiam sit amet nisl purus. Massa tincidunt dui ut ornare lectus sit amet est placerat. Nisl condimentum id venenatis a condimentum vitae. Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Tellus orci ac auctor augue mauris augue neque. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Dignissim sodales ut eu sem. Tristique nulla aliquet enim tortor at auctor urna nunc. Pellentesque adipiscing commodo elit at imperdiet dui accumsan. Purus faucibus ornare suspendisse sed nisi.
 
