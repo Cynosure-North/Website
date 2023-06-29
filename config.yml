@@ -30,6 +30,7 @@ markup:
     lineNumbersInTable: false
     anchorLineNos: true
     noClasses: false
+    codeFences: false
   asciidocExt:
     backend: html5s
     extensions: ["asciidoctor-html5s"]
