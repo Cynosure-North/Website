@@ -106,32 +106,30 @@ h1 {
 }
 
 /* Text */
-h2, h3, h4, h5, h6, p, a {
+h2, h3, h4, h5, h6, p, a, code {
 	color: var(--text-color);
 	font-family: 'Fira Code', 'monospace';
 	font-weight: 500;
 	font-feature-settings:
-		"ss05",		/* @ symbol with long tail */
-		"zero",		/* Zero with a dot in it */
-		"ss07",		/* Approx equals */
-		"cv30",		/* Tall pipe */
 		"ss03",		/* traditional ampersand */
-		"ss09"		/* Arrows instead of logic */
+		"ss04",		/* simplified $ */
+		"ss05",		/* @ symbol with long tail */
+		"ss07",		/* Approx equals */
+		"ss09",		/* Arrows instead of logic */
+		"zero",		/* Zero with a dot in it */
+		"cv30"		/* Tall pipe */
 		;
 }
 
 code {
-	color: var(--text-color);
-	font-family: 'Fira Code', monospace;
 	font-weight: 400;
-	font-variant-ligatures: none;
+	font-variant: none;
 	font-feature-settings:
+		"ss04",		/* simplified $ */
 		"ss05",		/* @ symbol with long tail */
 		"zero",		/* Zero with a dot in it */
 		"ss07",		/* Approx equals */
-		"cv30",		/* Tall pipe */
-		"ss03",		/* traditional ampersand */
-		"ss09"		/* Arrows instead of logic */
+		"ss03"		/* traditional ampersand */
 		;
 }
 
