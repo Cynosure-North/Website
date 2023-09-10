@@ -4,7 +4,7 @@
 	inputs = {
 		nixpkgs.url = "github:nixos/nixpkgs";
 		flake-utils.url = "github:numtide/flake-utils";
-		# TODO: asciidoctor-html5s
+		# TODO: asciidoctor-html5s			https://nixos.org/manual/nixpkgs/stable/#sec-language-ruby
 	};
 
 	outputs = { nixpkgs, flake-utils, ... }:
@@ -18,6 +18,10 @@
 						hugo
 						asciidoctor
 					];
+					shellHook = ''
+						firefox localhost:1313
+						hugo serve
+					'';
 				};
 			}
 		);
