@@ -5,21 +5,21 @@ enableGitInfo: true
 
 frontmatter:
   date:
-  - date
-  - publishDate
-  - lastmod
-  - :filename
+    - date
+    - publishDate
+    - lastmod
+    - :filename
   expiryDate:
-  - expiryDate
+    - expiryDate
   lastmod:
-  - lastmod
-  - :git
-  - date
-  - publishDate
+    - lastmod
+    - :git
+    - date
+    - publishDate
   publishDate:
-  - :filename
-  - publishDate
-  - date
+    - :filename
+    - publishDate
+    - date
 
 permalinks:
   blog: blog/:day-:month-:year/:title
@@ -32,8 +32,8 @@ markup:
     noClasses: false
     codeFences: false
   asciidocExt:
-    backend: html5s
-    extensions: ["asciidoctor-html5s"]
+    # backend: html5s
+    # extensions: ["asciidoctor-html5s"]
     attributes: {
       "icons":"font"
     }
@@ -44,5 +44,4 @@ taxonomies:
 security:
   exec:
     allow:
-      - ^go$
       - ^asciidoctor$
