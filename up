@@ -2,4 +2,4 @@
 IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not)) | .[].addr_info | .[].local')
 
 firefox -url "$IP:1313" &
-docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" -e "IP=$IP" website
+docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP"
