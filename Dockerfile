@@ -9,5 +9,3 @@ RUN gem install --no-document asciidoctor-html5s -v 0.5.1
 
 RUN mkdir /hugo
 WORKDIR /hugo
-
-CMD hugo serve --bind "0.0.0.0" --baseURL=${IP}
