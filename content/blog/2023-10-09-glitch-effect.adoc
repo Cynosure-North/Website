@@ -1,0 +1,248 @@
+---
+title: How the Glitch Effect Works
+summary: TLDR, stack animations
+tags:
+  - meta
+  - coding
+---
+
+++++
+	<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0;">
+		<script>
+			function update() {
+				let rainbow = document.getElementById("rainbow").checked;
+				let wobble = document.getElementById("wobble").checked;
+				let clip = document.getElementById("clip").checked;
+
+				let style = `
+					#editable {
+						font-size: 4em;
+						font-weight: 700;
+						position: relative;
+						margin: 0 auto;
+						animation: ${rainbow ? "glitch-text 1199ms infinite -200ms;" : "none;" }
+					}
+
+					#editable::before,
+					#editable::after {
+						${document.getElementById("psuedo").checked ? "" : "display: none;"}
+						position: absolute;
+						left: 0;
+						top: 0;
+						opacity: 0.8;
+						overflow: hidden;
+						content: "${document.getElementById("psuedo-text").value}";
+						animation-delay: inherit;
+					}
+
+					#editable::before {
+						animation: glitch-text 650ms infinite alternate, outer 1000ms infinite, before 1538ms linear -1500ms infinite alternate-reverse;
+						
+						animation: ${
+						
+							  (rainbow ? "glitch-text 650ms infinite alternate" : "")
+							+ (rainbow && wobble ? ", " : "")
+							+ (wobble ? "outer 1000ms infinite" : "")
+							+ ((rainbow && clip) || (wobble && clip) ? ", " : "")
+							+ (clip ? "before 1538ms linear -1500ms infinite alternate-reverse" : "")
+
+							+ ((!rainbow && !wobble && !clip) ? "none" : "")
+							+ ";"
+						}
+
+
+						clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+					}
+
+					#editable::after {
+						animation: ${
+							  (rainbow ? "glitch-text 375ms reverse infinite" : "")
+							+ (rainbow && wobble ? ", " : "")
+							+ (wobble ? "outer 957ms -500ms infinite reverse" : "")
+							+ (!rainbow && wobble ? "none" : "")
+							+ ";"
+						}
+
+						clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+					}
+				`;
+
+				document.getElementById("styles").textContent = style;
+				console.log(style);
+			}
+			
+			update()
+		</script>
+
+		<style id="styles">
+
+		</style>
+
+		<div>
+			<input id="rainbow" onChange="update()" type="checkbox" checked>
+			<label for="rainbow">Rainbow text shadow</label>
+			<br>
+			<input id="psuedo" onChange="update()" type="checkbox" checked>
+			<label for="psuedo">::before & ::after</label>
+			<input id="psuedo-text" onKeyDown="update()" type="text" style="margin-left: 10px" Value="overlay text">
+			<br>
+			<input id="wobble" onChange="update()" type="checkbox" checked>
+			<label for="wobble">Wobbling</label>
+			<br>
+			<input id="clip" onChange="update()" type="checkbox" checked>
+			<label for="clip">Clip Path</label>
+		</div>
+
+		<h2 id="editable" contenteditable="true">Edit Me</h2>
+	</div>
+++++
+
+== HTML
+There are 2 things to see here.
+Firstly, I set the content attribute to be equal to the title.
+Secondly, I vary the font size to make the title take up a reasonable amount of the page.
+
+
+{{<highlight html "lineanchors=html, hl_lines=1">}}
+<h1 class="glitch" content="{{ title .Title }}"
+style="
+	{{ if lt (len .Title) 20 }}
+		font-size:15vmin
+	{{ else if gt (len .Title) 60 }}
+		font-size:8vmin
+	{{ else }}
+		font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor  }}vmin
+	{{end}}"
+>{{ title .Title }}</h1>
+{{</highlight>}}
+
+
+== CSS
+
+{{<highlight css "lineanchors=css">}}
+@media (prefers-reduced-motion: no-preference) {
+	.glitch {
+		font-weight: 700;
+		position: relative;
+		animation: glitch-text 1199ms infinite -200ms;
+	}
+
+	.glitch::before,
+	.glitch::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0.8;
+		content: attr(content);
+		animation-delay: inherit;
+	}
+
+	.glitch::before {
+		animation: glitch-text 650ms infinite alternate,
+			outer 1000ms infinite,
+			before 1538ms linear -1500ms infinite alternate-reverse;
+		clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+	}
+
+	.glitch::after {
+		animation: glitch-text 375ms reverse infinite, outer 957ms -500ms infinite reverse;
+		clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+	}
+
+	@keyframes glitch-text {
+		0% {
+			text-shadow: 0.05em 0 12px rgba(255, 0, 0, 0.75),
+				-0.05em -0.025em 10px rgba(0, 255, 0, 0.75),
+				-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+
+		14% {
+			text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+				-0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+				-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+
+		15% {
+			text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+				0.025em 0.025em 5px rgba(0, 255, 0, 0.75),
+				-0.05em -0.05em 3px rgba(0, 0, 255, 0.75);
+		}
+
+		49% {
+			text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+				0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+				-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+
+		50% {
+			text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+				0.05em 0 0 rgba(0, 255, 0, 0.75),
+				0 -0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+
+		99% {
+			text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+				0.05em 0 0 rgba(0, 255, 0, 0.75),
+				0 -0.05em 0 rgba(0, 0, 255, 0.75);
+		}
+
+		100% {
+			text-shadow: -0.025em 0 5px rgba(255, 0, 0, 0.75),
+				-0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+				-0.025em -0.05em 12px rgba(0, 0, 255, 0.75);
+		}
+	}
+
+	@keyframes outer {
+		0% {
+			opacity: 30%;
+		}
+
+		14% {
+			opacity: 20%;
+			transform: translate(-0.04em, -0.026em);
+		}
+
+		15% {
+			opacity: 100%;
+			transform: translate(0.02em, 0.016em) rotate(-0.5deg);
+		}
+
+		49% {
+			transform: rotate(0.1deg);
+			opacity: 80%;
+		}
+
+		50% {
+			transform: rotate(-0.2deg);
+		}
+
+		60% {
+			transform: rotate(0.1deg) translate(0.015em, 0.002em);
+			opacity: 40%;
+		}
+	}
+
+	@keyframes before {
+		0% {
+			clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+		}
+
+		20% {
+			clip-path: polygon(0 0, 100% 0, 100% 45%, 0 75%);
+		}
+
+		22% {
+			clip-path: polygon(0 0, 100% 0, 100% 35%, 0 25%);
+		}
+
+		75% {
+			clip-path: polygon(0 0, 100% 0, 100% 35%, 0 25%);
+		}
+
+		76% {
+			clip-path: polygon(0 0, 100% 0, 100% 5%, 0 75%);
+		}
+	}
+}
+{{</highlight>}}

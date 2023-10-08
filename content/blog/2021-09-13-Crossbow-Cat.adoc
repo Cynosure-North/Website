@@ -5,7 +5,7 @@ tags:
  - theatre
  - personal
  - news
-Lastmod: "2021-09-13"
+Lastmod: 2021-09-13
 ---
 
 I'm currently rehearsing for Crossbow Cat, to be performed soon. I'm playing Cinnamon, who happens to be a cat.

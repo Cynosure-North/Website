@@ -106,7 +106,7 @@ h1 {
 }
 
 /* Text */
-h2, h3, h4, h5, h6, p, a, code {
+h2, h3, h4, h5, h6, p, a, code, label, input {
 	color: var(--text-color);
 	font-family: 'Fira Code', 'monospace';
 	font-weight: 500;
@@ -119,6 +119,12 @@ h2, h3, h4, h5, h6, p, a, code {
 		"zero",		/* Zero with a dot in it */
 		"cv30"		/* Tall pipe */
 		;
+}
+
+input[type="text"] {
+	background: transparent;
+	border: none;
+	box-shadow: 0 2px 0 var(--text-color);
 }
 
 code {
