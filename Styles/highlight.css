@@ -17,7 +17,7 @@
 }
 
 /* */ .chroma { overflow-x: scroll; display: flex; border-radius: 4px; }
-/* Code block */ .chroma code { display: inline-block; flex-grow: 1; background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 4px }
+/* Code block */ .chroma code { display: inline-block; flex-grow: 1; background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 4px; tab-size: 4; }
 /* Line - Number section */ .chroma .ln { user-select: none; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; }
 /* Line - Number (anchor) */ .chroma .lnlinks { text-decoration: none; color: var(--line-number) }
 /* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
