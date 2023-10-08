@@ -5,7 +5,20 @@
     <link>http://Cynosure.page/tags/meta/</link>
     <description>Recent content in meta on Cynosure</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-nz</language><atom:link href="http://Cynosure.page/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-nz</language>
+    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Cynosure.page/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How the Glitch Effect Works</title>
+      <link>http://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</link>
+      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;
+&lt;p&gt;TLDR, stack animations&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
     <item>
       <title>About Me</title>
       <link>http://Cynosure.page/blog/01-01-1/about-me/</link>
