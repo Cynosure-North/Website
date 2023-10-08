@@ -14,17 +14,13 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		content: attr(content);
 		opacity: 0.8;
-		user-select: none;
-		pointer-events: none;
-		animation-delay: inherit !important;
+		content: attr(content);
+		animation-delay: inherit;
 	}
 
 	.glitch::before {
-		animation: glitch-text 650ms infinite alternate, outer 1000ms infinite,
-			before 1538ms linear -1500ms infinite alternate-reverse;
-		clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+		animation: glitch-text 650ms infinite alternate, outer 1000ms infinite, before 1538ms linear -1500ms infinite alternate-reverse;
 	}
 
 	.glitch::after {
