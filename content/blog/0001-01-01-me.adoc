@@ -1,7 +1,6 @@
 ---
 title: About Me
 summary: Here are some facts and a lovely dithered image
-Lastmod: 2022-06-23
 tags:
   - meta
   - personal
@@ -11,5 +10,7 @@ image::/Images/me.png["A person wearing sunglasses, lipstick, and a hoodie."]
 
 mailto:contact@cynosure.page[contact@cynosure.page]
 
-Hi, I'm North (they/them). I'm at uni right now studying Computer Science and Theatre.
-You may notice things are a bit barren right now. That's because I haven't finished this.
+https://github.com/Cynosure-North/[github.com/cynosure-north]
+
+Hi, I'm North (they/them). 
+I do art things and computer things. Sometimes both at once. 
