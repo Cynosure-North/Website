@@ -2,20 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://Cynosure.page/tags/class/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
+    <loc>http://Cynosure.page/blog/</loc>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
+  </url><url>
+    <loc>http://Cynosure.page/tags/coding/</loc>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
   </url><url>
     <loc>http://Cynosure.page/</loc>
-    <lastmod>2023-10-09T02:16:11+13:00</lastmod>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
+  </url><url>
+    <loc>http://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</loc>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
+  </url><url>
+    <loc>http://Cynosure.page/tags/meta/</loc>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
+  </url><url>
+    <loc>http://Cynosure.page/tags/</loc>
+    <lastmod>2023-10-09T02:19:54+13:00</lastmod>
+  </url><url>
+    <loc>http://Cynosure.page/tags/class/</loc>
+    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://Cynosure.page/tags/review/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://Cynosure.page/reviews/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://Cynosure.page/tags/</loc>
-    <lastmod>2023-10-09T02:16:11+13:00</lastmod>
   </url><url>
     <loc>http://Cynosure.page/tags/theatre/</loc>
     <lastmod>2022-08-09T00:00:00+00:00</lastmod>
@@ -28,9 +40,6 @@
   </url><url>
     <loc>http://Cynosure.page/reviews/hole/</loc>
     <lastmod>2021-11-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://Cynosure.page/blog/</loc>
-    <lastmod>2023-10-09T02:16:11+13:00</lastmod>
   </url><url>
     <loc>http://Cynosure.page/blog/13-09-2021/crossbow-cat/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
@@ -46,8 +55,5 @@
   </url><url>
     <loc>http://Cynosure.page/blog/01-01-1/lorem-ipsum/</loc>
     <lastmod>2023-10-09T02:16:10+13:00</lastmod>
-  </url><url>
-    <loc>http://Cynosure.page/tags/meta/</loc>
-    <lastmod>2023-10-09T02:16:11+13:00</lastmod>
   </url>
 </urlset>
