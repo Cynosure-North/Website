@@ -2,11 +2,11 @@
 	.glitch {
 		font-weight: 700;
 		position: relative;
-		animation: glitch-text 1199ms infinite -200ms;
+		animation: rainbow-text 1199ms infinite -200ms;
 	}
 
-	.glitch-shadow {
-		animation: glitch-shadow 556ms infinite -400ms alternate-reverse, rotate 637ms infinite -20ms alternate;
+	.glitch-shadow{
+		animation: rainbow-shadow 556ms infinite -400ms alternate-reverse, rotate 637ms infinite -20ms alternate;
 	}
 
 	.glitch::before,
@@ -20,15 +20,15 @@
 	}
 
 	.glitch::before {
-		animation: glitch-text 650ms infinite alternate, outer 1000ms infinite, before 1538ms linear -1500ms infinite alternate-reverse;
+		animation: rainbow-text 650ms infinite alternate, wobble 1000ms infinite, clipper 1538ms linear -1500ms infinite alternate-reverse;
 	}
 
 	.glitch::after {
-		animation: glitch-text 375ms reverse infinite, outer 957ms -500ms infinite reverse;
+		animation: rainbow-text 375ms reverse infinite, wobble 957ms -500ms infinite reverse;
 		clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
 	}
 
-	@keyframes glitch-text {
+	@keyframes rainbow-text {
 		0% {
 			text-shadow: 0.05em 0 12px rgba(255, 0, 0, 0.75),
 				-0.05em -0.025em 10px rgba(0, 255, 0, 0.75),
@@ -73,7 +73,7 @@
 	}
 
 
-	@keyframes glitch-shadow {
+	@keyframes rainbow-shadow {
 		0% {
 			filter: drop-shadow(0.25em 0 12px rgba(255, 0, 0, 0.75)) drop-shadow(-0.25em -0.25em 10px rgba(0, 255, 0, 0.75)) drop-shadow(-0.225em 0.5em 0 rgba(0, 0, 255, 0.75));
 		}
@@ -103,7 +103,7 @@
 		}
 	}
 
-	@keyframes outer {
+	@keyframes wobble {
 		0% {
 			opacity: 30%;
 		}
@@ -195,7 +195,7 @@
 		}
 	}
 
-	@keyframes before {
+	@keyframes clipper {
 		0% {
 			clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
 		}

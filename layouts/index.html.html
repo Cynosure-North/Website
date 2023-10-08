@@ -20,11 +20,13 @@
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -29s;" content="!!"> E </h1>
 	</div>
 	<div id="column">
-		<p>Hi there. I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a>, and this website is a hub for my
-			projects.<br>
-			It's a little sparse right now, because it's very new. But there's lots to come<br>
+		<p>Hi there, I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a></p>
+		<p>Read a post: 
+			{{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }}
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			{{end}}
 		</p>
-		<p>Lorem Ipsum: <a href="{{ ref . "0001-01-01-Test.adoc" }}">Test</a></p>
+		<p>Or browse by <a href="/tags">tags</a></p>
 	</div>
 </body>
 </html>

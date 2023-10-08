@@ -8,99 +8,104 @@ tags:
 
 ++++
 	<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0;">
-		<script>
-			function update() {
-				let rainbow = document.getElementById("rainbow").checked;
-				let wobble = document.getElementById("wobble").checked;
-				let clip = document.getElementById("clip").checked;
-
-				let style = `
-					#editable {
-						font-size: 4em;
-						font-weight: 700;
-						position: relative;
-						margin: 0 auto;
-						animation: ${rainbow ? "glitch-text 1199ms infinite -200ms;" : "none;" }
-					}
-
-					#editable::before,
-					#editable::after {
-						${document.getElementById("psuedo").checked ? "" : "display: none;"}
-						position: absolute;
-						left: 0;
-						top: 0;
-						opacity: 0.8;
-						overflow: hidden;
-						content: "${document.getElementById("psuedo-text").value}";
-						animation-delay: inherit;
-					}
-
-					#editable::before {
-						animation: glitch-text 650ms infinite alternate, outer 1000ms infinite, before 1538ms linear -1500ms infinite alternate-reverse;
-						
-						animation: ${
-						
-							  (rainbow ? "glitch-text 650ms infinite alternate" : "")
-							+ (rainbow && wobble ? ", " : "")
-							+ (wobble ? "outer 1000ms infinite" : "")
-							+ ((rainbow && clip) || (wobble && clip) ? ", " : "")
-							+ (clip ? "before 1538ms linear -1500ms infinite alternate-reverse" : "")
-
-							+ ((!rainbow && !wobble && !clip) ? "none" : "")
-							+ ";"
-						}
-
-
-						clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-					}
-
-					#editable::after {
-						animation: ${
-							  (rainbow ? "glitch-text 375ms reverse infinite" : "")
-							+ (rainbow && wobble ? ", " : "")
-							+ (wobble ? "outer 957ms -500ms infinite reverse" : "")
-							+ (!rainbow && wobble ? "none" : "")
-							+ ";"
-						}
-
-						clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-					}
-				`;
-
-				document.getElementById("styles").textContent = style;
-				console.log(style);
-			}
-			
-			update()
-		</script>
-
-		<style id="styles">
-
-		</style>
-
 		<div>
 			<input id="rainbow" onChange="update()" type="checkbox" checked>
 			<label for="rainbow">Rainbow text shadow</label>
 			<br>
-			<input id="psuedo" onChange="update()" type="checkbox" checked>
-			<label for="psuedo">::before & ::after</label>
-			<input id="psuedo-text" onKeyDown="update()" type="text" style="margin-left: 10px" Value="overlay text">
-			<br>
 			<input id="wobble" onChange="update()" type="checkbox" checked>
 			<label for="wobble">Wobbling</label>
 			<br>
-			<input id="clip" onChange="update()" type="checkbox" checked>
-			<label for="clip">Clip Path</label>
+			<input id="clipper" onChange="update()" type="checkbox" checked>
+			<label for="clipper">Clipping boundary</label>
+			<br>
+			<input id="psuedo" onChange="update()" type="checkbox" checked>
+			<label for="psuedo">::before & ::after</label>
+			<input id="psuedo-text" onKeyDown="update()" type="text" style="margin-left: 10px" Value="Edit Me">
 		</div>
 
 		<h2 id="editable" contenteditable="true">Edit Me</h2>
 	</div>
+
+	<script>
+		function update() {
+			let rainbow = document.getElementById("rainbow").checked;
+			let wobble = document.getElementById("wobble").checked;
+			let clipper = document.getElementById("clipper").checked;
+
+
+			let style = `
+				#editable {
+					font-size: 4em;
+					font-weight: 700;
+					position: relative;
+					margin: 0 auto;
+					animation: ${rainbow ? "rainbow-text 1199ms infinite -200ms;" : "none;" }
+				}
+
+				#editable::before,
+				#editable::after {
+					${document.getElementById("psuedo").checked ? "" : "display: none;"}
+					position: absolute;
+					left: 0;
+					top: 0;
+					opacity: 0.8;
+					overflow: hidden;
+					content: "${document.getElementById("psuedo-text").value}";
+					animation-delay: inherit;
+				}
+
+				#editable::before {
+					animation: ${
+						  (rainbow ? "rainbow-text 650ms infinite alternate" : "")
+						+ (rainbow && wobble ? ", " : "")
+						+ (wobble ? "wobble 1000ms infinite" : "")
+						+ ((rainbow && clipper) || (wobble && clipper) ? ", " : "")
+						+ (clipper ? "clipper 1538ms linear -1500ms infinite alternate-reverse" : "")
+
+						+ ((!rainbow && !wobble && !clipper) ? "none" : "")
+						+ ";"
+					}
+
+
+					clipper-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+				}
+
+				#editable::after {
+					animation: ${
+						  (rainbow ? "rainbow-text 375ms reverse infinite" : "")
+						+ (rainbow && wobble ? ", " : "")
+						+ (wobble ? "wobble 957ms -500ms infinite reverse" : "")
+						+ (!rainbow && wobble ? "none" : "")
+						+ ";"
+					}
+
+					clipper-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+				}
+			`;
+
+			document.getElementById("styles").textContent = style;
+			console.log(style);
+		}
+
+		window.addEventListener("load", update);
+	</script>
+
+	<style id="styles">
+
+	</style>
 ++++
+
+I'm kinda proud of the effect. It's pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But... But it looks cool.
+
+Also, after far, far too long I am (just about) ready to say this site is at version 1.0. Hurrah.
+{empty} +
+{empty} +
+{empty} +
 
 == HTML
 There are 2 things to see here.
 Firstly, I set the content attribute to be equal to the title.
-Secondly, I vary the font size to make the title take up a reasonable amount of the page.
+Secondly and unrelatedly, I vary the font size to make the title take up a reasonable amount of the page.
 
 
 {{<highlight html "lineanchors=html, hl_lines=1">}}
@@ -118,8 +123,12 @@ style="
 
 
 == CSS
+This is largely unremarkable, just a load of animation keyframes.
 
-{{<highlight css "lineanchors=css">}}
+Do pay attention to the content and animation delay attributes though. `content: attr(content)` is the trick that allows me to easily set the overlay text to match.
+`animation-delay` isn't useful for the majority of titles, but for the homepage I have each letter as its own seperate animation. I've manually set a unique animation delay on each and that ensures the wandering clip paths don't all line up in an obvious way.
+
+{{<highlight css "lineanchors=css, hl_lines=14-15">}}
 @media (prefers-reduced-motion: no-preference) {
 	.glitch {
 		font-weight: 700;
