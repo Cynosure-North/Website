@@ -28,8 +28,8 @@
 	</div>
 </header>
 	
-			<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0;">
-		<div>
+			<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0; gap: 100px">
+		<div style="margin: 0 auto 0 auto">
 			<input id="rainbow" onchange="update()" type="checkbox" checked=""/>
 			<label for="rainbow">Rainbow text shadow</label>
 			<br/>
@@ -41,10 +41,10 @@
 			<br/>
 			<input id="psuedo" onchange="update()" type="checkbox" checked=""/>
 			<label for="psuedo">::before &amp; ::after</label>
-			<input id="psuedo-text" onkeydown="update()" type="text" style="margin-left: 10px" value="Edit Me"/>
+			<input id="psuedo-text" oninput="update()" type="text" style="margin-left: 10px" value="Edit Me"/>
 		</div>
 
-		<h2 id="editable" contenteditable="true">Edit Me</h2>
+		<h2 id="editable" contenteditable="true" style="margin: 0 auto 0 auto">Edit Me</h2>
 	</div>
 
 	<script>
@@ -293,7 +293,7 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 		
 		<p> Posted: <time datetime="2023-10-08"> 8 October 2023</time></p>
 		
-			<p> Edited: <time datetime="2023-10-09"> 9 October 2023</time></p>
+			<p> Edited: <time datetime="2023-11-05"> 5 November 2023</time></p>
 		
 		
 			<a href="/tags/coding">coding</a>

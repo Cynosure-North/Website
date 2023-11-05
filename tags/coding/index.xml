@@ -2,22 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coding on Cynosure</title>
-    <link>http://Cynosure.page/tags/coding/</link>
+    <link>https://Cynosure.page/tags/coding/</link>
     <description>Recent content in coding on Cynosure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-nz</language>
-    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://Cynosure.page/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://Cynosure.page/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How the Glitch Effect Works</title>
-      <link>http://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</link>
+      <link>https://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</link>
       <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</guid>
+      <guid>https://Cynosure.page/blog/08-10-2023/how-the-glitch-effect-works/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;
 &lt;p&gt;TLDR, stack animations&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
-    
   </channel>
 </rss>
