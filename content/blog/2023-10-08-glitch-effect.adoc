@@ -7,8 +7,8 @@ tags:
 ---
 
 ++++
-	<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0;">
-		<div>
+	<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0; gap: 100px">
+		<div style="margin: 0 auto 0 auto">
 			<input id="rainbow" onChange="update()" type="checkbox" checked>
 			<label for="rainbow">Rainbow text shadow</label>
 			<br>
@@ -20,10 +20,10 @@ tags:
 			<br>
 			<input id="psuedo" onChange="update()" type="checkbox" checked>
 			<label for="psuedo">::before & ::after</label>
-			<input id="psuedo-text" onKeyDown="update()" type="text" style="margin-left: 10px" Value="Edit Me">
+			<input id="psuedo-text" onInput="update()" type="text" style="margin-left: 10px" Value="Edit Me">
 		</div>
 
-		<h2 id="editable" contenteditable="true">Edit Me</h2>
+		<h2 id="editable" contenteditable="true" style="margin: 0 auto 0 auto">Edit Me</h2>
 	</div>
 
 	<script>
