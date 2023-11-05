@@ -1,5 +1,5 @@
-baseURL : "http://Cynosure.page"
-languageCode : "en-nz"
+baseURL: "https://Cynosure.page"
+languageCode: "en-nz"
 title : "Cynosure"
 enableGitInfo: true
 
