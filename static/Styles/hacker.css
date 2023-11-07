@@ -40,27 +40,20 @@ html {
 	background: var(--scrollbar-background);	/* Fallback */
 }
 
-body::before {		/* Janky Hack because background-attachment: fixed doesn't work properly on mobile */
+body::before {		/* Hack because background-attachment: fixed doesn't work properly on mobile */
 	content: '';
-	background: var(--background-gradient);
 	position: fixed;
 	width: 100vw;
 	height: 110vh;
 	z-index: -1;
 
-	display: block;
-	top: -5px;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
-
+	background: var(--background-gradient);
 	background-size: cover;
 	background-position: center top;
 }
 
 body {
 	margin: 0;
-	overflow-x: hidden;		/* TODO: DO I need this? */
 }
 
 /* General */
