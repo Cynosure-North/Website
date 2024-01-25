@@ -28,24 +28,22 @@
 	</div>
 </header>
 	
-			<div style="display: flex; flex-wrap: wrap; margin: 100px 0 100px 0; gap: 100px">
-		<div style="margin: 0 auto 0 auto">
-			<input id="rainbow" onchange="update()" type="checkbox" checked=""/>
-			<label for="rainbow">Rainbow text shadow</label>
-			<br/>
-			<input id="wobble" onchange="update()" type="checkbox" checked=""/>
-			<label for="wobble">Wobbling</label>
-			<br/>
-			<input id="clipper" onchange="update()" type="checkbox" checked=""/>
-			<label for="clipper">Clipping boundary</label>
-			<br/>
-			<input id="psuedo" onchange="update()" type="checkbox" checked=""/>
-			<label for="psuedo">::before &amp; ::after</label>
-			<input id="psuedo-text" oninput="update()" type="text" style="margin-left: 10px" value="Edit Me"/>
-		</div>
-
-		<h2 id="editable" contenteditable="true" style="margin: 0 auto 0 auto">Edit Me</h2>
+			<div style="margin: 50px auto 50px auto; width: 90%">
+		<input id="rainbow" onchange="update()" type="checkbox" checked=""/>
+		<label for="rainbow">Rainbow text shadow</label>
+		<br/>
+		<input id="psuedo" onchange="update()" type="checkbox" checked=""/>
+		<label for="psuedo">::before &amp; ::after</label>
+		<input id="psuedo-text" oninput="update()" type="text" style="margin-left: 10px; width: 13ch" value="Edit Me Too"/>
+		<br/>
+		<input id="wobble" onchange="update()" type="checkbox" checked=""/>
+		<label for="wobble">Wobbling</label>
+		<br/>
+		<input id="clipper" onchange="update()" type="checkbox" checked=""/>
+		<label for="clipper">Clipping boundary</label>
 	</div>
+
+	<h2 id="editable" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me</h2>
 
 	<script>
 		function update() {
@@ -53,13 +51,13 @@
 			let wobble = document.getElementById("wobble").checked;
 			let clipper = document.getElementById("clipper").checked;
 
-
 			let style = `
 				#editable {
-					font-size: 4em;
+					font-size: 5em;
 					font-weight: 700;
 					position: relative;
 					margin: 0 auto;
+					white-space: pre;
 					animation: ${rainbow ? "rainbow-text 1199ms infinite -200ms;" : "none;" }
 				}
 
@@ -87,8 +85,7 @@
 						+ ";"
 					}
 
-
-					clipper-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+					clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
 				}
 
 				#editable::after {
@@ -96,16 +93,15 @@
 						  (rainbow ? "rainbow-text 375ms reverse infinite" : "")
 						+ (rainbow && wobble ? ", " : "")
 						+ (wobble ? "wobble 957ms -500ms infinite reverse" : "")
-						+ (!rainbow && wobble ? "none" : "")
+						+ (!rainbow && !wobble ? "none" : "")
 						+ ";"
 					}
 
-					clipper-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+					clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
 				}
 			`;
 
 			document.getElementById("styles").textContent = style;
-			console.log(style);
 		}
 
 		window.addEventListener("load", update);
@@ -115,7 +111,7 @@
 
 	</style>
 <div class="paragraph">
-<p>I’m kinda proud of the effect. It’s pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But…​ But it looks cool.</p>
+<p>I’m kinda proud of the effect. It’s pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But…​ It looks cool.</p>
 </div>
 <div class="paragraph">
 <p>Also, after far, far too long I am (just about) ready to say this site is at version 1.0. Hurrah.
@@ -152,8 +148,8 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 <p>This is largely unremarkable, just a load of animation keyframes.</p>
 </div>
 <div class="paragraph">
-<p>Do pay attention to the content and animation delay attributes though. <code>content: attr(content)</code> is the trick that allows me to easily set the overlay text to match.
-<code>animation-delay</code> isn’t useful for the majority of titles, but for the homepage I have each letter as its own seperate animation. I’ve manually set a unique animation delay on each and that ensures the wandering clip paths don’t all line up in an obvious way.</p>
+<p>Do pay attention to the content and animation delay attributes though. <code>content: attr(content)</code> is the trick that allows me to easily set the overlay text to match. This is important because I can easily set html content on a per page basis with Hugo (the static site generator I use), but it’s substantially harder to have unique CSS per page.
+<code>animation-delay</code> isn’t useful for the majority of titles, but for the homepage I have each letter as its own separate animation. I’ve manually set a unique animation delay on each and that ensures the wandering clip paths don’t all line up in an obvious way.</p>
 </div>
 <div class="paragraph">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="ln" id="css-1"><a class="lnlinks" href="#css-1">  1</a></span><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">prefers-reduced-motion</span><span class="o">:</span> <span class="nt">no-preference</span><span class="o">)</span> <span class="p">{</span>
@@ -293,7 +289,7 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 		
 		<p> Posted: <time datetime="2023-10-08"> 8 October 2023</time></p>
 		
-			<p> Edited: <time datetime="2023-11-05"> 5 November 2023</time></p>
+			<p> Edited: <time datetime="2024-01-26"> 26 January 2024</time></p>
 		
 		
 			<a href="/tags/coding">coding</a>
