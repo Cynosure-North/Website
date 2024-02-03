@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+	<head>
+		{{ block "head" . }}
+			{{ partial "head.html" . }}	
+		{{ end }}
+	</head>
+	<body>
+		<div id="column">
+		{{ block "header" . }}
+			{{ partial "header.html" . }}
+		{{ end }}
+		{{ block "main" . }}
+				{{ .Content }}
+		{{ end }}
+		{{ block "footer" . }}
+			{{ partial "footer.html" . }}
+		{{ end }}
+		</div>
+	</body>
+</html>

@@ -1,5 +1,26 @@
-#!/bin/sh
+#!/bin/bash
+
+# TODO handle better
 IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not)) | .[].addr_info | .[].local')
 
-firefox --devtools "$IP:1313" &
-docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture"
+# TODO Build
+if [ "$1" = "build" ]; then
+	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo"
+elif [ "$1" = "sh" ]; then
+	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh
+elif [ "$1" = "new" ]; then
+	shift
+	filename="/content/$1/$2.adoc"
+	{
+		echo "---"
+		echo "draft: true"
+		echo "date: $DATE"
+		echo "summary: "
+		echo "title: ${1/-/ }"
+		echo "---"
+	} >> "$filename"
+	$EDITOR "$filename"
+else
+	firefox --devtools "$IP:1313" &
+	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
+fi

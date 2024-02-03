@@ -2,13 +2,12 @@
 	{{ partial "logo.html" }}
 	<div id="title-container">
 		<h1 class="glitch" content="{{ title .Title }}"
-		{{/* The css linter doesn't like brackets in the string, but nothing is actually wrong*/}}
 		style="{{ if lt (len .Title) 20 }}
 				font-size:15vmin
 			{{ else if gt (len .Title) 60 }}
 				font-size:8vmin
 			{{ else }}
-				font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor  }}vmin
+				font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor }}vmin
 			{{end}}"
 		>{{ title .Title }}</h1>
 	</div>
