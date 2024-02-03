@@ -1,0 +1,29 @@
+---
+date: 2024-02-03
+draft: true
+title: Inside the Vic Debsoc website
+tags:
+  - webdev
+  - debating
+---
+
+A while back I took it upon myself to design the https://www.vicdebsoc.org.nz[website for my debating society]. I had a number of constraints that I think are pretty common.
+1. Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.
+2. Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.
+3. Low technical complexity. I'm not going to be around forever, and I don't want for whoever takes over to have a huge maintenance burden.
+
+Luckily this is a fairly small website, and modern tools have made this easy.
+The stack consists of https://docs.gitlab.com/ee/user/project/pages[Gitlab Pages], https://gohugo.io[Hugo], and https://www.staticcms.org[StaticCMS]. If you just want to see an example you can find it https://gitlab.com/Cynosure-North/Debsoc-Website[here], I'm going to talk about why I used each of these tools.
+
+== Gitlab
+The obvious solution in this space is GitHub Pages, and that's what I use for this website. But one of the needs of StaticCMS is an authorisation. The subtleties are beyond this post, but what's important is that GitHub doesn't support PKCE for OAuth apps. That means I'd need to rely on an external service like Netlify identity to handle the login flow. That's an unattractive solution due to the extra complexity. Fortunately, Gitlab does support it. Gitlab also provides a lot of other useful services, like hosting and CI/CD runners.
+
+== Hugo
+I've tried other static site generators in the past, but I haven't found any as easy or powerful as Hugo. It also has a lot of useful features like minifcation built in. It being quick to build was a bonus in the development process
+
+== StaticCMS
+This is the core of the website. It provides the easy interface for content authors, and it's just a SPA that runs from one script. While I did find a few spots that need work, it does most things well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren't huge, but they're appreciated. It's things updating react, dropping backends I'm not using, and cleaning up options. The community also seems more active.
+
+All of these tools are open source, and with the exception of gitlab, independant of any major companies backing them. Because of this I'm more willing to trust them long term, to not be sold and go to crap.
+
+For small, no-cost, low-complexity websites I think this is the best stack in 2024.

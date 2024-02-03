@@ -21,11 +21,12 @@
 	</div>
 	<div id="column">
 		<p>Hi there, I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a></p>
-		<p>Read a post: 
+		<p>Read a post:</p> 
+		<ul>
 			{{ range ( where .Site.RegularPages "Type" "blog" | first 1 ) }}
-				<a href="{{ .Permalink }}">{{ .Title }}</a>
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{end}}
-		</p>
+		</ul>
 		<p>Or browse by <a href="/tags">tags</a></p>
 	</div>
 </body>

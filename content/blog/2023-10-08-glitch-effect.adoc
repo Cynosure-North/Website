@@ -3,7 +3,7 @@ title: How the Glitch Effect Works
 summary: TLDR, stacked animations
 tags:
   - meta
-  - coding
+  - webdev
 ---
 
 ++++
