@@ -22,7 +22,7 @@ frontmatter:
     - date
 
 permalinks:
-  blog: blog/:day-:month-:year/:title
+  blog: blog/:year-:month-:day/:title
 
 markup:
   highlight:
