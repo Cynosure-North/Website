@@ -29,14 +29,28 @@
 
 	
 			<div class="paragraph">
-<p>A while back I took it upon myself to design the <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I think are pretty common.
-1. Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.
-2. Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.
-3. Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</p>
+<p>A while back I took it upon myself to design the <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I think are pretty common.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.</p>
+</li>
+<li>
+<p>Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.</p>
+</li>
+<li>
+<p>Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>Luckily this is a fairly small website, and modern tools have made this easy.
 The stack consists of <a href="https://docs.gitlab.com/ee/user/project/pages">Gitlab Pages</a>, <a href="https://gohugo.io">Hugo</a>, and <a href="https://www.staticcms.org">StaticCMS</a>. If you just want to see an example you can find it <a href="https://gitlab.com/Cynosure-North/Debsoc-Website">here</a>, I’m going to talk about why I used each of these tools.</p>
+</div>
+<div class="paragraph">
+<p>All of these tools are open source, which should make any future migrations substantially easier.<br/>
+For small, no-cost, low-complexity websites I think this is the best stack in 2024.</p>
 </div>
 <div class="sect1">
 <h2 id="_gitlab">Gitlab</h2>
@@ -61,10 +75,6 @@ I have found GitLab’s time to first byte to be higher than Github’s, but tha
 <div class="paragraph">
 <p>This is the core of the admin interface, and the tool that enables the whole static architecture. It provides the easy interface for content authors,  I found it extremely easy to get started. It runs as a client-side SPA, which is ideal. While I did find a few spots that need work, it does the basics well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren’t huge, but they’re appreciated. They’re things updating react, dropping backends I’m not using, and cleaning up options. The community also seems more active.</p>
 </div>
-<div class="paragraph">
-<p>All of these tools are open source, which should make any future migrations substantially easier.<br/>
-For small, no-cost, low-complexity websites I think this is the best stack in 2024.</p>
-</div>
 </div>
 </div>
 
@@ -74,9 +84,7 @@ For small, no-cost, low-complexity websites I think this is the best stack in 20
 	
 		
 		
-		<p> Posted: <time datetime="2024-02-03"> 3 February 2024</time></p>
-		
-			<p> Edited: <time datetime="2024-02-05"> 5 February 2024</time></p>
+		<p> Posted: <time datetime="2024-02-05"> 5 February 2024</time></p>
 		
 		
 			<a href="/tags/debating">debating</a>
