@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<title>Cynosure - Inside the Vic Debsoc Website</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="North">
+	<meta name="description" content="Now in rainbow">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
+
+	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
+
+	</head>
+
+	<body>
+		<div id="column">
+			<header>
+	<a href="/index.html" id="logo" aria-label="Compass Logo"><img id="compass" src="/Icons/Compass-Rose-White-Background.svg" aria-hidden="true" class="glitch-shadow"><img id="needle" src="/Icons/Compass-Rose-White-Needle.svg" aria-hidden="true"></a> 
+	<div id="title-container">
+		<h1 class="glitch" content="Inside the Vic Debsoc Website"
+		style="
+				font-size:13vmin
+			"
+		>Inside the Vic Debsoc Website</h1>
+	</div>
+</header>
+
+	
+			<div class="paragraph">
+<p>A while back I took it upon myself to design the <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I think are pretty common.
+1. Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.
+2. Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.
+3. Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</p>
+</div>
+<div class="paragraph">
+<p>Luckily this is a fairly small website, and modern tools have made this easy.
+The stack consists of <a href="https://docs.gitlab.com/ee/user/project/pages">Gitlab Pages</a>, <a href="https://gohugo.io">Hugo</a>, and <a href="https://www.staticcms.org">StaticCMS</a>. If you just want to see an example you can find it <a href="https://gitlab.com/Cynosure-North/Debsoc-Website">here</a>, I’m going to talk about why I used each of these tools.</p>
+</div>
+<div class="sect1">
+<h2 id="_gitlab">Gitlab</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The obvious solution in this space is GitHub Pages, and that’s what I use for this website. But one of the needs of StaticCMS is an authorisation. The details are beyond this post (and me), but what’s important is that GitHub doesn’t support PKCE for OAuth apps. That means I’d need to rely on an external service like Netlify identity to handle the login flow. That’s an unattractive solution due to the extra complexity. Fortunately, Gitlab does support it. Gitlab provides all the other services of GitHub, so it was an easy replacement.<br/>
+I have found GitLab’s time to first byte to be higher than Github’s, but that may just be a consequence of living in NZ.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hugo">Hugo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve tried other static site generators in the past, but I haven’t found any as easy or powerful as Hugo. It also has a lot of useful features like minifcation built in. It being quick to build was a bonus in the development process. It is the most replaceable part of this stack though, so whatever works for you.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_staticcms">StaticCMS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is the core of the admin interface, and the tool that enables the whole static architecture. It provides the easy interface for content authors,  I found it extremely easy to get started. It runs as a client-side SPA, which is ideal. While I did find a few spots that need work, it does the basics well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren’t huge, but they’re appreciated. They’re things updating react, dropping backends I’m not using, and cleaning up options. The community also seems more active.</p>
+</div>
+<div class="paragraph">
+<p>All of these tools are open source, which should make any future migrations substantially easier.<br/>
+For small, no-cost, low-complexity websites I think this is the best stack in 2024.</p>
+</div>
+</div>
+</div>
+
+	
+			<footer>
+	<hr>
+	
+		
+		
+		<p> Posted: <time datetime="2024-02-03"> 3 February 2024</time></p>
+		
+			<p> Edited: <time datetime="2024-02-05"> 5 February 2024</time></p>
+		
+		
+			<a href="/tags/debating">debating</a>
+		
+			<a href="/tags/webdev">webdev</a>
+		
+	
+</footer>
+		</div>
+	</body>
+	<script>0</script> 
+</html>
