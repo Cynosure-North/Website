@@ -103,7 +103,7 @@ h2 {
 }
 
 /* Text */
-h2, h3, h4, h5, h6, p, a, code, label, input {
+h2, h3, h4, h5, h6, p, a, code, label, input, ul, ol {
 	color: var(--text-color);
 	font-family: 'Fira Code', 'monospace';
 	font-weight: 500;
