@@ -10,11 +10,21 @@
 	margin-top: calc(40px + 17vh);
 	margin-left: 1.2vw;
 	margin-right: 1.2vw;
-	margin-bottom: calc(35px + 24vh);
+	margin-bottom: calc(35px + 18vh);
 	display: inline-block;
 }
 
 p{
     text-align: center;
-	text-size-adjust: 250%;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	padding-left: 0;
+	margin: -11px 0 24px 0
+}
+
+li {
+	margin: 5px 0;
 }
