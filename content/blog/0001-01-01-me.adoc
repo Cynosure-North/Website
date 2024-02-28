@@ -4,6 +4,7 @@ summary: Here are some facts and a lovely dithered image
 tags:
   - meta
   - personal
+url: /about
 ---
   
 image::/Images/me.png["A person wearing sunglasses, lipstick, and a hoodie."]
