@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		{{ partial "head.html" . }}
-	</head>
-
-	<body>
-		<div id="column">
-			{{ partial "header.html" . }}
-	
-			{{ .Content }}
-	
-			{{ partial "footer.html" . }}
-		</div>
-	</body>
-	<script>0</script> <!-- Firefox FOUS hack -->
-</html>
+{{/* Baseof is fine */}}
+{{ define "main" }}
+	<div id="content">
+		{{ .Content }}
+	</div>
+{{ end }}
