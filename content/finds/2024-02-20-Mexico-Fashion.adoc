@@ -1,5 +1,5 @@
 ---
 title: Mexico City's Urban Fashion
 date: 2024-02-20
-url: https://youtu.be/pLswlkUc2Jo?list=TLPQMjAwMjIwMjRGKTmEkSlcNw
+link: https://youtu.be/pLswlkUc2Jo
 ---

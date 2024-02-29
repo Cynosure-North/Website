@@ -1,8 +1,8 @@
 {{ define "main" }}
-	<div id="list">
+	<div id="section">
 		<ul>
 		{{ range .Pages.ByDate.Reverse }}
-			<a href="{{ .Permalink }}">
+			<a href="{{ .Params.link }}">
 				<li>
 					<h2>{{ .Title }}</h2>
 					<p>{{ .Summary }}</p>
@@ -11,4 +11,5 @@
 		{{ end }}
 		</ul>	
 	</div>
+
 {{ end }}
