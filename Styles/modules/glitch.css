@@ -25,7 +25,8 @@
 	}
 
 	.glitch::after {
-		animation: 375ms infinite reverse rainbow-text, 957ms -500ms infinite reverse wobble;
+		animation: 375ms infinite reverse rainbow-text, 957ms 0ms infinite reverse wobble;
+		animation-delay: 0;		/* Makes it way easier to read */
 		clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
 	}
 

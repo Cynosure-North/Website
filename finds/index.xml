@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finds on Cynosure</title>
+    <link>https://Cynosure.page/finds/</link>
+    <description>Recent content in Finds on Cynosure</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-nz</language>
+    <lastBuildDate>Mon, 04 Mar 2024 13:17:45 +1300</lastBuildDate>
+    <atom:link href="https://Cynosure.page/finds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weird Art, Mixed Media &amp; Unrestricted Access to the Internet</title>
+      <link>https://Cynosure.page/finds/weird-online-art/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/weird-online-art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upzoning NZ</title>
+      <link>https://Cynosure.page/finds/nz-housing/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/nz-housing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Why Drugs Got Harder to Develop and What We Can Do About It</title>
+      <link>https://Cynosure.page/finds/pharma-development/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/pharma-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mexico City&#39;s Urban Fashion</title>
+      <link>https://Cynosure.page/finds/mexico-fashion/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/mexico-fashion/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

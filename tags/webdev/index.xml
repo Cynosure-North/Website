@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>webdev on Cynosure</title>
+    <title>Webdev on Cynosure</title>
     <link>https://Cynosure.page/tags/webdev/</link>
-    <description>Recent content in webdev on Cynosure</description>
+    <description>Recent content in Webdev on Cynosure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 05 Feb 2024 14:04:26 +1300</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2024 20:01:31 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inside the Vic Debsoc website</title>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Cynosure</title>
+    <title>Blog on Cynosure</title>
     <link>https://Cynosure.page/blog/</link>
-    <description>Recent content in Blogs on Cynosure</description>
+    <description>Recent content in Blog on Cynosure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 05 Feb 2024 14:04:26 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inside the Vic Debsoc website</title>
@@ -31,9 +30,9 @@
     </item>
     <item>
       <title>About Me</title>
-      <link>https://Cynosure.page/blog/1-01-01/about-me/</link>
+      <link>https://Cynosure.page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/1-01-01/about-me/</guid>
+      <guid>https://Cynosure.page/about/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
