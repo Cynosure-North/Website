@@ -2,6 +2,7 @@
 
 # TODO handle better
 IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not)) | .[].addr_info | .[].local')
+cd "$(dirname "${BASH_SOURCE[0]}")" || exit		# Always run from same location
 
 if [ "$1" = "serve" ]; then
 	shift
@@ -14,19 +15,37 @@ elif [ "$1" = "sh" ]; then
 	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh
 elif [ "$1" = "new" ]; then
 	shift
-	if [ ! -d "content/$1" ]; then mkdir "content/$1"; fi
-	filename="content/$1/$DATE-$2.adoc"
-	{
-		echo "---"
-		echo "draft: true"
-		echo "title: ${2/-/ }"
-		echo "date: $DATE"
-		echo "summary: "
-		echo "tags: "
-		echo "  - "
-		echo "---"
-	} >> "$filename"
-	$EDITOR "$filename"
+
+	if [ "$1" = "find" ]; then
+		shift
+		filename="content/finds/$DATE-$1.adoc"
+		{
+			echo "---"
+			echo "title: $2"
+			echo "date: $DATE"
+			echo "link: $3"
+			echo "---"
+		} >> "$filename"
+	else
+		if [ ! -d "content/$1" ]; then 
+			mkdir "content/$1"
+			echo "Made new directory: $1"
+		fi
+
+		filename="content/$1/$DATE-$2.adoc"
+		echo "$filename"
+		{
+			echo "---"
+			echo "draft: true"
+			echo "title: ${2/-/ }"
+			echo "date: $DATE"
+			echo "summary: "
+			echo "tags: "
+			echo "  - "
+			echo "---"
+		} >> "$filename"
+		$EDITOR "$filename"
+	fi
 else
 	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
 fi
