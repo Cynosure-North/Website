@@ -4,4 +4,6 @@ date: 2023-11-24
 tags: 
   - scripts
 ---
-I wrote a short play about 2 crabs on a coconut, you can read it link:Crabs.pdf[here].
+A play about crabs, coconuts, and bromance.  
+
+link:Crabs.pdf[Crabs]
