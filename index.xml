@@ -6,8 +6,36 @@
     <description>Recent content on Cynosure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 05 Feb 2024 14:04:26 +1300</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 10:32:03 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weird Art, Mixed Media &amp; Unrestricted Access to the Internet</title>
+      <link>https://Cynosure.page/finds/weird-online-art/</link>
+      <pubDate>Mon, 04 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/weird-online-art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upzoning NZ</title>
+      <link>https://Cynosure.page/finds/nz-housing/</link>
+      <pubDate>Thu, 29 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/nz-housing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Why Drugs Got Harder to Develop and What We Can Do About It</title>
+      <link>https://Cynosure.page/finds/pharma-development/</link>
+      <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/pharma-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mexico City&#39;s Urban Fashion</title>
+      <link>https://Cynosure.page/finds/mexico-fashion/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/mexico-fashion/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Inside the Vic Debsoc website</title>
       <link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
@@ -20,7 +48,7 @@
       <link>https://Cynosure.page/scripts/crabs/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/scripts/crabs/</guid>
-      <description>I wrote a short play about 2 crabs on a coconut, you can read it here.</description>
+      <description>A play about crabs, coconuts, and bromance.&#xA;Crabs</description>
     </item>
     <item>
       <title>How the Glitch Effect Works</title>
@@ -30,27 +58,6 @@
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;TLDR, stacked animations&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>Witness For The Prosecution 2017 Scenography</title>
-      <link>https://Cynosure.page/reviews/witness-for-the-prosecution-sceno/</link>
-      <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/reviews/witness-for-the-prosecution-sceno/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Set in the stunning London County Hall&lt;/p&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Hadestown Broadway 2019 Scenography</title>
-      <link>https://Cynosure.page/reviews/hadestown-sceno/</link>
-      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/reviews/hadestown-sceno/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;I mean, you already know it’s great&lt;/p&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Hole Review</title>
-      <link>https://Cynosure.page/reviews/hole/</link>
-      <pubDate>Sun, 28 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/reviews/hole/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;It takes time, but it gets to your heart&lt;/p&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
       <title>Crossbow Cat</title>
       <link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
@@ -58,10 +65,17 @@
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>About Me</title>
-      <link>https://Cynosure.page/blog/1-01-01/about-me/</link>
+      <title></title>
+      <link>https://Cynosure.page/rejected-landing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/1-01-01/about-me/</guid>
+      <guid>https://Cynosure.page/rejected-landing/</guid>
+      <description>&lt;!DOCTYPE html&gt; Cynosure If you&#39;re seeing this something has gone wrong&#xA;Click to continue North </description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://Cynosure.page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/about/</guid>
       <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>

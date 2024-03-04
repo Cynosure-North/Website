@@ -2,11 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Cynosure.page/blog/</loc>
-    <lastmod>2024-02-05T14:04:26+13:00</lastmod>
-  </url><url>
     <loc>https://Cynosure.page/</loc>
-    <lastmod>2024-02-05T14:04:26+13:00</lastmod>
+    <lastmod>2024-03-05T10:32:03+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/finds/</loc>
+    <lastmod>2024-03-04T13:17:45+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/finds/weird-online-art/</loc>
+    <lastmod>2024-03-04T13:17:45+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/finds/nz-housing/</loc>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/finds/pharma-development/</loc>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/finds/mexico-fashion/</loc>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/debating/</loc>
     <lastmod>2024-02-05T14:04:26+13:00</lastmod>
@@ -15,46 +27,25 @@
     <lastmod>2024-02-05T14:04:26+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/</loc>
-    <lastmod>2024-02-05T14:04:26+13:00</lastmod>
+    <lastmod>2024-03-05T10:32:03+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/webdev/</loc>
-    <lastmod>2024-02-05T14:04:26+13:00</lastmod>
+    <lastmod>2024-02-28T20:01:31+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/scripts/crabs/</loc>
-    <lastmod>2024-02-03T20:09:41+13:00</lastmod>
+    <lastmod>2024-03-05T10:32:03+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/scripts/</loc>
-    <lastmod>2024-02-03T20:09:41+13:00</lastmod>
+    <lastmod>2024-03-05T10:32:03+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/scripts/</loc>
-    <lastmod>2024-02-03T20:09:41+13:00</lastmod>
+    <lastmod>2024-03-05T10:32:03+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</loc>
-    <lastmod>2024-02-03T20:09:41+13:00</lastmod>
+    <lastmod>2024-02-28T20:01:31+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/meta/</loc>
-    <lastmod>2024-02-05T13:35:27+13:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/tags/class/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/tags/review/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/reviews/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/tags/theatre/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/reviews/witness-for-the-prosecution-sceno/</loc>
-    <lastmod>2022-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/reviews/hadestown-sceno/</loc>
-    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Cynosure.page/reviews/hole/</loc>
-    <lastmod>2021-11-28T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
@@ -63,9 +54,18 @@
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Cynosure.page/tags/personal/</loc>
-    <lastmod>2024-02-05T13:35:27+13:00</lastmod>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
   </url><url>
-    <loc>https://Cynosure.page/blog/1-01-01/about-me/</loc>
-    <lastmod>2024-02-05T13:35:27+13:00</lastmod>
+    <loc>https://Cynosure.page/tags/theatre/</loc>
+    <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/rejected-landing/</loc>
+    <lastmod>2022-06-23T22:12:49+12:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/about/</loc>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
+  </url><url>
+    <loc>https://Cynosure.page/blog/</loc>
+    <lastmod>2024-02-29T16:05:55+13:00</lastmod>
   </url>
 </urlset>
