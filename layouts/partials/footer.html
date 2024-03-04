@@ -7,8 +7,10 @@
 		{{ if ne $dateFormatted $updateFormatted}}
 			<p> Edited: <time datetime="{{ .Lastmod.Format "2006-01-02" }}"> {{ $updateFormatted }}</time></p>
 		{{ end }}
-		{{ range sort .Params.tags }}
-			<a href="/tags/{{ . }}">{{.}}</a>
+		{{ if .Params.tags }}
+			{{ range sort .Params.tags }}
+				<a href="/tags/{{ . }}">{{.}}</a>
+			{{ end }}
 		{{ end }}
 	{{ else }}
 		{{ range .Site.Taxonomies.tags }}
