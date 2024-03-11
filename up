@@ -26,6 +26,7 @@ elif [ "$1" = "new" ]; then
 			echo "link: $3"
 			echo "---"
 		} >> "$filename"
+		cat "$filename"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"
