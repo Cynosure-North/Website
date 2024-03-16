@@ -27,6 +27,8 @@ elif [ "$1" = "new" ]; then
 			echo "---"
 		} >> "$filename"
 		cat "$filename"
+		git add "$filename"
+		git commit -m "new find: $2" "$filename"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"
