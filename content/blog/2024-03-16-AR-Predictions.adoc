@@ -1,0 +1,45 @@
+---
+draft: true
+title: Predictions for the Future-Future of AR
+date: 2024-03-16
+summary: I have no experience, and a lot of thoughts.
+tags: 
+  - tech
+  - AR
+---
+
+I'm excited about AR. I love programming, but I am sick of working at a desk. When I can code while sitting outside under a tree, with the gear I wear every day, I will be happy. I have a few ideas about that world, and like an ancient Greek philosopher I shall proclaim them.
+
+== Dashboards as the killer app
+
+Ubiquitous computing is an idea that has been around for decades, but has never taken off. Part of that is due to the difficulties of visualising the data.
+The usual solution is to setup a tiny screen somewhere. They suck. The UI is a nightmare, the hardware is underpowered, the software is outdated, and they're never where you need them.
+
+I hope AR tech can solve this.
+With a standard for smart sensors, we can enable
+
+Flexibility of user driven software - Cambrian explosion of creativity
+Cars
+Menus
+Batman tactical view
+The difference between passively seeing something, and having to pull out your phone is the difference between a phone and a desktop. Information is an order of magnitude closer.
+
+Perhaps this is just me wishcasting. I've managed to rip myself of social media (mostly). I've found a better way to use the internet. AR is likely to be even more engrossing.
+
+== Going beyond taps
+
+Apple's eye based controls seem cool and all, if you have control over where you look (which is not a given), and you only ever need to input one thing at a time directly where you're looking, and you only ever intend to use it in situations where you don't have other things to look at (like traffic). I just think, maybe, there are situations where it's not ideal.
+
+And even if you are in the ideal situations, it strikes me as unbelievably clunky for text input. For now, while people primarily use Visions at a desk near a power plug, they can just use a keyboard and cope. But there are 2 problems with this.
+1.	You need to have a keyboard. Apple is clearly working towards glasses that can be worn anywhere, every day. That means out in the world without a keyboard handy.
+2.	It's leaving so much interaction on the table. Our hands are wonderfully expressive, dynamic, and sensitive. They're capable of so many movements, and can sense fine details. Merely clicking, when there are 3 dimension of input (first knuckle, second knuckle, left/right (most people don't have enough control of the last knuckle to be useful)), across 2 hands, each with 5 fingers (maybe not all of them equally useful), is irritating.
+
+This system will be easy to develop for, it's a similar design language as the other digital user interfaces we're used to. But it shouldn't be. Those design systems are for 2d interfaces, but the key conceit of AR/VR is the 3rd dimension.
+
+The thing this reminds me of most is multitouch. It's very cool, very elegant. But no one is writing a novel on a phone. No one is doing serious programming on a mobile.
+
+== Haptics
+
+Input when you're looking at something else
+Affordances
+Contribute to illusion

@@ -1,5 +1,0 @@
----
-title: What Is To Be Done? A Manifesto To Return To Web 1.5
-date: 2024-03-18
-link: https://cjthex.wpengine.com/what-is-to-be-done/
----

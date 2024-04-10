@@ -1,5 +1,0 @@
----
-title: What Computers Cannot Do: The Consequences of Turing-Completeness
-date: 2024-03-28
-link: https://yzena.com/2024/03/what-computers-cannot-do-the-consequences-of-turing-completeness/
----

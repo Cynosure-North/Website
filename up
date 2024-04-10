@@ -18,17 +18,8 @@ elif [ "$1" = "new" ]; then
 
 	if [ "$1" = "find" ]; then
 		shift
-		filename="content/finds/$DATE-$1.adoc"
-		{
-			echo "---"
-			echo "title: $2"
-			echo "date: $DATE"
-			echo "link: $3"
-			echo "---"
-		} >> "$filename"
-		cat "$filename"
-		git add "$filename"
-		git commit -m "new find: $2" "$filename"
+		echo "\"$DATE\",\"$2\",\"$3\"" >> /content/finds/finds.csv
+		git commit -m "new find: $2" "/content/finds/finds.csv"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"

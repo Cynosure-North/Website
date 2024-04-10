@@ -34,6 +34,9 @@ jobs:
 
       - name: Run Hugo
         run: hugo
+          
+      - name: JamPack
+        run: 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+<div id="section">
+	<ul>
+	{{ range ( .Resources.Get "finds.csv" | unmarshal | collections.Reverse) }}
+		<a href="{{ index . 2 }}"><li><h2>{{ index . 1 }}</h2></li></a>
+	{{ end }}
+	</ul>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+	<!-- No footer -->	
+{{ end }}
