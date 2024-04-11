@@ -18,8 +18,8 @@ elif [ "$1" = "new" ]; then
 
 	if [ "$1" = "find" ]; then
 		shift
-		echo "\"$DATE\",\"$1\",\"$2\"" >> content/finds/finds.csv
-		git commit -m "new find: $1" content/finds/finds.csv
+		echo "\"$DATE\",\"$2\",\"$3\"" >> /content/finds/finds.csv
+		git commit -m "new find: $2" "/content/finds/finds.csv	"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"
