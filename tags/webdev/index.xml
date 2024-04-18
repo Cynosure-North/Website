@@ -4,7 +4,7 @@
     <title>Webdev on Cynosure</title>
     <link>https://Cynosure.page/tags/webdev/</link>
     <description>Recent content in Webdev on Cynosure</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo 0.125.0</generator>
     <language>en-nz</language>
     <lastBuildDate>Wed, 28 Feb 2024 20:01:31 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Zero cost, low maintenance static sites for the non-technical&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>Zero cost, low maintenance static sites for the non-technical</description>
     </item>
     <item>
       <title>How the Glitch Effect Works</title>
       <link>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</link>
       <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;TLDR, stacked animations&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>TLDR, stacked animations</description>
     </item>
   </channel>
 </rss>

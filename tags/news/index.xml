@@ -4,7 +4,7 @@
     <title>News on Cynosure</title>
     <link>https://Cynosure.page/tags/news/</link>
     <description>Recent content in News on Cynosure</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo 0.125.0</generator>
     <language>en-nz</language>
     <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://Cynosure.page/tags/news/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>I’m playing the cat</description>
     </item>
   </channel>
 </rss>

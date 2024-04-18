@@ -4,7 +4,7 @@
     <title>Blog on Cynosure</title>
     <link>https://Cynosure.page/blog/</link>
     <description>Recent content in Blog on Cynosure</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo 0.125.0</generator>
     <language>en-nz</language>
     <atom:link href="https://Cynosure.page/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,35 +12,35 @@
       <link>https://Cynosure.page/blog/2024-04-11/vietnam/</link>
       <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2024-04-11/vietnam/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Last year I went to Vietnam and now, very late, I have compiled a report.&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>Last year I went to Vietnam and now, very late, I have compiled a report.</description>
     </item>
     <item>
       <title>Inside the Vic Debsoc website</title>
       <link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Zero cost, low maintenance static sites for the non-technical&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>Zero cost, low maintenance static sites for the non-technical</description>
     </item>
     <item>
       <title>How the Glitch Effect Works</title>
       <link>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</link>
       <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;TLDR, stacked animations&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>TLDR, stacked animations</description>
     </item>
     <item>
       <title>Crossbow Cat</title>
       <link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>I’m playing the cat</description>
     </item>
     <item>
       <title>About Me</title>
       <link>https://Cynosure.page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/about/</guid>
-      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+      <description>Here are some facts and a lovely dithered image</description>
     </item>
   </channel>
 </rss>
