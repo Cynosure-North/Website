@@ -14,7 +14,7 @@
 		{{ end }}
 	{{ else }}
 		{{ range .Site.Taxonomies.tags }}
-			<a href="/tags/{{ .Page.Title }}">{{ .Page.Title }}&nbsp;{{ .Count }}</a>
+			<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}&nbsp;{{ .Count }}</a>
 		{{ end }}
 	{{ end }}
 </footer>

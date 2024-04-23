@@ -43,3 +43,5 @@ The thing this reminds me of most is multitouch. It's very cool, very elegant. B
 Input when you're looking at something else
 Affordances
 Contribute to illusion
+
+== Halos
