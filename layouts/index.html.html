@@ -23,11 +23,13 @@
 		<p>Hi there, I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a></p>
 		<p>Read a post:</p> 
 		<ul>
-				{{ range ( where .Site.RegularPages "Section" "in" (slice "blog" "scripts") | first 3 ) }}
+			{{ range ( where .Site.RegularPages "Section" "in" (slice "blog" "scripts") | first 3 ) }}
 				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{end}}
 		</ul>
 		<p>Or browse by <a href="/tags">tags</a></p>
+		<p>{{ partialCached "rss.html" . }}</p>
+
 	</div>
 </body>
 </html>

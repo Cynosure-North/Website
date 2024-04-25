@@ -1,3 +1,10 @@
+#logo {
+	display: flex;
+	justify-content: center;
+	fill: #fff;
+	stroke: #fff;
+}
+
 #compass{
 	height: 100%;
 	position: absolute;
@@ -6,12 +13,13 @@
 #needle{
 	height: 100%;
 	position: absolute;
+	transform: rotate(-45deg);
 	transition: transform 1.5s ease-in-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {
 	#logo:hover > #needle{
-		transform: rotate(180deg);
+		transform: rotate(135deg);
 	}
 }
 

@@ -29,8 +29,13 @@
 		--semi-transparent-background: #eee8;
 	}
 
-	#logo, hr{
+	hr{
 		filter: invert(100%);
+	}
+
+	#logo {
+		fill: #000;
+		stroke: #000;
 	}
 }
 
@@ -63,6 +68,11 @@ body {
 	left: 5px;
 	height: 70px;
 	width: 70px;
+}
+
+#rss {
+	height: 2ch;	
+	fill: var(--text-color);
 }
 
 #column {
