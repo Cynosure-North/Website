@@ -14,15 +14,16 @@
 	display: inline-block;
 }
 
-p{
-    text-align: center;
+p {
+	text-align: center;
+	margin: 30px;
 }
 
 ul {
 	text-align: center;
 	list-style-type: none;
 	padding-left: 0;
-	margin: -11px 0 24px 0
+	margin-top: -20px;
 }
 
 li {
