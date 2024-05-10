@@ -19,7 +19,7 @@ tags:
 		<label for="wobble">Wobbling</label>
 		<br>
 		<input id="clipper" onChange="update()" type="checkbox" checked>
-		<label for="clipper">Clipping boundary</label>
+		<label for="clipper">Moving clip-path</label>
 	</div>
 
 	<h2 id="editable" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
@@ -29,6 +29,15 @@ tags:
 			let rainbow = document.getElementById("rainbow").checked;
 			let wobble = document.getElementById("wobble").checked;
 			let clipper = document.getElementById("clipper").checked;
+			let psuedo = document.getElementById("psuedo").checked;
+			
+			if (psuedo) {
+				document.getElementById("wobble").disabled = false
+				document.getElementById("clipper").disabled = false
+			} else {
+				document.getElementById("wobble").disabled = true
+				document.getElementById("clipper").disabled = true
+			}
 
 			let style = `
 				#editable {
@@ -42,7 +51,7 @@ tags:
 
 				#editable::before,
 				#editable::after {
-					${document.getElementById("psuedo").checked ? "" : "display: none;"}
+					${psuedo ? "" : "display: none;"}
 					position: absolute;
 					left: 0;
 					top: 0;
