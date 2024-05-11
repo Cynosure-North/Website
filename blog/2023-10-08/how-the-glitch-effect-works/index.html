@@ -20,7 +20,7 @@
 		
 			<header>
 	<a href="/index.html" id="logo" aria-label="Compass Logo">
-	<svg id="compass" aria-hidden="true" class="glitch-shadow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760">
+	<svg id="compass" aria-hidden="true" class="glitch-shadow" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 760 760">
 		<circle cx="380" cy="380" r="200" style="fill:transparent;stroke-width:10px" />
 		<circle cx="380" cy="380" r="175" style="fill:transparent;stroke-width:10px" />
 		<g transform="translate(355 35)">
@@ -60,7 +60,7 @@
 			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
 		</g>
 	</svg>
-	<svg id="needle" aria-hidden="true" viewBox="0 0 120 600" xmlns="http://www.w3.org/2000/svg">
+	<svg id="needle" aria-hidden="true" width="70" height="70" viewBox="0 0 120 600" xmlns="http://www.w3.org/2000/svg">
 		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
 	</svg>
 </a> 
@@ -88,7 +88,7 @@
 		<label for="wobble">Wobbling</label>
 		<br/>
 		<input id="clipper" onchange="update()" type="checkbox" checked=""/>
-		<label for="clipper">Clipping boundary</label>
+		<label for="clipper">Moving clip-path</label>
 	</div>
 
 	<h2 id="editable" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
@@ -98,6 +98,15 @@
 			let rainbow = document.getElementById("rainbow").checked;
 			let wobble = document.getElementById("wobble").checked;
 			let clipper = document.getElementById("clipper").checked;
+			let psuedo = document.getElementById("psuedo").checked;
+
+			if (psuedo) {
+				document.getElementById("wobble").disabled = false
+				document.getElementById("clipper").disabled = false
+			} else {
+				document.getElementById("wobble").disabled = true
+				document.getElementById("clipper").disabled = true
+			}
 
 			let style = `
 				#editable {
@@ -111,7 +120,7 @@
 
 				#editable::before,
 				#editable::after {
-					${document.getElementById("psuedo").checked ? "" : "display: none;"}
+					${psuedo ? "" : "display: none;"}
 					position: absolute;
 					left: 0;
 					top: 0;
@@ -339,7 +348,7 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 		
 		<p> Posted: <time datetime="2023-10-08"> 8 October 2023</time></p>
 		
-			<p> Edited: <time datetime="2024-02-28"> 28 February 2024</time></p>
+			<p> Edited: <time datetime="2024-05-11"> 11 May 2024</time></p>
 		
 		
 			

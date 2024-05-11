@@ -17,12 +17,12 @@
 }
 
 /* */ .chroma { overflow-x: scroll; display: flex; border-radius: 4px; }
-/* Code block */ .chroma code { display: inline-block; flex-grow: 1; scroll-behavior: auto; background-color: var(--background); padding: 5px 0px 5px 0px; border-radius: 4px; tab-size: 4; }
-/* Line - Number section */ .chroma .ln { user-select: none; margin-right: 0.4em; margin-top: -200px; padding: 200px 0.2em 0 0.4em; }
+/* Code block */ .chroma code { display: inline-block; flex-grow: 1; scroll-behavior: auto; background-color: var(--background); padding: 5px 0px; tab-size: 4; }
+/* Line - Number section */ .chroma .ln { user-select: none; margin-right: 0.4em; padding: 0 5px; scroll-margin-top: 100px; }
 /* Line - Number (anchor) */ .chroma .lnlinks { text-decoration: none; color: var(--line-number) }
-/* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 2px; }
+/* Anchor target */ .chroma :target { background-color: var(--anchor); border-radius: 0 0 2px 0; }
 /* Line - Code section */ .chroma .cl {  }
-/* Line */ .chroma .line { display: block; overflow-x:visible; overflow-y: clip; }
+/* Line */ .chroma .line { display: block; overflow-x :visible; }
 /* Highlighted Line */ .chroma .hl { background-color: var(--line-highlight); width: 100%; }
 
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
