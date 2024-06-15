@@ -138,8 +138,6 @@ input[type="text"] {
 	box-shadow: 0 2px 0 var(--text-color);
 }
 
-input { accent-color: #f00; }
-
 code {
 	font-weight: 400;
 	font-variant: none;
