@@ -45,3 +45,21 @@ Affordances
 Contribute to illusion
 
 == Halos
+
+Even with Moore's Law and battery technology advances it's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky. What I think is much more likely is either tethered pucks like we've seen with the vision pro, or the much cooler and harder option: Neck bands.
+What I envision is the battery and compute being in something like a necklace or a neckband, like with some wireless earbuds, with a small wire, or wireless connection up to the glasses which are effectively just a display
+And if I were to guess, they'll be called Halos.
+
+== Goodbye to designer glasses
+
+Once people have smart glasses I doubt they're going to go back to smart glasses in day to day life. The difficulty of designing smart glasses means that there are going to be relatively few options.
+This is a huge shame. Glasses are among the most significant fashion choices people can make. They can radically change how a face looks, and, at least for me, are worn all the time. The move to smart glasses is going to homogenise all of that.
+We're going to be stuck with thick rimmed, rectangular glasses for a long time.
+
+Perhaps we'll get some customisation options equivalent to swapping watch straps, but I think the more significant aspect, frame shape, is going to remain fixed. It seems the aspect most sensitive to changes. It's the where all the display tech is focused, and it's the most unique to this type of product. The lenses will probably also need to reflect the shape of the virtual display, which will undoubtedly be a rectangle.
+Electronics have been contorted to fit camera bodies before, so the arms may have some degree of flexibility, although it's unclear if there will be a market for the sort of bold stylistic decisions.
+Looking at cars, which are similarly difficult to design, and constrained by practicalities, in the mid-market they've tended towards similar styling and inoffensive colors. That means they appeal to everyone, but no one loves any of them. That's a huge loss.
+And of course because everyone will be wearing the same designs, all the time.
+
+
+Timeframe
