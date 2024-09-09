@@ -7,10 +7,7 @@
 
 #title h1 {
 	font-size: min(10em, 14vw);
-	margin-top: calc(40px + 17vh);
-	margin-left: 1.2vw;
-	margin-right: 1.2vw;
-	margin-bottom: calc(35px + 18vh);
+	margin: calc(40px + 17vh) 1.2vw calc(35px + 18vh) 1.2vw;
 	display: inline-block;
 }
 

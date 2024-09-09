@@ -5,6 +5,7 @@
   src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
   font-weight: 100 700;
   font-style: normal;
+	font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -119,7 +120,7 @@ h2 {
 /* Text */
 h2, h3, h4, h5, h6, p, a, code, label, input, ul, ol {
 	color: var(--text-color);
-	font-family: 'Fira Code', 'monospace';
+	font-family: 'Fira Code', "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Noto Sans Mono", 'monospace';
 	font-weight: 500;
 	font-feature-settings:
 		"ss03",		/* traditional ampersand */
