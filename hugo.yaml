@@ -45,3 +45,4 @@ security:
   exec:
     allow:
       - ^asciidoctor$
+      - ^git$
