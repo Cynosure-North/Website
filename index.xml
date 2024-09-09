@@ -20,7 +20,7 @@
       <link>https://Cynosure.page/scripts/crabs/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/scripts/crabs/</guid>
-      <description>A play about crabs, coconuts, and bromance.&#xA;Crabs</description>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;Crabs.pdf&#34;&gt;Crabs&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>How the Glitch Effect Works</title>
@@ -41,7 +41,7 @@
       <link>https://Cynosure.page/rejected-landing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/rejected-landing/</guid>
-      <description>&lt;!DOCTYPE html&gt; Cynosure If you&#39;re seeing this something has gone wrong&#xA;Click to continue North </description>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; &gt;&#xA;&#x9;&lt;head&gt;&#xA;&#x9;&#x9;&lt;title&gt;Cynosure&lt;/title&gt;&#xA;&#x9;&#x9;&lt;meta charset=&#34;UTF-8&#34;/&gt; &#xA;&#x9;&#x9;&lt;meta name=&#34;author&#34; content=&#34;North&#34;&gt;&#xA;&#x9;&#x9;&lt;meta name=&#34;description&#34; content=&#34;Where to?&#34;&gt;&#xA;&#x9;&#x9;&lt;link rel=&#34;icon&#34; href=&#34;https://Cynosure.page/Icons/Minimal-Compass-Black.svg&#34; type=&#34;image/gif&#34;&gt;&#xA;&#x9;&#x9;&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;rejected-landing-style.css&#34;/&gt;&#xA;&#xA;&#x9;&#x9;&lt;script type=&#34;text/javascript&#34; src=&#34;zoom-spin.js&#34;&gt;&lt;/script&gt;&#xA;&#x9;&lt;/head&gt;&#xA;&#xA;&#x9;&lt;a href=&#34;https://Cynosure.page/&#34;&gt;&#xA;&#x9;&#x9;&lt;body onload=&#34;init()&#34; onresize=&#34;resize()&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;canvas id=&#34;canvas&#34;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;h1&gt;If you&#39;re seeing this something has gone wrong&lt;br&gt;Click to continue&lt;/h1&gt;&#xA;&#x9;&#x9;&#x9;&lt;/canvas&gt;&#xA;&#x9;&#x9;&#x9;&lt;h1&#x9;id=&#34;landing-title&#34;&gt;North&lt;/h1&gt;&#xA;&#x9;&#x9;&lt;/body&gt;&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title>About Me</title>
