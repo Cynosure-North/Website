@@ -2,7 +2,7 @@
 
 # TODO handle better
 IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not)) | .[].addr_info | .[].local')
-cd "$(dirname "${BASH_SOURCE[0]}")" || exit		# Always run from same location
+cd "$(dirname "$0")" || exit # Always run from same location
 
 if [ "$1" = "serve" ]; then
 	shift
@@ -18,8 +18,8 @@ elif [ "$1" = "new" ]; then
 
 	if [ "$1" = "find" ]; then
 		shift
-		echo "\"$DATE\",\"$2\",\"$3\"" >> /content/finds/finds.csv
-		git commit -m "new find: $2" "/content/finds/finds.csv	"
+		echo "\"$DATE\",\"$2\",\"$3\"" >> content/finds/finds.csv
+		git commit -m "new find: $2" "content/finds/finds.csv"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"
