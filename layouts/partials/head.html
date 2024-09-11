@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
 	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
-	<link rel="preload" href="/Fonts/FiraCode-VF.woff2" as="font" type="font/woff2">
+	{{/* Needs crossorigin set, even if it's not crossorigin https://stackoverflow.com/questions/70183153/why-do-we-need-the-crossorigin-attribute-when-preloading-font-files */}}
+	<link rel="preload" href="/Fonts/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
 	{{/* TODO: Only load if page contains code block */}}
 	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
