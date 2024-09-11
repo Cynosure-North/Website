@@ -11,6 +11,9 @@
 	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
 
 	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
+	<link rel="preload" href="/my-font.woff2" as="font" type="font/woff2">
+	
 	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
 	
 		
@@ -64,6 +67,34 @@
 		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
 	</svg>
 </a> 
+
+<style>
+	#logo {
+		display: flex;
+		justify-content: center;
+		fill: var(--text-color);
+		stroke: var(--text-color);
+	}
+	
+	#compass{
+		height: 100%;
+		position: absolute;
+	}
+	
+	#needle{
+		height: 100%;
+		position: absolute;
+		transform: rotate(-45deg);
+		transition: transform 1.5s ease-in-out;
+	}
+	
+	@media (prefers-reduced-motion: no-preference) {
+		#logo:hover > #needle{
+			transform: rotate(135deg);
+		}
+	}	
+</style>
+
 	<div id="title-container">
 		<h1 class="glitch" content="Debating"
 		style="

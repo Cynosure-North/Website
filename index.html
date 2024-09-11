@@ -2,9 +2,42 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.1">
+	<meta name="generator" content="Hugo 0.134.2">
 	<title>Cynosure</title>
-	<link rel="stylesheet" type="text/css" href="/Styles/index.css" />
+
+	<style>
+		#title{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			pointer-events: none;
+			padding-top: calc(40px + 17vh);
+			padding-bottom: calc(35px + 18vh); 
+		}
+		
+		#title h1 {
+			font-size: min(10em, 14vw);
+			margin: 0 1.2vw;
+			display: inline-block;
+		}
+		
+		p {
+			text-align: center;
+			margin: 30px;
+		}
+		
+		ul {
+			text-align: center;
+			list-style-type: none;
+			padding-left: 0;
+			margin-top: -20px;
+		}
+		
+		li {
+			margin: 5px 0;
+		}
+	</style>
+	
 		<title>Cynosure - </title>
 	<meta charset="utf-8"/>
 	<meta name="author" content="North">
@@ -14,6 +47,9 @@
 	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
 
 	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
+	<link rel="preload" href="/my-font.woff2" as="font" type="font/woff2">
+	
 	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
 
 </head>
@@ -64,6 +100,34 @@
 		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
 	</svg>
 </a> 
+
+<style>
+	#logo {
+		display: flex;
+		justify-content: center;
+		fill: var(--text-color);
+		stroke: var(--text-color);
+	}
+	
+	#compass{
+		height: 100%;
+		position: absolute;
+	}
+	
+	#needle{
+		height: 100%;
+		position: absolute;
+		transform: rotate(-45deg);
+		transition: transform 1.5s ease-in-out;
+	}
+	
+	@media (prefers-reduced-motion: no-preference) {
+		#logo:hover > #needle{
+			transform: rotate(135deg);
+		}
+	}	
+</style>
+
 	<div id="title" role="heading" aria-label="Cynosure">
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -1.3s;" content="░"> C </h1>
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -.9s;" content="//"> Y </h1>
