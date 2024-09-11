@@ -7,7 +7,7 @@ tags:
   - debating
 ---
 
-A while back I took it upon myself to design the https://www.vicdebsoc.org.nz[website] for my debating society. I had a number of constraints that I know others have, and I think I've found the best solution, at time of writing.
+A while back I took it upon myself to design a new https://www.vicdebsoc.org.nz[website] for my debating society. I had a number of constraints that I know others have, and I think I've found the best solution, at time of writing.
 
 1. Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.
 2. Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.
