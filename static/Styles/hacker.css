@@ -1,9 +1,18 @@
 @font-face {
-  font-family: 'Fira Code';
-  src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Fira Code';
+	src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Custom Fallback';
+	/* Probably good enough, although I strugged to find a comprehensive list of fonts commonly installed on linux */
+	src: local("Lucida Console"),
+		local("Lucida Sans Typewriter"),
+		local("DejaVu Sans Mono"),
+		local("Noto Sans Mono"),
+		local("Andale Mono"),
+	/* TODO: I'd like to use fmods to get this even better, but they're already pretty close */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -112,7 +121,7 @@ h2 {
 /* Text */
 h2, h3, h4, h5, h6, p, a, code, label, input, ul, ol {
 	color: var(--text-color);
-	font-family: 'Fira Code', "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Noto Sans Mono", 'monospace';
+	font-family: 'Fira Code', 'Custom Fallback', monospace;
 	font-weight: 500;
 	font-feature-settings:
 		"ss03",		/* traditional ampersand */
