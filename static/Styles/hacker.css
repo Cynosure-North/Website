@@ -1,10 +1,9 @@
-@import url('modules/glitch.css');
 @font-face {
   font-family: 'Fira Code';
   src: url('/Fonts/FiraCode-VF.woff2') format('woff2-variations');
   font-weight: 100 700;
   font-style: normal;
-	font-display: swap;
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
