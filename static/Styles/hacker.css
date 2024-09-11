@@ -1,4 +1,3 @@
-@import url('modules/logo.css');
 @import url('modules/glitch.css');
 @font-face {
   font-family: 'Fira Code';
@@ -36,11 +35,6 @@
 
 	hr{
 		filter: invert(100%);
-	}
-
-	#logo {
-		fill: #000;
-		stroke: #000;
 	}
 }
 
