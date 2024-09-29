@@ -3,7 +3,40 @@
 
 <head>
 	<title>Cynosure</title>
-	<link rel="stylesheet" type="text/css" href="/Styles/index.css" />
+
+	<style>
+		#title{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			pointer-events: none;
+			padding-top: calc(40px + 17vh);
+			padding-bottom: calc(35px + 18vh); 
+		}
+		
+		#title h1 {
+			font-size: min(10em, 14vw);
+			margin: 0 1.2vw;
+			display: inline-block;
+		}
+		
+		p {
+			text-align: center;
+			margin: 30px;
+		}
+		
+		ul {
+			text-align: center;
+			list-style-type: none;
+			padding-left: 0;
+			margin-top: -20px;
+		}
+		
+		li {
+			margin: 5px 0;
+		}
+	</style>
+	
 	{{ partial "partials/head.html" }}
 </head>
 
