@@ -7,4 +7,4 @@ I currently have 2 sections, my blog and theatre reviews. There's also a landing
 Here are the templates, it's currently pretty basic, although I'll probably expand in future.
 
 ### Static
-Stuff that is just copied over directly. Stuff probably won't always stay here (TODO: I have plans around images, but that'l come later)
+Stuff that is just copied over directly. Stuff probably won't always stay here (TODO: I have plans around images, but that'll come later)
