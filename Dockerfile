@@ -9,3 +9,5 @@ RUN gem install --no-document asciidoctor-html5s -v 0.5.1
 
 RUN mkdir /hugo
 WORKDIR /hugo
+
+# docker build . -t website

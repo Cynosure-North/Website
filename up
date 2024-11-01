@@ -7,19 +7,20 @@ cd "$(dirname "$0")" || exit # Always run from same location
 if [ "$1" = "serve" ]; then
 	shift
 	firefox --devtools "$IP:1313" &
-	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
 elif [ "$1" = "build" ]; then
 	shift
-	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo" "$@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo" "$@"
 elif [ "$1" = "sh" ]; then
-	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh
 elif [ "$1" = "new" ]; then
 	shift
 
 	if [ "$1" = "find" ]; then
 		shift
-		echo "\"$1\",\"$2\"" >> content/feeds/finds.csv
-		git commit -m "new find: $1" "content/feeds/finds.csv"
+		if [[ $1 =~ ";" || $2 =~ ";" ]] echo "A string contains a semicolon"; exit;
+		echo "$1;$2" >> content/finds/finds.csv
+		git commit -m "new find: $1" "content/finds/finds.csv"
 	else
 		if [ ! -d "content/$1" ]; then 
 			mkdir "content/$1"
@@ -41,5 +42,5 @@ elif [ "$1" = "new" ]; then
 		$EDITOR "$filename"
 	fi
 else
-	docker run -it -v "$PWD:/hugo" -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
 fi

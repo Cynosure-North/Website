@@ -2,8 +2,8 @@
 {{ define "main" }}
 <div id="section">
 	<ul>
-	{{ range ( .Resources.Get "finds.csv" | unmarshal | collections.Reverse) }}
-		<a href="{{ index . 2 }}"><li><h2>{{ index . 1 }}</h2></li></a>
+	{{ range ( .Resources.Get "finds.csv" | unmarshal ( dict "delimiter" ";" "lazyQuotes" "true" ) | collections.Reverse) }}
+		<a href="{{ index . 1 }}"><li><h2>{{ index . 0 }}</h2></li></a>
 	{{ end }}
 	</ul>
 </div>
