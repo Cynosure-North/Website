@@ -18,7 +18,8 @@ elif [ "$1" = "new" ]; then
 
 	if [ "$1" = "find" ]; then
 		shift
-		if [[ $1 =~ ";" || $2 =~ ";" ]] echo "A string contains a semicolon"; exit;
+		# if [[ $1 =~ ";" || $2 =~ ";" ]] echo "A string contains a semicolon"; exit;
+		# TODO
 		echo "$1;$2" >> content/finds/finds.csv
 		git commit -m "new find: $1" "content/finds/finds.csv"
 	else

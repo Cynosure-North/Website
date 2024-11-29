@@ -1,6 +1,7 @@
 baseURL: "https://Cynosure.page"
 languageCode: "en-nz"
 title : "Cynosure"
+description: "Now in rainbow"
 enableGitInfo: true
 
 frontmatter:
@@ -40,6 +41,17 @@ markup:
 
 taxonomies:
   tag: tags
+
+outputs:
+  home:
+  - html
+  - rss
+  section:
+  - html
+  taxonomy:
+  - html
+  term:
+  - html
 
 security:
   exec:
