@@ -8,99 +8,83 @@ tags:
 
 ++++
 	<div style="margin: 50px auto 50px auto; width: 90%">
-		<input id="rainbow" onChange="update()" type="checkbox" checked>
+		<input id="rainbow" onChange="document.getElementById('editable').classList.toggle('rainbow')" type="checkbox" autocomplete="off" checked>
 		<label for="rainbow">Rainbow text shadow</label>
 		<br>
-		<input id="psuedo" onChange="update()" type="checkbox" checked>
+		<input id="psuedo" onChange="
+			document.getElementById('editable').classList.toggle('psuedo');
+			if (!this.checked) {
+				document.getElementById('wobble').disabled = true;
+				document.getElementById('clipper').disabled = true;
+			} else {
+				document.getElementById('wobble').disabled = false;
+				document.getElementById('clipper').disabled = false; }" type="checkbox" autocomplete="off" checked>
 		<label for="psuedo">::before & ::after</label>
-		<input id="psuedo-text" onInput="update()" type="text" style="margin-left: 10px; width: 13ch" Value="Edit Me">
+		<input id="psuedo-text" onInput="
+			document.getElementById('editable').style.setProperty('--psuedo-text', this.value);
+			if (this.value.trim() == '') {
+				document.getElementById('wobble').disabled = true;
+				document.getElementById('clipper').disabled = true;
+			} else {
+				document.getElementById('wobble').disabled = false;
+				document.getElementById('clipper').disabled = false; }" onLoad="document.getElementById('editable').style.setProperty('--psuedo-text', this.value)" type="text" style="margin-left: 10px; width: 13ch" autocomplete="off" value="Edit Me">
 		<br>
-		<input id="wobble" onChange="update()" type="checkbox" checked>
+		<input id="wobble" onChange="document.getElementById('editable').classList.toggle('wobble')" type="checkbox" autocomplete="off" checked>
 		<label for="wobble">Wobbling</label>
 		<br>
-		<input id="clipper" onChange="update()" type="checkbox" checked>
+		<input id="clipper" onChange="document.getElementById('editable').classList.toggle('clipper')" type="checkbox" autocomplete="off" checked>
 		<label for="clipper">Moving clip-path</label>
 	</div>
 
-	<h2 id="editable" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
+	<h2 id="editable" class="rainbow psuedo wobble clipper" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
 
-	<script>
-		function update() {
-			let rainbow = document.getElementById("rainbow").checked;
-			let wobble = document.getElementById("wobble").checked;
-			let clipper = document.getElementById("clipper").checked;
-			let psuedo = document.getElementById("psuedo").checked;
-			
-			if (psuedo) {
-				document.getElementById("wobble").disabled = false
-				document.getElementById("clipper").disabled = false
-			} else {
-				document.getElementById("wobble").disabled = true
-				document.getElementById("clipper").disabled = true
-			}
-
-			let style = `
-				#editable {
-					font-size: 5em;
-					font-weight: 700;
-					position: relative;
-					margin: 0 auto;
-					white-space: pre;
-					animation: ${rainbow ? "rainbow-text 1199ms infinite -200ms;" : "none;" }
-				}
-
-				#editable::before,
-				#editable::after {
-					${psuedo ? "" : "display: none;"}
-					position: absolute;
-					left: 0;
-					top: 0;
-					opacity: 0.8;
-					overflow: hidden;
-					content: "${document.getElementById("psuedo-text").value}";
-					animation-delay: inherit;
-				}
-
-				#editable::before {
-					animation: ${
-						  (rainbow ? "rainbow-text 650ms infinite alternate" : "")
-						+ (rainbow && wobble ? ", " : "")
-						+ (wobble ? "wobble 1000ms infinite" : "")
-						+ ((rainbow && clipper) || (wobble && clipper) ? ", " : "")
-						+ (clipper ? "clipper 1538ms linear -1500ms infinite alternate-reverse" : "")
-
-						+ ((!rainbow && !wobble && !clipper) ? "none" : "")
-						+ ";"
-					}
-
-					clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-				}
-
-				#editable::after {
-					animation: ${
-						  (rainbow ? "rainbow-text 375ms reverse infinite" : "")
-						+ (rainbow && wobble ? ", " : "")
-						+ (wobble ? "wobble 957ms -500ms infinite reverse" : "")
-						+ (!rainbow && !wobble ? "none" : "")
-						+ ";"
-					}
-
-					clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-				}
-			`;
-
-			document.getElementById("styles").textContent = style;
-		}
-
-		window.addEventListener("load", update);
-	</script>
 
 	<style id="styles">
+		#editable {
+			--psuedo-text: "Edit Me";
+
+			font-size: 5em;
+			font-weight: 700;
+			position: relative;
+			margin: 0 auto;
+			white-space: pre;
+		}
+
+		#editable::before,
+		#editable::after {
+			position: absolute;
+			left: 3px;
+			top: 0;
+			opacity: 0.8;
+			overflow: hidden;
+			animation-delay: inherit;
+			content: var(--psuedo-text);
+		}
+
+		#editable:not(.psuedo)::before,
+		#editable:not(.psuedo)::after {
+			display: none;
+		}
+
+		#editable.rainbow { animation: rainbow-text 1199ms infinite -200ms; }
+
+		#editable.rainbow::after { animation: rainbow-text 375ms reverse infinite; }
+		#editable.wobble::after { animation: wobble 957ms -500ms infinite reverse; }
+		#editable.rainbow.wobble::after { animation: rainbow-text 375ms reverse infinite, wobble 957ms -500ms infinite reverse; }
+
+		#editable.rainbow::before { animation: rainbow-text 650ms infinite alternate; }
+		#editable.wobble::before { animation: wobble 1000ms infinite; }
+		#editable.clipper::before { animation: clipper 1538ms linear -1500ms infinite alternate-reverse; }
+		#editable.rainbow.wobble::before { animation: rainbow-text 650ms infinite alternate, wobble 1000ms infinite; }
+		#editable.wobble.clipper::before { animation: wobble 1000ms infinite, clipper 1538ms linear -1500ms infinite alternate-reverse; }
+		#editable.rainbow.clipper::before { animation: rainbow-text 650ms infinite alternate, clipper 1538ms linear -1500ms infinite alternate-reverse; }
+		#editable.rainbow.wobble.clipper::before { animation: rainbow-text 650ms infinite alternate, wobble 1000ms infinite, clipper 1538ms linear -1500ms infinite alternate-reverse; }
 
 	</style>
 ++++
 
-I'm kinda proud of the effect. It's pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But... It looks cool.
+I'm kinda proud of the effect. It's pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But... It looks cool. It works through a combination of relatively simple animations layered together.
+If there's no animation on the title, you may have reduced-motion set, or animations disabled on your device. Amusingly, I turn off animations on my phone so I can't see the effect.
 
 Also, after far, far too long I am (just about) ready to say this site is at version 1.0. Hurrah.
 {empty} +
