@@ -1,463 +1,61 @@
-<rss version="2.0">
-	<channel>
-		<title>Cynosure</title>
-		<link>https://Cynosure.page/</link>
-		<description></description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en</language>
-		<lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate>
-		<image><url>https://Cynosure.page//Icons/Minimal-Compass-Black.svg</url></image>
-
-		
-		<item>
-			<title>Inside the Vic Debsoc website</title>
-			<link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
-			<guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
-			<pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-			<description>Zero cost, low maintenance static sites for the non-technical</description>
-			<content:encoded><div class="paragraph">
-<p>A while back I took it upon myself to design a new <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I know others have, and I think I’ve found the best solution, at time of writing.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.</p>
-</li>
-<li>
-<p>Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.</p>
-</li>
-<li>
-<p>Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Luckily this is a fairly small website, and modern tools have made this easy.
-The stack consists of <a href="https://docs.gitlab.com/ee/user/project/pages">Gitlab Pages</a>, <a href="https://gohugo.io">Hugo</a>, and <a href="https://www.staticcms.org">StaticCMS</a>. If you just want to see an example you can find the repo <a href="https://gitlab.com/Cynosure-North/Debsoc-Website">here</a>. All of these tools are open source, which should make any future migrations substantially easier.</p>
-</div>
-<div class="sect1">
-<h2 id="_gitlab">Gitlab</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The obvious solution in this space is GitHub Pages, and that’s what I use for this website. But one of the needs of StaticCMS is an authorisation. The details are beyond this post (and me), but what’s important is that GitHub doesn’t support PKCE for OAuth apps. That means I’d need to rely on an external service like Netlify identity to handle the login flow. That’s an unattractive solution due to the extra complexity. Fortunately, Gitlab does support it. Gitlab provides all the other services of GitHub, so it was an easy replacement.<br/>
-I have found GitLab’s time to first byte to be higher than Github’s, but that may just be a consequence of living in NZ.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_hugo">Hugo</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>I’ve tried other static site generators in the past, but I haven’t found any as easy or powerful as Hugo. It also has a lot of useful features like minifcation built in. It being quick to build was a bonus in the development process. It is the most replaceable part of this stack though, so whatever works for you.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_staticcms">StaticCMS</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is the core of the admin interface, and the tool that enables the whole static architecture. It provides the easy interface for content authors,  I found it extremely easy to get started. It runs as a client-side SPA, which is ideal. While I did find a few spots that need work, it does the basics well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren’t huge, but they’re appreciated. They’re things updating react, dropping backends I’m not using, and cleaning up options. The community also seems more active.</p>
-</div>
-</div>
-</div>
-</content:encoded>
-		</item>
-		
-		<item>
-			<title>Crabs 🦀</title>
-			<link>https://Cynosure.page/scripts/crabs/</link>
-			<guid>https://Cynosure.page/scripts/crabs/</guid>
-			<pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-			<description>&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;paragraph&#34;&gt;
-&lt;p&gt;&lt;a href=&#34;Crabs.pdf&#34;&gt;Crabs&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-			<content:encoded><div class="paragraph">
-<p>A play about crabs, coconuts, and bromance.</p>
-</div>
-<div class="paragraph">
-<p><a href="Crabs.pdf">Crabs</a></p>
-</div>
-</content:encoded>
-		</item>
-		
-		<item>
-			<title>How the Glitch Effect Works</title>
-			<link>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</link>
-			<guid>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</guid>
-			<pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
-			<description>TLDR, stacked animations</description>
-			<content:encoded><div style="margin: 50px auto 50px auto; width: 90%">
-		<input id="rainbow" onchange="update()" type="checkbox" checked=""/>
-		<label for="rainbow">Rainbow text shadow</label>
-		<br/>
-		<input id="psuedo" onchange="update()" type="checkbox" checked=""/>
-		<label for="psuedo">::before &amp; ::after</label>
-		<input id="psuedo-text" oninput="update()" type="text" style="margin-left: 10px; width: 13ch" value="Edit Me"/>
-		<br/>
-		<input id="wobble" onchange="update()" type="checkbox" checked=""/>
-		<label for="wobble">Wobbling</label>
-		<br/>
-		<input id="clipper" onchange="update()" type="checkbox" checked=""/>
-		<label for="clipper">Moving clip-path</label>
-	</div>
-
-	<h2 id="editable" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
-
-	<script>
-		function update() {
-			let rainbow = document.getElementById("rainbow").checked;
-			let wobble = document.getElementById("wobble").checked;
-			let clipper = document.getElementById("clipper").checked;
-			let psuedo = document.getElementById("psuedo").checked;
-
-			if (psuedo) {
-				document.getElementById("wobble").disabled = false
-				document.getElementById("clipper").disabled = false
-			} else {
-				document.getElementById("wobble").disabled = true
-				document.getElementById("clipper").disabled = true
-			}
-
-			let style = `
-				#editable {
-					font-size: 5em;
-					font-weight: 700;
-					position: relative;
-					margin: 0 auto;
-					white-space: pre;
-					animation: ${rainbow ? "rainbow-text 1199ms infinite -200ms;" : "none;" }
-				}
-
-				#editable::before,
-				#editable::after {
-					${psuedo ? "" : "display: none;"}
-					position: absolute;
-					left: 0;
-					top: 0;
-					opacity: 0.8;
-					overflow: hidden;
-					content: "${document.getElementById("psuedo-text").value}";
-					animation-delay: inherit;
-				}
-
-				#editable::before {
-					animation: ${
-						  (rainbow ? "rainbow-text 650ms infinite alternate" : "")
-						+ (rainbow && wobble ? ", " : "")
-						+ (wobble ? "wobble 1000ms infinite" : "")
-						+ ((rainbow && clipper) || (wobble && clipper) ? ", " : "")
-						+ (clipper ? "clipper 1538ms linear -1500ms infinite alternate-reverse" : "")
-
-						+ ((!rainbow && !wobble && !clipper) ? "none" : "")
-						+ ";"
-					}
-
-					clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-				}
-
-				#editable::after {
-					animation: ${
-						  (rainbow ? "rainbow-text 375ms reverse infinite" : "")
-						+ (rainbow && wobble ? ", " : "")
-						+ (wobble ? "wobble 957ms -500ms infinite reverse" : "")
-						+ (!rainbow && !wobble ? "none" : "")
-						+ ";"
-					}
-
-					clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-				}
-			`;
-
-			document.getElementById("styles").textContent = style;
-		}
-
-		window.addEventListener("load", update);
-	</script>
-
-	<style id="styles">
-
-	</style>
-<div class="paragraph">
-<p>I’m kinda proud of the effect. It’s pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But…​ It looks cool.</p>
-</div>
-<div class="paragraph">
-<p>Also, after far, far too long I am (just about) ready to say this site is at version 1.0. Hurrah.
-<br/>
-<br/>
-<br/></p>
-</div>
-<div class="sect1">
-<h2 id="_html">HTML</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>There are 2 things to see here.
-Firstly, I set the content attribute to be equal to the title.
-Secondly and unrelatedly, I vary the font size to make the title take up a reasonable amount of the page.</p>
-</div>
-<div class="paragraph">
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line hl"><span class="ln" id="html-1"><a class="lnlinks" href="#html-1"> 1</a></span><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glitch&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ title .Title }}&#34;</span>
-</span></span><span class="line"><span class="ln" id="html-2"><a class="lnlinks" href="#html-2"> 2</a></span><span class="cl"><span class="na">style</span><span class="o">=</span><span class="s">&#34;
-</span></span></span><span class="line"><span class="ln" id="html-3"><a class="lnlinks" href="#html-3"> 3</a></span><span class="cl"><span class="s">	{{ if lt (len .Title) 20 }}
-</span></span></span><span class="line"><span class="ln" id="html-4"><a class="lnlinks" href="#html-4"> 4</a></span><span class="cl"><span class="s">		font-size:15vmin
-</span></span></span><span class="line"><span class="ln" id="html-5"><a class="lnlinks" href="#html-5"> 5</a></span><span class="cl"><span class="s">	{{ else if gt (len .Title) 60 }}
-</span></span></span><span class="line"><span class="ln" id="html-6"><a class="lnlinks" href="#html-6"> 6</a></span><span class="cl"><span class="s">		font-size:8vmin
-</span></span></span><span class="line"><span class="ln" id="html-7"><a class="lnlinks" href="#html-7"> 7</a></span><span class="cl"><span class="s">	{{ else }}
-</span></span></span><span class="line"><span class="ln" id="html-8"><a class="lnlinks" href="#html-8"> 8</a></span><span class="cl"><span class="s">		font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor  }}vmin
-</span></span></span><span class="line"><span class="ln" id="html-9"><a class="lnlinks" href="#html-9"> 9</a></span><span class="cl"><span class="s">	{{end}}&#34;</span>
-</span></span><span class="line"><span class="ln" id="html-10"><a class="lnlinks" href="#html-10">10</a></span><span class="cl"><span class="p">&gt;</span>{{ title .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_css">CSS</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is largely unremarkable, just a load of animation keyframes.</p>
-</div>
-<div class="paragraph">
-<p>Do pay attention to the content and animation delay attributes though. <code>content: attr(content)</code> is the trick that allows me to easily set the overlay text to match. This is important because I can easily set html content on a per page basis with Hugo (the static site generator I use), but it’s substantially harder to have unique CSS per page.
-<code>animation-delay</code> isn’t useful for the majority of titles, but for the homepage I have each letter as its own separate animation. I’ve manually set a unique animation delay on each and that ensures the wandering clip paths don’t all line up in an obvious way.</p>
-</div>
-<div class="paragraph">
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="ln" id="css-1"><a class="lnlinks" href="#css-1">  1</a></span><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">prefers-reduced-motion</span><span class="o">:</span> <span class="nt">no-preference</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-2"><a class="lnlinks" href="#css-2">  2</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-3"><a class="lnlinks" href="#css-3">  3</a></span><span class="cl">		<span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-4"><a class="lnlinks" href="#css-4">  4</a></span><span class="cl">		<span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-5"><a class="lnlinks" href="#css-5">  5</a></span><span class="cl">		<span class="k">animation</span><span class="p">:</span> <span class="n">glitch-text</span> <span class="mi">1199</span><span class="kt">ms</span> <span class="kc">infinite</span> <span class="mi">-200</span><span class="kt">ms</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-6"><a class="lnlinks" href="#css-6">  6</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-7"><a class="lnlinks" href="#css-7">  7</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-8"><a class="lnlinks" href="#css-8">  8</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span>
-</span></span><span class="line"><span class="ln" id="css-9"><a class="lnlinks" href="#css-9">  9</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-10"><a class="lnlinks" href="#css-10"> 10</a></span><span class="cl">		<span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-11"><a class="lnlinks" href="#css-11"> 11</a></span><span class="cl">		<span class="k">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-12"><a class="lnlinks" href="#css-12"> 12</a></span><span class="cl">		<span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-13"><a class="lnlinks" href="#css-13"> 13</a></span><span class="cl">		<span class="k">opacity</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">;</span>
-</span></span><span class="line hl"><span class="ln" id="css-14"><a class="lnlinks" href="#css-14"> 14</a></span><span class="cl">		<span class="k">content</span><span class="p">:</span> <span class="nb">attr</span><span class="p">(</span><span class="n">content</span><span class="p">);</span>
-</span></span><span class="line hl"><span class="ln" id="css-15"><a class="lnlinks" href="#css-15"> 15</a></span><span class="cl">		<span class="k">animation-delay</span><span class="p">:</span> <span class="kc">inherit</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-16"><a class="lnlinks" href="#css-16"> 16</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-17"><a class="lnlinks" href="#css-17"> 17</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-18"><a class="lnlinks" href="#css-18"> 18</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-19"><a class="lnlinks" href="#css-19"> 19</a></span><span class="cl">		<span class="k">animation</span><span class="p">:</span> <span class="n">glitch-text</span> <span class="mi">650</span><span class="kt">ms</span> <span class="kc">infinite</span> <span class="kc">alternate</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="css-20"><a class="lnlinks" href="#css-20"> 20</a></span><span class="cl">			<span class="n">outer</span> <span class="mi">1000</span><span class="kt">ms</span> <span class="kc">infinite</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="css-21"><a class="lnlinks" href="#css-21"> 21</a></span><span class="cl">			<span class="n">before</span> <span class="mi">1538</span><span class="kt">ms</span> <span class="kc">linear</span> <span class="mi">-1500</span><span class="kt">ms</span> <span class="kc">infinite</span> <span class="kc">alternate-reverse</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-22"><a class="lnlinks" href="#css-22"> 22</a></span><span class="cl">		<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">45</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">45</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-23"><a class="lnlinks" href="#css-23"> 23</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-24"><a class="lnlinks" href="#css-24"> 24</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-25"><a class="lnlinks" href="#css-25"> 25</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-26"><a class="lnlinks" href="#css-26"> 26</a></span><span class="cl">		<span class="k">animation</span><span class="p">:</span> <span class="n">glitch-text</span> <span class="mi">375</span><span class="kt">ms</span> <span class="kc">reverse</span> <span class="kc">infinite</span><span class="p">,</span> <span class="n">outer</span> <span class="mi">957</span><span class="kt">ms</span> <span class="mi">-500</span><span class="kt">ms</span> <span class="kc">infinite</span> <span class="kc">reverse</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-27"><a class="lnlinks" href="#css-27"> 27</a></span><span class="cl">		<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">80</span><span class="kt">%</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">20</span><span class="kt">%</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">100</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">100</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-28"><a class="lnlinks" href="#css-28"> 28</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-29"><a class="lnlinks" href="#css-29"> 29</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-30"><a class="lnlinks" href="#css-30"> 30</a></span><span class="cl">	<span class="p">@</span><span class="k">keyframes</span> <span class="nt">glitch-text</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-31"><a class="lnlinks" href="#css-31"> 31</a></span><span class="cl">		<span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-32"><a class="lnlinks" href="#css-32"> 32</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="mi">12</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-33"><a class="lnlinks" href="#css-33"> 33</a></span><span class="cl">				<span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">10</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-34"><a class="lnlinks" href="#css-34"> 34</a></span><span class="cl">				<span class="mf">-0.025</span><span class="kt">em</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-35"><a class="lnlinks" href="#css-35"> 35</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-36"><a class="lnlinks" href="#css-36"> 36</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-37"><a class="lnlinks" href="#css-37"> 37</a></span><span class="cl">		<span class="nt">14</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-38"><a class="lnlinks" href="#css-38"> 38</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-39"><a class="lnlinks" href="#css-39"> 39</a></span><span class="cl">				<span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-40"><a class="lnlinks" href="#css-40"> 40</a></span><span class="cl">				<span class="mf">-0.025</span><span class="kt">em</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-41"><a class="lnlinks" href="#css-41"> 41</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-42"><a class="lnlinks" href="#css-42"> 42</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-43"><a class="lnlinks" href="#css-43"> 43</a></span><span class="cl">		<span class="nt">15</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-44"><a class="lnlinks" href="#css-44"> 44</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-45"><a class="lnlinks" href="#css-45"> 45</a></span><span class="cl">				<span class="mf">0.025</span><span class="kt">em</span> <span class="mf">0.025</span><span class="kt">em</span> <span class="mi">5</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-46"><a class="lnlinks" href="#css-46"> 46</a></span><span class="cl">				<span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mi">3</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-47"><a class="lnlinks" href="#css-47"> 47</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-48"><a class="lnlinks" href="#css-48"> 48</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-49"><a class="lnlinks" href="#css-49"> 49</a></span><span class="cl">		<span class="nt">49</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-50"><a class="lnlinks" href="#css-50"> 50</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-51"><a class="lnlinks" href="#css-51"> 51</a></span><span class="cl">				<span class="mf">0.025</span><span class="kt">em</span> <span class="mf">0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-52"><a class="lnlinks" href="#css-52"> 52</a></span><span class="cl">				<span class="mf">-0.05</span><span class="kt">em</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-53"><a class="lnlinks" href="#css-53"> 53</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-54"><a class="lnlinks" href="#css-54"> 54</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-55"><a class="lnlinks" href="#css-55"> 55</a></span><span class="cl">		<span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-56"><a class="lnlinks" href="#css-56"> 56</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">0.025</span><span class="kt">em</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-57"><a class="lnlinks" href="#css-57"> 57</a></span><span class="cl">				<span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-58"><a class="lnlinks" href="#css-58"> 58</a></span><span class="cl">				<span class="mi">0</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-59"><a class="lnlinks" href="#css-59"> 59</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-60"><a class="lnlinks" href="#css-60"> 60</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-61"><a class="lnlinks" href="#css-61"> 61</a></span><span class="cl">		<span class="nt">99</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-62"><a class="lnlinks" href="#css-62"> 62</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">0.025</span><span class="kt">em</span> <span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-63"><a class="lnlinks" href="#css-63"> 63</a></span><span class="cl">				<span class="mf">0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-64"><a class="lnlinks" href="#css-64"> 64</a></span><span class="cl">				<span class="mi">0</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-65"><a class="lnlinks" href="#css-65"> 65</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-66"><a class="lnlinks" href="#css-66"> 66</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-67"><a class="lnlinks" href="#css-67"> 67</a></span><span class="cl">		<span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-68"><a class="lnlinks" href="#css-68"> 68</a></span><span class="cl">			<span class="k">text-shadow</span><span class="p">:</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="mi">5</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-69"><a class="lnlinks" href="#css-69"> 69</a></span><span class="cl">				<span class="mf">-0.025</span><span class="kt">em</span> <span class="mf">-0.025</span><span class="kt">em</span> <span class="mi">0</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span>
-</span></span><span class="line"><span class="ln" id="css-70"><a class="lnlinks" href="#css-70"> 70</a></span><span class="cl">				<span class="mf">-0.025</span><span class="kt">em</span> <span class="mf">-0.05</span><span class="kt">em</span> <span class="mi">12</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-71"><a class="lnlinks" href="#css-71"> 71</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-72"><a class="lnlinks" href="#css-72"> 72</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-73"><a class="lnlinks" href="#css-73"> 73</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-74"><a class="lnlinks" href="#css-74"> 74</a></span><span class="cl">	<span class="p">@</span><span class="k">keyframes</span> <span class="nt">outer</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-75"><a class="lnlinks" href="#css-75"> 75</a></span><span class="cl">		<span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-76"><a class="lnlinks" href="#css-76"> 76</a></span><span class="cl">			<span class="k">opacity</span><span class="p">:</span> <span class="mi">30</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-77"><a class="lnlinks" href="#css-77"> 77</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-78"><a class="lnlinks" href="#css-78"> 78</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-79"><a class="lnlinks" href="#css-79"> 79</a></span><span class="cl">		<span class="nt">14</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-80"><a class="lnlinks" href="#css-80"> 80</a></span><span class="cl">			<span class="k">opacity</span><span class="p">:</span> <span class="mi">20</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-81"><a class="lnlinks" href="#css-81"> 81</a></span><span class="cl">			<span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mf">-0.04</span><span class="kt">em</span><span class="p">,</span> <span class="mf">-0.026</span><span class="kt">em</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-82"><a class="lnlinks" href="#css-82"> 82</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-83"><a class="lnlinks" href="#css-83"> 83</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-84"><a class="lnlinks" href="#css-84"> 84</a></span><span class="cl">		<span class="nt">15</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-85"><a class="lnlinks" href="#css-85"> 85</a></span><span class="cl">			<span class="k">opacity</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-86"><a class="lnlinks" href="#css-86"> 86</a></span><span class="cl">			<span class="k">transform</span><span class="p">:</span> <span class="nb">translate</span><span class="p">(</span><span class="mf">0.02</span><span class="kt">em</span><span class="p">,</span> <span class="mf">0.016</span><span class="kt">em</span><span class="p">)</span> <span class="nb">rotate</span><span class="p">(</span><span class="mf">-0.5</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-87"><a class="lnlinks" href="#css-87"> 87</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-88"><a class="lnlinks" href="#css-88"> 88</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-89"><a class="lnlinks" href="#css-89"> 89</a></span><span class="cl">		<span class="nt">49</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-90"><a class="lnlinks" href="#css-90"> 90</a></span><span class="cl">			<span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mf">0.1</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-91"><a class="lnlinks" href="#css-91"> 91</a></span><span class="cl">			<span class="k">opacity</span><span class="p">:</span> <span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-92"><a class="lnlinks" href="#css-92"> 92</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-93"><a class="lnlinks" href="#css-93"> 93</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-94"><a class="lnlinks" href="#css-94"> 94</a></span><span class="cl">		<span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-95"><a class="lnlinks" href="#css-95"> 95</a></span><span class="cl">			<span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mf">-0.2</span><span class="kt">deg</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-96"><a class="lnlinks" href="#css-96"> 96</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-97"><a class="lnlinks" href="#css-97"> 97</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-98"><a class="lnlinks" href="#css-98"> 98</a></span><span class="cl">		<span class="nt">60</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-99"><a class="lnlinks" href="#css-99"> 99</a></span><span class="cl">			<span class="k">transform</span><span class="p">:</span> <span class="nb">rotate</span><span class="p">(</span><span class="mf">0.1</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translate</span><span class="p">(</span><span class="mf">0.015</span><span class="kt">em</span><span class="p">,</span> <span class="mf">0.002</span><span class="kt">em</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-100"><a class="lnlinks" href="#css-100">100</a></span><span class="cl">			<span class="k">opacity</span><span class="p">:</span> <span class="mi">40</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="ln" id="css-101"><a class="lnlinks" href="#css-101">101</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-102"><a class="lnlinks" href="#css-102">102</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-103"><a class="lnlinks" href="#css-103">103</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-104"><a class="lnlinks" href="#css-104">104</a></span><span class="cl">	<span class="p">@</span><span class="k">keyframes</span> <span class="nt">before</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-105"><a class="lnlinks" href="#css-105">105</a></span><span class="cl">		<span class="nt">0</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-106"><a class="lnlinks" href="#css-106">106</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">45</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">45</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-107"><a class="lnlinks" href="#css-107">107</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-108"><a class="lnlinks" href="#css-108">108</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-109"><a class="lnlinks" href="#css-109">109</a></span><span class="cl">		<span class="nt">20</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-110"><a class="lnlinks" href="#css-110">110</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">45</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">75</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-111"><a class="lnlinks" href="#css-111">111</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-112"><a class="lnlinks" href="#css-112">112</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-113"><a class="lnlinks" href="#css-113">113</a></span><span class="cl">		<span class="nt">22</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-114"><a class="lnlinks" href="#css-114">114</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">35</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">25</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-115"><a class="lnlinks" href="#css-115">115</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-116"><a class="lnlinks" href="#css-116">116</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-117"><a class="lnlinks" href="#css-117">117</a></span><span class="cl">		<span class="nt">75</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-118"><a class="lnlinks" href="#css-118">118</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">35</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">25</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-119"><a class="lnlinks" href="#css-119">119</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-120"><a class="lnlinks" href="#css-120">120</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="css-121"><a class="lnlinks" href="#css-121">121</a></span><span class="cl">		<span class="nt">76</span><span class="o">%</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="css-122"><a class="lnlinks" href="#css-122">122</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">5</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">75</span><span class="kt">%</span><span class="p">);</span>
-</span></span><span class="line"><span class="ln" id="css-123"><a class="lnlinks" href="#css-123">123</a></span><span class="cl">		<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-124"><a class="lnlinks" href="#css-124">124</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-125"><a class="lnlinks" href="#css-125">125</a></span><span class="cl"><span class="p">}</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
-</content:encoded>
-		</item>
-		
-		<item>
-			<title>Crossbow Cat</title>
-			<link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
-			<guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
-			<pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-			<description>I’m playing the cat</description>
-			<content:encoded><div class="paragraph">
-<p>I’m currently rehearsing for Crossbow Cat, to be performed soon. I’m playing Cinnamon, who happens to be a cat.
-Cinnamon gained the ability to walk and talk when Martha shot her in the head with a crossbow, and now she’s back for revenge.</p>
-</div>
-<div class="paragraph">
-<p>It’s been fascinating playing a cat, I was inspired by The Cat from Coraline and Cheshire Cat, but with more resentment.
-Cats are extremely mobile, and it turns out I love to move this way. The challenge of making myself look that mobile is interesting, there’s lots of lounging in odd positions, and pouncing on furniture. It’s as if a child was coordinated.
-Emotionally, Cinnamon needs therapy. She’s a mess. There’s a whole lot of anger at Martha for shooting her, resulting in her ostracisation from cat society, but below that there’s intense fear and loneliness. Cinnamon refuses to confront this though. She stalks and plans to kill Martha, but when goes to do it she’s so wildly off base. She brings knives, and doesn’t even throw a punch. She is lost, and running from that towards an unquestioned goal. She’s not going to let that stop her though. Cinnamon has a plan.</p>
-</div>
-<div class="paragraph">
-<p>We’ll be performing from the 4th of September until the 8th at Studio 77 2021.</p>
-</div>
-</content:encoded>
-		</item>
-		
-		<item>
-			<title></title>
-			<link>https://Cynosure.page/rejected-landing/</link>
-			<guid>https://Cynosure.page/rejected-landing/</guid>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			<description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34; &gt;
-	&lt;head&gt;
-		&lt;title&gt;Cynosure&lt;/title&gt;
-		&lt;meta charset=&#34;UTF-8&#34;/&gt; 
-		&lt;meta name=&#34;author&#34; content=&#34;North&#34;&gt;
-		&lt;meta name=&#34;description&#34; content=&#34;Where to?&#34;&gt;
-		&lt;link rel=&#34;icon&#34; href=&#34;https://Cynosure.page/Icons/Minimal-Compass-Black.svg&#34; type=&#34;image/gif&#34;&gt;
-		&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;rejected-landing-style.css&#34;/&gt;
-
-		&lt;script type=&#34;text/javascript&#34; src=&#34;zoom-spin.js&#34;&gt;&lt;/script&gt;
-	&lt;/head&gt;
-
-	&lt;a href=&#34;https://Cynosure.page/&#34;&gt;
-		&lt;body onload=&#34;init()&#34; onresize=&#34;resize()&#34;&gt;
-			&lt;canvas id=&#34;canvas&#34;&gt;
-				&lt;h1&gt;If you&#39;re seeing this something has gone wrong&lt;br&gt;Click to continue&lt;/h1&gt;
-			&lt;/canvas&gt;
-			&lt;h1	id=&#34;landing-title&#34;&gt;North&lt;/h1&gt;
-		&lt;/body&gt;
-	&lt;/a&gt;
-&lt;/html&gt;</description>
-			<content:encoded><!DOCTYPE html>
-<html lang="en" >
-	<head>
-		<title>Cynosure</title>
-		<meta charset="UTF-8"/> 
-		<meta name="author" content="North">
-		<meta name="description" content="Where to?">
-		<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
-		<link rel="stylesheet" type="text/css" href="rejected-landing-style.css"/>
-
-		<script type="text/javascript" src="zoom-spin.js"></script>
-	</head>
-
-	<a href="/">
-		<body onload="init()" onresize="resize()">
-			<canvas id="canvas">
-				<h1>If you're seeing this something has gone wrong<br>Click to continue</h1>
-			</canvas>
-			<h1	id="landing-title">North</h1>
-		</body>
-	</a>
-</html> </content:encoded>
-		</item>
-		
-		<item>
-			<title>About Me</title>
-			<link>https://Cynosure.page/about/</link>
-			<guid>https://Cynosure.page/about/</guid>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			<description>Here are some facts and a lovely dithered image</description>
-			<content:encoded><div class="imageblock">
-<div class="content">
-<img src="/Images/me.png" alt="A person wearing sunglasses, lipstick, and a hoodie."/>
-</div>
-</div>
-<div class="paragraph">
-<p><a href="mailto:contact@cynosure.page">contact@cynosure.page</a></p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/Cynosure-North/">github.com/cynosure-north</a></p>
-</div>
-<div class="paragraph">
-<p>Hi, I’m (Morgana) North [they/them].
-I do art things and computer things. Sometimes both at once.</p>
-</div>
-</content:encoded>
-		</item>
-		
-		<item>
-			<title>Finds</title>
-			<link>https://Cynosure.page/finds/</link>
-			<guid>https://Cynosure.page/finds/</guid>
-			<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-			<description></description>
-			<content:encoded></content:encoded>
-		</item>
-		
-
-	</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cynosure</title>
+    <link>https://Cynosure.page/</link>
+    <description>Recent content on Cynosure</description>
+    <generator>Hugo</generator>
+    <language>en-nz</language>
+    <lastBuildDate>Sun, 01 Dec 2024 16:57:11 +1300</lastBuildDate>
+    <atom:link href="https://Cynosure.page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inside the Vic Debsoc website</title>
+      <link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
+      <description>Zero cost, low maintenance static sites for the non-technical</description>
+    </item>
+    <item>
+      <title>Crabs 🦀</title>
+      <link>https://Cynosure.page/scripts/crabs/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/scripts/crabs/</guid>
+      <description>&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;paragraph&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;Crabs.pdf&#34;&gt;Crabs&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>How the Glitch Effect Works</title>
+      <link>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</link>
+      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2023-10-08/how-the-glitch-effect-works/</guid>
+      <description>TLDR, stacked animations</description>
+    </item>
+    <item>
+      <title>Crossbow Cat</title>
+      <link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
+      <description>I’m playing the cat</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Cynosure.page/rejected-landing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/rejected-landing/</guid>
+      <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34; &gt;&#xA;&#x9;&lt;head&gt;&#xA;&#x9;&#x9;&lt;title&gt;Cynosure&lt;/title&gt;&#xA;&#x9;&#x9;&lt;meta charset=&#34;UTF-8&#34;/&gt; &#xA;&#x9;&#x9;&lt;meta name=&#34;author&#34; content=&#34;North&#34;&gt;&#xA;&#x9;&#x9;&lt;meta name=&#34;description&#34; content=&#34;Where to?&#34;&gt;&#xA;&#x9;&#x9;&lt;link rel=&#34;icon&#34; href=&#34;https://Cynosure.page/Icons/Minimal-Compass-Black.svg&#34; type=&#34;image/gif&#34;&gt;&#xA;&#x9;&#x9;&lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;rejected-landing-style.css&#34;/&gt;&#xA;&#xA;&#x9;&#x9;&lt;script type=&#34;text/javascript&#34; src=&#34;zoom-spin.js&#34;&gt;&lt;/script&gt;&#xA;&#x9;&lt;/head&gt;&#xA;&#xA;&#x9;&lt;a href=&#34;https://Cynosure.page/&#34;&gt;&#xA;&#x9;&#x9;&lt;body onload=&#34;init()&#34; onresize=&#34;resize()&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;canvas id=&#34;canvas&#34;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;h1&gt;If you&#39;re seeing this something has gone wrong&lt;br&gt;Click to continue&lt;/h1&gt;&#xA;&#x9;&#x9;&#x9;&lt;/canvas&gt;&#xA;&#x9;&#x9;&#x9;&lt;h1&#x9;id=&#34;landing-title&#34;&gt;North&lt;/h1&gt;&#xA;&#x9;&#x9;&lt;/body&gt;&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/html&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://Cynosure.page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/about/</guid>
+      <description>Here are some facts and a lovely dithered image</description>
+    </item>
+    <item>
+      <title>Finds</title>
+      <link>https://Cynosure.page/finds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/finds/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>
