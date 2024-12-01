@@ -42,17 +42,6 @@ markup:
 taxonomies:
   tag: tags
 
-outputs:
-  home:
-  - html
-  - rss
-  section:
-  - html
-  taxonomy:
-  - html
-  term:
-  - html
-
 security:
   exec:
     allow:
