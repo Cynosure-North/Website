@@ -8,9 +8,9 @@ tags:
   - AR
 ---
 
-I'm excited about AR. I love programming, but I am sick of working at a desk. When I can code while sitting outside under a tree, with the gear I wear every day, I will be happy. I have a few ideas about that world, and like an ancient Greek philosopher I shall proclaim them.
+I am sick of working at a desk. When I can code while sitting outside under a tree with the gear I wear every day, I will be happy. I have a few ideas about that world, and like an ancient Greek philosopher I shall proclaim them.
 
-== Dashboards as the killer app
+== Passive Information
 
 Ubiquitous computing is an idea that has been around for decades, but has never taken off. Part of that is due to the difficulties of visualising the data.
 The usual solution is to setup a tiny screen somewhere. They suck. The UI is a nightmare, the hardware is underpowered, the software is outdated, and they're never where you need them.
@@ -25,6 +25,8 @@ Batman tactical view
 The difference between passively seeing something, and having to pull out your phone is the difference between a phone and a desktop. Information is an order of magnitude closer.
 
 Perhaps this is just me wishcasting. I've managed to rip myself of social media (mostly). I've found a better way to use the internet. AR is likely to be even more engrossing.
+
+Also more decentralisation coming
 
 == Going beyond taps
 
@@ -44,22 +46,13 @@ Input when you're looking at something else
 Affordances
 Contribute to illusion
 
-== Halos
-
-Even with Moore's Law and battery technology advances it's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky. What I think is much more likely is either tethered pucks like we've seen with the vision pro, or the much cooler and harder option: Neck bands.
-What I envision is the battery and compute being in something like a necklace or a neckband, like with some wireless earbuds, with a small wire, or wireless connection up to the glasses which are effectively just a display
-And if I were to guess, they'll be called Halos.
-
 == Goodbye to designer glasses
 
-Once people have smart glasses I doubt they're going to go back to smart glasses in day to day life. The difficulty of designing smart glasses means that there are going to be relatively few options.
-This is a huge shame. Glasses are among the most significant fashion choices people can make. They can radically change how a face looks, and, at least for me, are worn all the time. The move to smart glasses is going to homogenise all of that.
-We're going to be stuck with thick rimmed, rectangular glasses for a long time.
+Once people have smart glasses I doubt they're going to go back to smart glasses in day to day life. Smart glasses are too useful, it'll be too much of a hassle to switch back and forth, and a large part of the value of smart glasses comes from the information they make passively visible.
+The difficulty of designing smart glasses means that there are going to be far fewer companies capable of designing smart glasses than dumb glasses. We can look at cars, which are similarly difficult to design and constrained by the limits of technology. In the mid-market similar designers with similar resources and similar constraints have lead to similar styling. The constraints for smart glasses will come from the layout of the projection system and how small the electronics can get, so goodbye to wire frames (my favourite).
+Perhaps we'll get some customisation options equivalent to swapping watch straps, probably changing the colour of the arms. At a stretch we might get interesting cutouts or contorted PCBs, but I doubt there's the market for it.
+Everyone will be wearing the same designs, all the time. This sucks. Glasses can radically change how a face looks, and, at least for me, are worn all the time for years between replacements. They are the most important fashion decision a person makes, and that's all going to be lost.
 
-Perhaps we'll get some customisation options equivalent to swapping watch straps, but I think the more significant aspect, frame shape, is going to remain fixed. It seems the aspect most sensitive to changes. It's the where all the display tech is focused, and it's the most unique to this type of product. The lenses will probably also need to reflect the shape of the virtual display, which will undoubtedly be a rectangle.
-Electronics have been contorted to fit camera bodies before, so the arms may have some degree of flexibility, although it's unclear if there will be a market for the sort of bold stylistic decisions.
-Looking at cars, which are similarly difficult to design, and constrained by practicalities, in the mid-market they've tended towards similar styling and inoffensive colors. That means they appeal to everyone, but no one loves any of them. That's a huge loss.
-And of course because everyone will be wearing the same designs, all the time.
+== Halos
 
-
-Timeframe
+It's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky. What I think is much more likely is either tethered compute pucks like we've seen with the vision pro. I think someone will try making the puck into a neckband, like with some earbuds. And if I were to guess, they'll be called Halos.

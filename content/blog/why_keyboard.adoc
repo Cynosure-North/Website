@@ -1,0 +1,10 @@
+to hit 60wpm (a slightly higher than average but easily achievable level), at avg 4.2 letters/word + 1 for space means 312 keystrokes/minute, or 5.2 letters second. 
+
+Requires:
+Quick reset
+Parallel, multiple hands at once
+
+
+Other requirements:
+Not exhausting - only uses fingers
+Doesn't cause RSI
