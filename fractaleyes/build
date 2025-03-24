@@ -1,0 +1,12 @@
+#! /bin/sh
+
+wasm-pack build --target web --out-dir src
+
+# clean up
+rm -r ./target
+rm ./src/.gitignore
+rm ./src/fracing_bg.wasm.d.ts
+rm ./src/fracing.d.ts
+rm ./src/package.json
+
+npm run dev
