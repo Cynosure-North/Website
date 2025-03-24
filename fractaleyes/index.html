@@ -1,122 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-nz">
-	<head>
-		
-				<title>Cynosure - </title>
-	<meta charset="utf-8"/>
-	<meta name="author" content="North">
-	<meta name="description" content="">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
 
-	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
-	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
-	
-	<link rel="preload" href="/Fonts/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
-	
-	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
-	
-		
-	</head>
-	<body>
-		<div id="column">
-		
-			<header>
-	<a href="/index.html" id="logo" aria-label="Compass Logo">
-	<svg id="compass" aria-hidden="true" class="glitch-shadow" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 760 760">
-		<circle cx="380" cy="380" r="200" style="fill:transparent;stroke-width:10px" />
-		<circle cx="380" cy="380" r="175" style="fill:transparent;stroke-width:10px" />
-		<g transform="translate(355 35)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(45 135.3 726)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z"
-				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(90 160 475)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(-45 219.7 -131)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z"
-				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(180 177.5 297.5)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(-135 184.7 224)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z"
-				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(-90 195 120)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-		<g style="transform-origin:25px 65px" transform="rotate(135 170.3 371)">
-			<path d="m25 0 25 130-25-2-25 2L25 0Z"
-				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
-			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
-		</g>
-	</svg>
-	<svg id="needle" aria-hidden="true" width="70" height="70" viewBox="0 0 120 600" xmlns="http://www.w3.org/2000/svg">
-		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
-	</svg>
-</a> 
 
-<style>
-	#logo {
-		display: flex;
-		justify-content: center;
-		fill: var(--text-color);
-		stroke: var(--text-color);
-	}
-	
-	#compass{
-		height: 100%;
-		position: absolute;
-	}
-	
-	#needle{
-		height: 100%;
-		position: absolute;
-		transform: rotate(-45deg);
-		transition: transform 1.5s ease-in-out;
-	}
-	
-	@media (prefers-reduced-motion: no-preference) {
-		#logo:hover > #needle{
-			transform: rotate(135deg);
-		}
-	}	
-</style>
-
-	<div id="title-container">
-		<h1 class="glitch" content=""
-		style="
-				font-size:15vmin
-			"
-		></h1>
-	</div>
-</header>
-
-		
-		
-	<div id="content">
-		<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <title>Fractaleyes</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="src/css.css">
-  <script type="module" src="src/main.ts"></script>
-  <script type="module" src="src/selection.js"></script>
+  <script type="module" src="./src/main.ts"></script>
+  <script type="module" src="./src/selection.ts"></script>
 </head>
 
 <body>
@@ -145,23 +37,4 @@
   </div>
 </body>
 
-</html>
-	</div>
-
-		
-			<footer>
-	<hr>
-	
-		
-		
-		<p> Posted: <time datetime="0001-01-01"> 1 January 0001</time></p>
-		
-			<p> Edited: <time datetime="2025-03-24"> 24 March 2025</time></p>
-		
-		
-	
-</footer>
-		
-		</div>
-	</body>
 </html>
