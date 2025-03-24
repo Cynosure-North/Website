@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Fractaleyes</title>
+  <meta charset="UTF-8" />
+  <script type="module" crossorigin src="assets/index-Bg31pqlB.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/index-sEbb-pag.css">
+</head>
+
+<body>
+  <div id="app">
+    <div style="position: relative; width: 500px">
+      <div style="height: 550px;">
+        <canvas id="map" width="500" height="500" style="position: absolute"></canvas>
+        <canvas id="selection" width="500" height="500" style="position: absolute"></canvas>
+      </div>
+      <div>
+        <p> Click and drag to select a section of the Mandelbrot Set (above) to zoom in on.</p>
+        <p>Or ctrl+click to set a seed value for the Julia Set (right), the initial value is (0, 0).</p>
+        <br>
+        <button id="zoom">Zoom view</button>
+        <button id="reset">Reset view</button>
+        <br>
+        <br>
+        <button id="save_mandelbrot">Save image of Mandelbrot Set</button>
+        <button id="save_julia">Save image of Julia Set</button>
+      </div>
+    </div>
+    <div>
+      <canvas id="result" width="1000" height="1000"></canvas>
+    </div>
+
+  </div>
+</body>
+
+</html>
