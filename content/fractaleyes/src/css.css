@@ -15,7 +15,9 @@ p {
 	font-family: monospace;
 }
 
-canvas { image-rendering: pixelated; }
+canvas {
+	image-rendering: pixelated;
+}
 
 button {
 	font-family: monospace;
@@ -24,5 +26,11 @@ button {
 	margin: 0 5px 10px 0;
 	background: #ddddddd7;
 }
-button:hover { background: #dddddde7; }
-button:active { background: #ddddddf7; }
+
+button:hover {
+	background: #dddddde7;
+}
+
+button:active {
+	background: #ddddddf7;
+}
