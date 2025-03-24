@@ -1,0 +1,1 @@
+#app{display:flex;flex-direction:row;gap:20px;padding:20px}body{background-color:#000}p{color:#ddd;font-family:monospace}canvas{image-rendering:pixelated}button{font-family:monospace;border:none;padding:5px 10px;margin:0 5px 10px 0;background:#ddddddd7}button:hover{background:#dddddde7}button:active{background:#ddddddf7}
