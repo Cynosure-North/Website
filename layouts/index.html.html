@@ -5,43 +5,43 @@
 	<title>Cynosure</title>
 
 	<style>
-		#title{
+		#title {
 			width: 100%;
 			display: flex;
 			justify-content: center;
 			pointer-events: none;
 			padding-top: calc(40px + 17vh);
-			padding-bottom: calc(35px + 18vh); 
+			padding-bottom: calc(35px + 18vh);
 		}
-		
+
 		#title h1 {
 			font-size: min(10em, 14vw);
 			margin: 0 1.2vw;
 			display: inline-block;
 		}
-		
+
 		p {
 			text-align: center;
 			margin: 30px;
 		}
-		
+
 		ul {
 			text-align: center;
 			list-style-type: none;
 			padding-left: 0;
 			margin-top: -20px;
 		}
-		
+
 		li {
 			margin: 5px 0;
 		}
 	</style>
-	
-	{{ partial "partials/head.html" }}
+
+	{{ partial "head.html" }}
 </head>
 
 <body>
-	{{ partial "partials/logo.html" }}
+	{{ partial "logo.html" }}
 	<div id="title" role="heading" aria-label="Cynosure">
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -1.3s;" content="░"> C </h1>
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -.9s;" content="//"> Y </h1>
@@ -53,11 +53,11 @@
 		<h1 class="glitch" aria-hidden="true" style="animation-delay: -2.9s;" content="!!"> E </h1>
 	</div>
 	<div id="column">
-		<p>Hi there, I'm <a href="{{ ref . "0001-01-01-me.adoc" }}">North</a></p>
-		<p>Read a post:</p> 
+		<p>Hi there, I'm <a href="{{ ref . "blog/0001-01-01-me.adoc" }}">North</a></p>
+		<p>Read a post:</p>
 		<ul>
 			{{ range ( where .Site.RegularPages "Section" "in" (slice "blog" "scripts") | first 3 ) }}
-				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{end}}
 		</ul>
 		<p>Or browse by <a href="/tags">tags</a></p>
@@ -65,4 +65,5 @@
 
 	</div>
 </body>
+
 </html>
