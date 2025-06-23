@@ -3,7 +3,7 @@
 <div id="section">
 	<ul>
 	{{ range ( .Resources.Get "finds.csv" | unmarshal ( dict "delimiter" ";" "lazyQuotes" "true" ) | collections.Reverse) }}
-		<a href="{{ index . 1 }}"><li><h2>{{ index . 0 }}</h2></li></a>
+		<li style="margin: 20px 0"><a href="{{ index . 1 }}"><h2 style="display: inline">{{ index . 0 }}</h2></a> <a href="{{ index . 2}}">archive</a></li>
 	{{ end }}
 	</ul>
 </div>
