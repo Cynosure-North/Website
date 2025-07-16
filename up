@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TODO handle better
-IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not)) | .[].addr_info | .[].local')
+IP=$(ip -4 -json addr show scope global | jq -r 'map(select(.ifname | test("docker.+") | not) | select(.operstate == "UP")) | .[].addr_info | .[].local')
 cd "$(dirname "$0")" || exit # Always run from same location
 
 if [ "$1" = "serve" ]; then
@@ -34,7 +34,7 @@ elif [ "$1" = "new" ]; then
 			echo "Made new directory: $1"
 		fi
 
-		filename="content/$1/$DATE-$2.adoc"
+		filename="content/$1/$DATE-${2/ /-}.adoc"
 		echo "$filename"
 		{
 			echo "---"
@@ -45,8 +45,7 @@ elif [ "$1" = "new" ]; then
 			echo "tags: "
 			echo "  - "
 			echo "---"
-		} >> "$filename"
-		$EDITOR "$filename"
+		} | nvim - +"file $filename"
 	fi
 else
 	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
