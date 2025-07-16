@@ -8,41 +8,68 @@ tags:
 
 ++++
 	<div style="margin: 50px auto 50px auto; width: 90%">
-		<input id="rainbow" onChange="document.getElementById('editable').classList.toggle('rainbow')" type="checkbox" autocomplete="off" checked>
+
+		<input id="rainbow" type="checkbox" autocomplete="off" checked
+		onChange="document.getElementById('editable').classList.toggle('rainbow')">
+
 		<label for="rainbow">Rainbow text shadow</label>
+
+
 		<br>
-		<input id="psuedo" onChange="
-			document.getElementById('editable').classList.toggle('psuedo');
+		<input id="pseudo" type="checkbox" autocomplete="off" checked
+		onChange="
+			document.getElementById('editable').classList.toggle('pseudo');
 			if (!this.checked) {
 				document.getElementById('wobble').disabled = true;
 				document.getElementById('clipper').disabled = true;
+				document.getElementById('overlay').disabled = true;
 			} else {
 				document.getElementById('wobble').disabled = false;
-				document.getElementById('clipper').disabled = false; }" type="checkbox" autocomplete="off" checked>
-		<label for="psuedo">::before & ::after</label>
-		<input id="psuedo-text" onInput="
-			document.getElementById('editable').style.setProperty('--psuedo-text', this.value);
+				document.getElementById('clipper').disabled = false;
+				document.getElementById('overlay').disabled = false; }">
+
+		<label for="pseudo">::before & ::after</label>
+
+		<input id="pseudo-text" type="text" autocomplete="off" value="Edit Me"
+		style="margin-left: 10px; width: 13ch"
+		onInput="
+			document.getElementById('editable').setAttribute('pseudo-text', this.value);
 			if (this.value.trim() == '') {
 				document.getElementById('wobble').disabled = true;
 				document.getElementById('clipper').disabled = true;
-			} else {
+				document.getElementById('overlay').disabled = true;
+			} else if (document.getElementById('pseudo').checked) {
 				document.getElementById('wobble').disabled = false;
-				document.getElementById('clipper').disabled = false; }" onLoad="document.getElementById('editable').style.setProperty('--psuedo-text', this.value)" type="text" style="margin-left: 10px; width: 13ch" autocomplete="off" value="Edit Me">
+				document.getElementById('clipper').disabled = false;
+				document.getElementById('overlay').disabled = false; }">
+
 		<br>
-		<input id="wobble" onChange="document.getElementById('editable').classList.toggle('wobble')" type="checkbox" autocomplete="off" checked>
+		<input id="overlay" type="checkbox" autocomplete="off"
+		onChange="document.getElementById('editable').classList.toggle('overlay')">
+
+		<label for="overlay">Highlight ::before & ::after</label>
+
+
+		<br>
+		<input id="wobble" type="checkbox" autocomplete="off" checked
+		onChange="document.getElementById('editable').classList.toggle('wobble')">
+
 		<label for="wobble">Wobbling</label>
+
+
 		<br>
-		<input id="clipper" onChange="document.getElementById('editable').classList.toggle('clipper')" type="checkbox" autocomplete="off" checked>
+		<input id="clipper" type="checkbox" autocomplete="off" checked
+		onChange="document.getElementById('editable').classList.toggle('clipper')">
+
 		<label for="clipper">Moving clip-path</label>
 	</div>
 
-	<h2 id="editable" class="rainbow psuedo wobble clipper" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
+	<h2 id="editable" class="rainbow pseudo wobble clipper" contenteditable="true" pseudo-text="Edit Me";
+	style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
 
 
 	<style id="styles">
 		#editable {
-			--psuedo-text: "Edit Me";
-
 			font-size: 5em;
 			font-weight: 700;
 			position: relative;
@@ -58,12 +85,17 @@ tags:
 			opacity: 0.8;
 			overflow: hidden;
 			animation-delay: inherit;
-			content: var(--psuedo-text);
+			content: attr(pseudo-text);
 		}
 
-		#editable:not(.psuedo)::before,
-		#editable:not(.psuedo)::after {
+		#editable:not(.pseudo)::before,
+		#editable:not(.pseudo)::after {
 			display: none;
+		}
+
+		#editable.overlay::before,
+		#editable.overlay::after {
+			color: #999;
 		}
 
 		#editable.rainbow { animation: rainbow-text 1199ms infinite -200ms; }
