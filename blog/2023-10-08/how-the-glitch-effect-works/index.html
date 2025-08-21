@@ -109,41 +109,60 @@
 		
 	<div id="content">
 		<div style="margin: 50px auto 50px auto; width: 90%">
-		<input id="rainbow" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;rainbow&#39;)" type="checkbox" autocomplete="off" checked=""/>
+
+		<input id="rainbow" type="checkbox" autocomplete="off" checked="" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;rainbow&#39;)"/>
+
 		<label for="rainbow">Rainbow text shadow</label>
+
+
 		<br/>
-		<input id="psuedo" onchange="
-			document.getElementById(&#39;editable&#39;).classList.toggle(&#39;psuedo&#39;);
+		<input id="pseudo" type="checkbox" autocomplete="off" checked="" onchange="
+			document.getElementById(&#39;editable&#39;).classList.toggle(&#39;pseudo&#39;);
 			if (!this.checked) {
 				document.getElementById(&#39;wobble&#39;).disabled = true;
 				document.getElementById(&#39;clipper&#39;).disabled = true;
+				document.getElementById(&#39;overlay&#39;).disabled = true;
 			} else {
 				document.getElementById(&#39;wobble&#39;).disabled = false;
-				document.getElementById(&#39;clipper&#39;).disabled = false; }" type="checkbox" autocomplete="off" checked=""/>
-		<label for="psuedo">::before &amp; ::after</label>
-		<input id="psuedo-text" oninput="
-			document.getElementById(&#39;editable&#39;).style.setProperty(&#39;--psuedo-text&#39;, this.value);
+				document.getElementById(&#39;clipper&#39;).disabled = false;
+				document.getElementById(&#39;overlay&#39;).disabled = false; }"/>
+
+		<label for="pseudo">::before &amp; ::after</label>
+
+		<input id="pseudo-text" type="text" autocomplete="off" value="Edit Me" style="margin-left: 10px; width: 13ch" oninput="
+			document.getElementById(&#39;editable&#39;).setAttribute(&#39;pseudo-text&#39;, this.value);
 			if (this.value.trim() == &#39;&#39;) {
 				document.getElementById(&#39;wobble&#39;).disabled = true;
 				document.getElementById(&#39;clipper&#39;).disabled = true;
-			} else {
+				document.getElementById(&#39;overlay&#39;).disabled = true;
+			} else if (document.getElementById(&#39;pseudo&#39;).checked) {
 				document.getElementById(&#39;wobble&#39;).disabled = false;
-				document.getElementById(&#39;clipper&#39;).disabled = false; }" onload="document.getElementById(&#39;editable&#39;).style.setProperty(&#39;--psuedo-text&#39;, this.value)" type="text" style="margin-left: 10px; width: 13ch" autocomplete="off" value="Edit Me"/>
+				document.getElementById(&#39;clipper&#39;).disabled = false;
+				document.getElementById(&#39;overlay&#39;).disabled = false; }"/>
+
 		<br/>
-		<input id="wobble" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;wobble&#39;)" type="checkbox" autocomplete="off" checked=""/>
+		<input id="overlay" type="checkbox" autocomplete="off" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;overlay&#39;)"/>
+
+		<label for="overlay">Highlight ::before &amp; ::after</label>
+
+
+		<br/>
+		<input id="wobble" type="checkbox" autocomplete="off" checked="" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;wobble&#39;)"/>
+
 		<label for="wobble">Wobbling</label>
+
+
 		<br/>
-		<input id="clipper" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;clipper&#39;)" type="checkbox" autocomplete="off" checked=""/>
+		<input id="clipper" type="checkbox" autocomplete="off" checked="" onchange="document.getElementById(&#39;editable&#39;).classList.toggle(&#39;clipper&#39;)"/>
+
 		<label for="clipper">Moving clip-path</label>
 	</div>
 
-	<h2 id="editable" class="rainbow psuedo wobble clipper" contenteditable="true" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
+	<h2 id="editable" class="rainbow pseudo wobble clipper" contenteditable="true" pseudo-text="Edit Me" ;="" style="margin: 20px auto 50px auto; width: 90%">Edit Me Too</h2>
 
 
 	<style id="styles">
 		#editable {
-			--psuedo-text: "Edit Me";
-
 			font-size: 5em;
 			font-weight: 700;
 			position: relative;
@@ -159,12 +178,17 @@
 			opacity: 0.8;
 			overflow: hidden;
 			animation-delay: inherit;
-			content: var(--psuedo-text);
+			content: attr(pseudo-text);
 		}
 
-		#editable:not(.psuedo)::before,
-		#editable:not(.psuedo)::after {
+		#editable:not(.pseudo)::before,
+		#editable:not(.pseudo)::after {
 			display: none;
+		}
+
+		#editable.overlay::before,
+		#editable.overlay::after {
+			color: #999;
 		}
 
 		#editable.rainbow { animation: rainbow-text 1199ms infinite -200ms; }
@@ -364,7 +388,7 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 		
 		<p> Posted: <time datetime="2023-10-08"> 8 October 2023</time></p>
 		
-			<p> Edited: <time datetime="2024-12-01"> 1 December 2024</time></p>
+			<p> Edited: <time datetime="2025-07-17"> 17 July 2025</time></p>
 		
 		
 			
