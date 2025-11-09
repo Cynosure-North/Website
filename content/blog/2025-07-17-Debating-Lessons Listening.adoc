@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Debating Lessons: Listening
+title: 'Debating Lessons: Listening'
 date: 2025-07-17
 summary: 
 tags: 
