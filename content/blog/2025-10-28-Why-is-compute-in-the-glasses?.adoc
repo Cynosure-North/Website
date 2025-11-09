@@ -1,0 +1,33 @@
+---
+draft: true
+title: Why is compute in the glasses?
+date: 2025-10-28
+summary: 
+tags: 
+  - 
+---
+
+Maybe compositing but what about the rest
+
+1. Bulky + Heavy
+2. Upgrades/repairs, if gaf
+3. Corporate environments
+	a. Buy prescription lenses for those who need it
+		logistics
+		cost
+		lenses are built in and basically impossible to replace, and very specific so they're worthless when the employee leaves
+		need to be precise or else headaches/nausea
+	b. Goggles over glasses
+		horrendous design challenge
+	c. Use employees devices
+		right to log off
+		security
+			bossware on personal devices probably illegal
+			or redesign all apps to use computer as dumb control and run compute on company severs
+				cost of redesign
+				performance
+
+Easier to have external puck which can be swapped
+So glasses + gloves are just interface
+
+More broadly, it's a question of whether they're devices or extensions of our senses/humanity letting us see into a different realm

@@ -34,12 +34,12 @@ elif [ "$1" = "new" ]; then
 			echo "Made new directory: $1"
 		fi
 
-		filename="content/$1/$DATE-${2/ /-}.adoc"
+		filename="content/$1/$DATE-${2// /-}.adoc"
 		echo "$filename"
 		{
 			echo "---"
 			echo "draft: true"
-			echo "title: ${2/-/ }"
+			echo "title: ${2//-/ }"
 			echo "date: $DATE"
 			echo "summary: "
 			echo "tags: "

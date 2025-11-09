@@ -1,0 +1,26 @@
+---
+draft: true
+title: AR Keyboards
+date: 2025-07-06
+summary: 
+tags: 
+  - AR
+  - Typing
+---
+
+
+The good
+	parallel
+	fast reset
+
+
+The bad
+	cumbersome
+	unergonomic
+
+
+The exciting
+	custom keyboard goes everywhere
+
+
+Haptics good
