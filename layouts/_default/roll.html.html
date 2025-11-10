@@ -1,0 +1,56 @@
+{{ define "head" }}
+{{ partial "head.html" . }}
+
+<style>
+	ul {
+		liGst-style-type: none;
+		padding: 50px;
+	}
+
+	li {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+
+		margin: 20px;
+
+		img {
+			width: 150px;
+			flex: 0 1 auto;
+			margin-right: 50px;
+		}
+
+		img[src=""] {
+			visibility: hidden;
+		}
+
+		div {
+			flex: 1 1 auto;
+		}
+	}
+</style>
+
+{{ end }}
+
+{{ define "main" }}
+<div id="section">
+	<h3><a href="feed.xml" download="{{.Params.filename}}">OPML link</a></h3>
+
+	<ul>
+		{{ range (.Resources.Get "feed.xml" | transform.Unmarshal).body.outline }}
+		<li>
+			<img src='{{ index . "-imageUrl"}}'>
+			<div>
+				<h2>{{ index . "-text" }}</h2>
+				<a href='{{ if (index . "-htmlUrl") }}
+							{{(index . "-htmlUrl")}}
+						{{else}}
+							https://{{ (urls.Parse (index . "-xmlUrl")).Host }}
+						{{ end }}'>{{ index . "-text" }}</a>
+				(<a href='{{ index . "-xmlUrl" }}'>feed</a>)
+			</div>
+		</li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
