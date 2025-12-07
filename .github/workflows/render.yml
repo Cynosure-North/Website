@@ -33,7 +33,7 @@ jobs:
           gem install asciidoctor-html5s
 
       - name: Run Hugo
-        run: hugo
+        run: hugo --buildFuture
           
       # - name: JamPack
       #   run: # TODO
