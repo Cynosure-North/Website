@@ -1,8 +1,9 @@
 ---
 title: My Information Diet
-date: 2025-12-08
+date: 2025-12-07
 summary: You are what you read, here's me
-tags: 
+tags:
+	- Meta
 ---
 
 I keep a list of interesting links, you can find them at link:/{{% ref "/finds" %}}[/finds]
