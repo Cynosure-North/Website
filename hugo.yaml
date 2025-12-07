@@ -4,24 +4,6 @@ title : "Cynosure"
 description: "Now in rainbow"
 enableGitInfo: true
 
-frontmatter:
-  date:
-    - date
-    - publishDate
-    - lastmod
-    - :filename
-  expiryDate:
-    - expiryDate
-  lastmod:
-    - lastmod
-    - :git
-    - date
-    - publishDate
-  publishDate:
-    - :filename
-    - publishDate
-    - date
-
 permalinks:
   blog: blog/:year-:month-:day/:title
 
