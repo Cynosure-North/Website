@@ -1,8 +1,8 @@
 ---
 draft: true
-title: The 2000s called, T9 typing is a pain
+title: Typing in AR
 date: 2025-07-06
-summary: 
+summary: The 2000s called, T9 typing is a pain
 tags: 
   - AR
   - Typing

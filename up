@@ -8,6 +8,9 @@ if [ "$1" = "serve" ]; then
 	shift
 	firefox --devtools "$IP:1313" &
 	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
+elif [ "$1" = "run" ]; then
+	shift
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
 elif [ "$1" = "build" ]; then
 	shift
 	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo" "$@"
