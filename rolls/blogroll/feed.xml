@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.1" xmlns:feeder="https://nononsenseapps.com/feeder">
+  <head>
+    <title>
+      Feeder
+    </title>
+  </head>
+  <body>
+    <outline feeder:notify="false" feeder:imageUrl="https://aethermug.com/favicon/favicon.ico" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Aether Mug" text="Aether Mug" type="rss" xmlUrl="https://aethermug.com/rss.xml"/>
+    <outline feeder:notify="false" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Austin Vernon" text="Austin Vernon" type="rss" xmlUrl="https://austinvernon.site/rss.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://ciechanow.ski/favicon.ico" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Bartosz Ciechanowski" text="Bartosz Ciechanowski" type="rss" xmlUrl="https://ciechanow.ski/atom.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://cdn.mefi.us/images/bestof/apple-touch-icon.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Best of MetaFilter" text="Best of MetaFilter" type="rss" xmlUrl="https://rss.metafilter.com/bestof.rss"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://www.bitsaboutmoney.com/favicon.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Bits about Money" text="Bits about Money" type="rss" xmlUrl="https://www.bitsaboutmoney.com/archive/rss/"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!D5O7!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcbadf3ca-c0bc-4140-8aa8-d5c20f74dd02_1017x1017.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Boiler Room" text="Boiler Room" type="rss" xmlUrl="https://boilerroom.substack.com/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://buttondown.com/static/images/icons/icon-square@144.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Computer Things" text="Computer Things" type="rss" xmlUrl="https://buttondown.com/hillelwayne/rss"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!T00N!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36a1bf24-54e3-4573-8fb3-cc9b6e706033_800x800.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Escaping Flatland" text="Escaping Flatland" type="rss" xmlUrl="https://www.henrikkarlsson.xyz/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!VtWA!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1a1b3b4-5f35-4876-a0d5-449398201e1f_1171x1171.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Experimental History" text="Experimental History" type="rss" xmlUrl="https://www.experimental-history.com/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://explaining.software/static/images/icons/icon-square@144.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Explaining Software Design" text="Explaining Software Design" type="rss" xmlUrl="https://explaining.software/rss"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://www.wix.com/favicon.ico" feeder:fullTextByDefault="true" feeder:openArticlesWith="" feeder:alternateId="false" title="Frozen Peaches" text="Frozen Peaches" type="rss" xmlUrl="https://estevenson936.wixsite.com/frozenpeaches/blog/blog-feed.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://100r.ca/media/services/rss.jpg" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Hundred Rabbits" text="Hundred Rabbits" type="rss" xmlUrl="https://100r.co/links/rss.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://i0.wp.com/kguttag.com/wp-content/uploads/2020/09/cropped-cc96c-2020-sq-logo-005-1.png?fit=32%2C32&amp;ssl=1" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="KGOnTech" text="KGOnTech" type="rss" xmlUrl="https://kguttag.com/feed/"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://triptych.oxus.net/favicon.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Kerim&apos;s Triptych" text="Kerim&apos;s Triptych" type="rss" xmlUrl="https://triptych.oxus.net/rss/"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://maggieappleton.com/images/favicon/apple-touch-icon.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Maggie Appleton" text="Maggie Appleton" type="rss" xmlUrl="https://maggieappleton.com/rss.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!18eA!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fedc5c8f5-59fe-46f0-8f5c-14d36392fda0_1024x1024.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Outlandish Claims" text="Outlandish Claims" type="rss" xmlUrl="https://blog.outlandish.claims/feed"/>
+    <outline feeder:notify="false" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Plankton 🥦 Valhalla" text="Plankton 🥦 Valhalla" type="rss" xmlUrl="https://planktonvalhalla.com/atom.xml"/>
+    <outline feeder:notify="false" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="marcan.st" text="marcan.st" type="rss" xmlUrl="https://marcan.st/posts/index.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://149346090.v2.pressablecdn.com/wp-content/themes/orbis/assets/icons/icon-57.png" feeder:fullTextByDefault="true" feeder:openArticlesWith="" feeder:alternateId="false" title="Rest of World - Latest Stories" text="Rest of World - Latest Stories" type="rss" xmlUrl="https://restofworld.org/feed/latest"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://sapiensanonym.blogspot.com/favicon.ico" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Sapiens Anonym" text="Sapiens Anonym" type="rss" xmlUrl="https://sapiensanonym.blogspot.com/feeds/posts/default"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!FFgU!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F480cba92-7f34-45f9-9cce-43632fc68dd6_438x438.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Seeds of Science" text="Seeds of Science" type="rss" xmlUrl="https://www.theseedsofscience.pub/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!RwST!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89a545bd-25c3-45a2-83e1-373bbc4de2eb_312x312.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="The Lunar Dispatch" text="The Lunar Dispatch" type="rss" xmlUrl="https://willdowd.substack.com/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://qntm.org/page/favicon.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Things Of Interest" text="Things Of Interest" type="rss" xmlUrl="http://qntm.org/rss.php?blog"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://substackcdn.com/image/fetch/$s_!N_Uq!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2eb7c721-9b43-4bab-aaec-04f30239056d_442x442.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="Useful Fictions" text="Useful Fictions" type="rss" xmlUrl="https://usefulfictions.substack.com/feed"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://vicdebsoc.org.nz/icons/favicon.ico" feeder:fullTextByDefault="true" feeder:openArticlesWith="" feeder:alternateId="false" title="Vic Debsoc" text="Vic Debsoc" type="rss" xmlUrl="https://vicdebsoc.org.nz/index.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://wiki.xxiivv.com/media/services/rss.jpg" feeder:fullTextByDefault="true" feeder:openArticlesWith="" feeder:alternateId="false" title="XXIIVV" text="XXIIVV" type="rss" xmlUrl="https://wiki.xxiivv.com/links/rss.xml"/>
+    <outline feeder:notify="false" feeder:imageUrl="https://www.goosesite.com:443/wp-content/uploads/2025/10/cropped-goose_image_5-3-32x32.png" feeder:fullTextByDefault="false" feeder:openArticlesWith="" feeder:alternateId="false" title="the goose digest" text="the goose digest" type="rss" xmlUrl="https://www.goosesite.com/feed/"/>
+    <feeder:settings>
+      <feeder:setting key="pref_sync_only_wifi" value="true"/>
+      <feeder:setting key="pref_show_fab" value="false"/>
+      <feeder:setting key="prefs_filter_recently_read" value="true"/>
+      <feeder:setting key="pref_body_text_scale" value="1.4000001"/>
+      <feeder:setting key="pref_show_reading_time" value="true"/>
+      <feeder:setting key="pref_sync_freq" value="360"/>
+      <feeder:setting key="pref_added_feeder_news" value="true"/>
+      <feeder:setting key="pref_open_drawer_on_fab" value="true"/>
+      <feeder:setting key="pref_img_only_wifi" value="true"/>
+      <feeder:setting key="prefs_filter_saved" value="true"/>
+      <feeder:setting key="pref_sync_on_resume" value="true"/>
+      <feeder:setting key="pref_dynamic_theme" value="true"/>
+      <feeder:setting key="pref_default_open_item_with" value="0"/>
+      <feeder:setting key="prefs_filter_read" value="false"/>
+    </feeder:settings>
+  </body>
+</opml>

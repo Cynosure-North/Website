@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+	<head>
+		
+	<title>Cynosure - Blogs</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="North">
+	<meta name="description" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
+
+	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
+	
+	<link rel="preload" href="/Fonts/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
+	
+	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
+
+
+<style>
+	ul {
+		liGst-style-type: none;
+		padding: 50px;
+	}
+
+	li {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+
+		margin: 20px;
+
+		img {
+			width: 150px;
+			flex: 0 1 auto;
+			margin-right: 50px;
+		}
+
+		img[src=""] {
+			visibility: hidden;
+		}
+
+		div {
+			flex: 1 1 auto;
+		}
+	}
+</style>
+
+
+	</head>
+	<body>
+		<div id="column">
+		
+			<header>
+	<a href="/index.html" id="logo" aria-label="Compass Logo">
+	<svg id="compass" aria-hidden="true" class="glitch-shadow" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 760 760">
+		<circle cx="380" cy="380" r="200" style="fill:transparent;stroke-width:10px" />
+		<circle cx="380" cy="380" r="175" style="fill:transparent;stroke-width:10px" />
+		<g transform="translate(355 35)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(45 135.3 726)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(90 160 475)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-45 219.7 -131)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(180 177.5 297.5)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-135 184.7 224)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-90 195 120)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(135 170.3 371)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+	</svg>
+	<svg id="needle" aria-hidden="true" width="70" height="70" viewBox="0 0 120 600" xmlns="http://www.w3.org/2000/svg">
+		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
+	</svg>
+</a> 
+
+<style>
+	#logo {
+		display: flex;
+		justify-content: center;
+		fill: var(--text-color);
+		stroke: var(--text-color);
+	}
+	
+	#compass{
+		height: 100%;
+		position: absolute;
+	}
+	
+	#needle{
+		height: 100%;
+		position: absolute;
+		transform: rotate(-45deg);
+		transition: transform 1.5s ease-in-out;
+	}
+	
+	@media (prefers-reduced-motion: no-preference) {
+		#logo:hover > #needle{
+			transform: rotate(135deg);
+		}
+	}	
+</style>
+
+	<div id="title-container">
+		<h1 class="glitch" content="Blogs"
+		style="
+				font-size:15vmin
+			"
+		>Blogs</h1>
+	</div>
+</header>
+
+		
+		
+<div id="section">
+	<h3><a href="feed.xml" download="blogroll.opml">OPML link</a></h3>
+
+	<ul>
+		
+		<li>
+			<img src='https://aethermug.com/favicon/favicon.ico'>
+			<div>
+				<h2>Aether Mug</h2>
+				<a href='
+							https://aethermug.com
+						'>Aether Mug</a>
+				(<a href='https://aethermug.com/rss.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src=''>
+			<div>
+				<h2>Austin Vernon</h2>
+				<a href='
+							https://austinvernon.site
+						'>Austin Vernon</a>
+				(<a href='https://austinvernon.site/rss.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://ciechanow.ski/favicon.ico'>
+			<div>
+				<h2>Bartosz Ciechanowski</h2>
+				<a href='
+							https://ciechanow.ski
+						'>Bartosz Ciechanowski</a>
+				(<a href='https://ciechanow.ski/atom.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://cdn.mefi.us/images/bestof/apple-touch-icon.png'>
+			<div>
+				<h2>Best of MetaFilter</h2>
+				<a href='
+							https://rss.metafilter.com
+						'>Best of MetaFilter</a>
+				(<a href='https://rss.metafilter.com/bestof.rss'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://www.bitsaboutmoney.com/favicon.png'>
+			<div>
+				<h2>Bits about Money</h2>
+				<a href='
+							https://www.bitsaboutmoney.com
+						'>Bits about Money</a>
+				(<a href='https://www.bitsaboutmoney.com/archive/rss/'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!D5O7!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcbadf3ca-c0bc-4140-8aa8-d5c20f74dd02_1017x1017.png'>
+			<div>
+				<h2>Boiler Room</h2>
+				<a href='
+							https://boilerroom.substack.com
+						'>Boiler Room</a>
+				(<a href='https://boilerroom.substack.com/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://buttondown.com/static/images/icons/icon-square@144.png'>
+			<div>
+				<h2>Computer Things</h2>
+				<a href='
+							https://buttondown.com
+						'>Computer Things</a>
+				(<a href='https://buttondown.com/hillelwayne/rss'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!T00N!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F36a1bf24-54e3-4573-8fb3-cc9b6e706033_800x800.png'>
+			<div>
+				<h2>Escaping Flatland</h2>
+				<a href='
+							https://www.henrikkarlsson.xyz
+						'>Escaping Flatland</a>
+				(<a href='https://www.henrikkarlsson.xyz/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!VtWA!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1a1b3b4-5f35-4876-a0d5-449398201e1f_1171x1171.png'>
+			<div>
+				<h2>Experimental History</h2>
+				<a href='
+							https://www.experimental-history.com
+						'>Experimental History</a>
+				(<a href='https://www.experimental-history.com/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://explaining.software/static/images/icons/icon-square@144.png'>
+			<div>
+				<h2>Explaining Software Design</h2>
+				<a href='
+							https://explaining.software
+						'>Explaining Software Design</a>
+				(<a href='https://explaining.software/rss'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://www.wix.com/favicon.ico'>
+			<div>
+				<h2>Frozen Peaches</h2>
+				<a href='
+							https://estevenson936.wixsite.com
+						'>Frozen Peaches</a>
+				(<a href='https://estevenson936.wixsite.com/frozenpeaches/blog/blog-feed.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://100r.ca/media/services/rss.jpg'>
+			<div>
+				<h2>Hundred Rabbits</h2>
+				<a href='
+							https://100r.co
+						'>Hundred Rabbits</a>
+				(<a href='https://100r.co/links/rss.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://i0.wp.com/kguttag.com/wp-content/uploads/2020/09/cropped-cc96c-2020-sq-logo-005-1.png?fit=32%2C32&amp;ssl=1'>
+			<div>
+				<h2>KGOnTech</h2>
+				<a href='
+							https://kguttag.com
+						'>KGOnTech</a>
+				(<a href='https://kguttag.com/feed/'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://triptych.oxus.net/favicon.png'>
+			<div>
+				<h2>Kerim&#39;s Triptych</h2>
+				<a href='
+							https://triptych.oxus.net
+						'>Kerim&#39;s Triptych</a>
+				(<a href='https://triptych.oxus.net/rss/'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://maggieappleton.com/images/favicon/apple-touch-icon.png'>
+			<div>
+				<h2>Maggie Appleton</h2>
+				<a href='
+							https://maggieappleton.com
+						'>Maggie Appleton</a>
+				(<a href='https://maggieappleton.com/rss.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!18eA!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fedc5c8f5-59fe-46f0-8f5c-14d36392fda0_1024x1024.png'>
+			<div>
+				<h2>Outlandish Claims</h2>
+				<a href='
+							https://blog.outlandish.claims
+						'>Outlandish Claims</a>
+				(<a href='https://blog.outlandish.claims/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src=''>
+			<div>
+				<h2>Plankton 🥦 Valhalla</h2>
+				<a href='
+							https://planktonvalhalla.com
+						'>Plankton 🥦 Valhalla</a>
+				(<a href='https://planktonvalhalla.com/atom.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src=''>
+			<div>
+				<h2>marcan.st</h2>
+				<a href='
+							https://marcan.st
+						'>marcan.st</a>
+				(<a href='https://marcan.st/posts/index.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://149346090.v2.pressablecdn.com/wp-content/themes/orbis/assets/icons/icon-57.png'>
+			<div>
+				<h2>Rest of World - Latest Stories</h2>
+				<a href='
+							https://restofworld.org
+						'>Rest of World - Latest Stories</a>
+				(<a href='https://restofworld.org/feed/latest'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://sapiensanonym.blogspot.com/favicon.ico'>
+			<div>
+				<h2>Sapiens Anonym</h2>
+				<a href='
+							https://sapiensanonym.blogspot.com
+						'>Sapiens Anonym</a>
+				(<a href='https://sapiensanonym.blogspot.com/feeds/posts/default'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!FFgU!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F480cba92-7f34-45f9-9cce-43632fc68dd6_438x438.png'>
+			<div>
+				<h2>Seeds of Science</h2>
+				<a href='
+							https://www.theseedsofscience.pub
+						'>Seeds of Science</a>
+				(<a href='https://www.theseedsofscience.pub/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!RwST!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89a545bd-25c3-45a2-83e1-373bbc4de2eb_312x312.png'>
+			<div>
+				<h2>The Lunar Dispatch</h2>
+				<a href='
+							https://willdowd.substack.com
+						'>The Lunar Dispatch</a>
+				(<a href='https://willdowd.substack.com/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://qntm.org/page/favicon.png'>
+			<div>
+				<h2>Things Of Interest</h2>
+				<a href='
+							https://qntm.org
+						'>Things Of Interest</a>
+				(<a href='http://qntm.org/rss.php?blog'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://substackcdn.com/image/fetch/$s_!N_Uq!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2eb7c721-9b43-4bab-aaec-04f30239056d_442x442.png'>
+			<div>
+				<h2>Useful Fictions</h2>
+				<a href='
+							https://usefulfictions.substack.com
+						'>Useful Fictions</a>
+				(<a href='https://usefulfictions.substack.com/feed'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://vicdebsoc.org.nz/icons/favicon.ico'>
+			<div>
+				<h2>Vic Debsoc</h2>
+				<a href='
+							https://vicdebsoc.org.nz
+						'>Vic Debsoc</a>
+				(<a href='https://vicdebsoc.org.nz/index.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://wiki.xxiivv.com/media/services/rss.jpg'>
+			<div>
+				<h2>XXIIVV</h2>
+				<a href='
+							https://wiki.xxiivv.com
+						'>XXIIVV</a>
+				(<a href='https://wiki.xxiivv.com/links/rss.xml'>feed</a>)
+			</div>
+		</li>
+		
+		<li>
+			<img src='https://www.goosesite.com:443/wp-content/uploads/2025/10/cropped-goose_image_5-3-32x32.png'>
+			<div>
+				<h2>the goose digest</h2>
+				<a href='
+							https://www.goosesite.com
+						'>the goose digest</a>
+				(<a href='https://www.goosesite.com/feed/'>feed</a>)
+			</div>
+		</li>
+		
+	</ul>
+</div>
+
+		
+			<footer>
+	<hr>
+	
+		
+		
+		<p> Posted: <time datetime="0001-01-01"> 1 January 0001</time></p>
+		
+			<p> Edited: <time datetime="2025-11-11"> 11 November 2025</time></p>
+		
+		
+	
+</footer>
+		
+		</div>
+	</body>
+</html>
