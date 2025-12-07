@@ -7,4 +7,4 @@ tags:
 
 I keep a list of interesting links, you can find them at link:/{{% ref "/finds" %}}[/finds]
 
-I also have link:{{% ref "/blogroll" %}}[/blogroll] (blogs I follow), link:{{% ref "/podroll" %}}[/podroll] (podcasts I follow), and /link:{{% ref "/vodroll" %}}[/vodroll] (youtube channels I follow).
+I also have link:{{% ref "/rolls/blogroll" %}}[/blogroll] (blogs I follow), link:{{% ref "/rolls/podroll" %}}[/podroll] (podcasts I follow), and /link:{{% ref "/rolls/vodroll" %}}[/vodroll] (youtube channels I follow).
