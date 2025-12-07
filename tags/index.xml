@@ -6,13 +6,20 @@
     <description>Recent content in Tags on Cynosure</description>
     <generator>Hugo</generator>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 08 Dec 2025 11:34:05 +1300</lastBuildDate>
+    <lastBuildDate>Mon, 08 Dec 2025 11:47:00 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AR</title>
       <link>https://Cynosure.page/tags/ar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/tags/ar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meta</title>
+      <link>https://Cynosure.page/tags/meta/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/tags/meta/</guid>
       <description></description>
     </item>
     <item>
@@ -55,13 +62,6 @@
       <link>https://Cynosure.page/tags/theatre/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/tags/theatre/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Meta</title>
-      <link>https://Cynosure.page/tags/meta/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/tags/meta/</guid>
       <description></description>
     </item>
   </channel>
