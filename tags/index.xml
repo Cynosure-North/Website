@@ -30,13 +30,6 @@
       <description></description>
     </item>
     <item>
-      <title>Meta</title>
-      <link>https://Cynosure.page/tags/meta/</link>
-      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/tags/meta/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>News</title>
       <link>https://Cynosure.page/tags/news/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
@@ -55,6 +48,13 @@
       <link>https://Cynosure.page/tags/theatre/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/tags/theatre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meta</title>
+      <link>https://Cynosure.page/tags/meta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/tags/meta/</guid>
       <description></description>
     </item>
   </channel>
