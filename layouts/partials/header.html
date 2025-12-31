@@ -3,11 +3,11 @@
 	<div id="title-container">
 		<h1 class="glitch" content="{{ title .Title }}"
 		style="{{ if lt (len .Title) 20 }}
-				font-size:15vmin
-			{{ else if gt (len .Title) 60 }}
+				font-size:12vmin
+			{{ else if gt (len .Title) 40 }}
 				font-size:8vmin
 			{{ else }}
-				font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor }}vmin
+				font-size:{{ len .Title | math.Log | mul -7 | add 35 | math.Floor }}vmin
 			{{end}}"
 		>{{ title .Title }}</h1>
 	</div>

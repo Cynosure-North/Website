@@ -15,8 +15,8 @@ markup:
     noClasses: false
     codeFences: false
   asciidocExt:
-    # backend: html5s
-    # extensions: ["asciidoctor-html5s"]
+    backend: html5s
+    extensions: ["asciidoctor-html5s"]
     attributes: {
       "icons":"font"
     }
