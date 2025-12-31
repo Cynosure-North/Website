@@ -55,4 +55,4 @@ Everyone will be wearing the same designs, all the time. This sucks. Glasses can
 
 == Halos
 
-It's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky. What I think is much more likely is either tethered compute pucks like we've seen with the vision pro. I think someone will try making the puck into a neckband, like with some earbuds. And if I were to guess, they'll be called Halos.
+It's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky. What I think is much more likely is either tethered compute pucks like we've seen with the Vision Pro. I think someone will try making the puck into a neckband, like with some earbuds, and if I were to guess, they'll call them Halos.

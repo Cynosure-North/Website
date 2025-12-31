@@ -1,0 +1,109 @@
+---
+title: First Principles for XR Typing
+date: 2026-01-01
+summary: Some proposed keyboards are so dumb they never needed to be built to know they wouldn't work
+tags: 
+  - AR
+  - Typing
+---
+
+https://xrtexttrove.github.io/[Numerous attempts] have been made to solve text entry for XR and they are overwhelmingly slow and frustrating.
+The thing is, most of those attempts would never seriously work, and it was clear without building the devices (Yes I know some are for research or accessibility, but most aren't).
+I've attempted to cover everything that text entry methods can be assessed on and compared to a traditional keyboard.
+
+== General Text Entry Criteria
+
+*WPM* The most obvious factor is the maximum speed that can comfortably be achieved.
+Even at the slow speed of 40wpm, assuming an average of five characters per word plus one more for space, that's 240 characters per minute, or a quarter of a second per character.
+Some proposals rely on predictive suggestions, but that only helps with predictable text, which is the least useful kind.
+Predictive text also requires the typist to pay attention to the suggested words rather than what they plan to write, which harms performance and takes more attention.
+Also proposed is whole word input, often this is paired with the claim that 3000 words make up 95% of communication in english.
+This would require some method to select between 3000 words in less than a second, and even then it would be difficult to talk about '`hills`' https://github.com/first20hours/google-10000-english[(word \#3001)].
+
+There are a number of factors that ultimately influence WPM.
+
+Firstly, is the speed of input.
+Being able to press more buttons, or narrow down a list of words faster, or whatever intermediate step it takes to make a word directly influences how fast words can be input.
+There are two things which help speed.
+First, operating in parallel means multiple actions can be in progress at once, for example when typing on a keyboard multiple fingers can move at once.
+Even on a mobile keyboard people can use two thumbs.
+Second, is the time to reset.
+When pressing a button, the operator's finger eventually hits the bottom, and the momentum is stopped so they can more quickly raise their finger to press another button.
+This is one of the reasons midair keyboards result in slower typing.
+Third, using small muscles means it's quicker to stop that movement and move to a small one, think of the momentum when you move your arm quickly compared to the momentum of a single finger.
+
+Secondly, accuracy.
+Making mistakes means going back and correcting those mistakes, thus wasting time and distracting the operator.
+Some details which affect accuracy:
+First, distance and size matter if the input is a button or something that has to be directly interacted with.
+Fitt's Law states the difficulty of hitting a target is equal to {{< math "\log_2(2 \cdot {Distance} / {Size})" >}}.
+Second, distinctiveness makes it easier to remember what action to do, either consciously or unconsciously.
+Remembering what to do is particularly important for systems without clear buttons such as gesture interfaces.
+This clarity also matters for systems which rely on machine learning  (ML) interpretation in order to avoid mistakes.
+Third, feedback improves accuracy over repeated interaction, i.e. it helps the next input, however the best type of feedback and the degree to which it helps can vary.
+Investigating these details is the focus of this dissertation.
+Finally, autocorrect can sometimes help, unfortunately plenty of people, including me, have names that get marked as incorrect, and automatically `correcting' mistakes means wasting time to go back and undo the '`correction`'.
+
+*Comfort* Any solution should be comfortable and pain free, even with extended use.
+Conditions such as Repetitive Strain Injury and Carpal Tunnel are issues for typists as they press the same buttons in the same spots repeatedly, stressing muscles in the same way and causing intense pain.
+Using large muscles causes fatigue, the interface from the film Minority Report seems cool until you try holding your arms up for 3 hours.
+Momentum from a whole limb moving makes it hard to hit a small target, and so targets must be larger, so they require more movement.
+
+*Cognitive load* Sometimes things are possible but difficult.
+Cognitive load is the measure of how much the operator has to think to do an action.
+A task with high cognitive load causes stress and exhaustion.
+This isn't just a comfort issue, working at that intensity for too long leads to worse results and mistakes.
+It sounds like an extreme impact just from typing, but there are proposed text entry methods which are that exhausting to use, such as the https://www.tapwithus.com/product/tap-strap-2/[TapStrap].
+At a lower level, a high cognitive load task can still distract the operator and lead to irritation.
+Some people multitask while typing, they need to be able to do other things at the same time, meaning cognitive load is even more important for them.
+Most people don't type on a keyboard because they love typing, they do it because they're trying to achieve some other goal.
+If this method is going to be something everyone will use it should not leave people irritated.
+Unfortunately cognitive load is underreported in text entry studies.
+Incidentally, this suggests gaze-based solutions are unlikely to be successful as people can't even look around while typing.
+
+*Time to learn* Most people, I'm told, have better things to do than spend weeks relearning how to type [citation needed].
+The fact is, people do what works and then get on with their day, and most people already know how to use a keyboard.
+Take for example mobile keyboards, they're fine but they could be better.
+https://www.bbc.com/news/uk-scotland-22283117[Replacement] https://en.wikipedia.org/wiki/MessagEase[keyboards] have been developed that are faster and more comfortable, but no one uses them.
+They're not even complicated to learn, but they're more complicated than the default one which people already understand.
+The second factor is that traditional keyboards can be learnt incrementally.
+It's relatively straightforward to understand the link between pressing a button labeled with a letter, and then seeing that letter appear on a screen.
+Most people start by hunting and pecking, and slowly get an intuitive sense of where the buttons are, and so they spend less time staring at the keyboard, and if they ever forget they can look down.
+Over time, just by using a keyboard, they get faster, perhaps eventually using more than their index fingers.
+However many of the proposed solutions resemble chording keyboards, in which multiple buttons have to be pressed to trigger a single keystroke.
+The issue is it's not obvious where to start with these keyboards, you need to read the instructions, and most people don't read instructions.
+This means that people don't want to learn, and when they do they only learn the bare minimum.
+The final factor is intimidation.
+Most people don't understand how technology works, and feel a sense of anxiety or inadequacy around it.
+
+Presenting them with an inscrutable interface heightens this, and stress doesn't make people want to learn, it makes them turn away and reject the source of the stress.
+People should feel comfortable using technology.
+
+One thing to note, the time it takes to learn a new method is a one-off cost.
+As the population learns how to use the XR text interface it's likely it will change as people no longer need to be guided through the transition.
+This will probably start with people customising their own inputs.
+The trouble with learning DVORAK or any other custom keyboard is that it's useless when you use someone else's keyboard, with XR this isn't a problem because each person has their own interface
+
+== AR-Specific Criteria
+This section will focus specifically on AR.
+VR replaces the wearer's entire field of view, and as such is only used in controlled indoor environments.
+In that situation it seems reasonable to suggest the wearer would just use a keyboard if needs be, they're already a room set up for this task.
+
+That is not true in AR.
+In AR the operator is potentially out in the world, and they only have access to what they're carrying.
+Any solution has to be better than a cheap folding keyboard.
+
+*Convenience* A key advantage of AR is that it's an overlay over regular life, the digital world is right there in front of the operator, not trapped in a black rectangle.
+If the user has to stop and pull some contraption out of their backpack or set up some device it brings that interruption right back, making the user think about the tool instead of their goal.
+In AR people view the digital world through some sort of headset, the size of headsets varies between a bulky pair of glasses and a welding mask depending on the target market.
+Whatever input method exists has to be at least as portable and convenient as the AR headset it's paired with.
+This means that for industrial headsets it's more acceptable to take up space, however for consumer headsets which are designed to be worn all day the size and weight requirements are much stricter.
+Remember that not everyone has reasonable sized pockets, or pockets at all, so if it's a physical device and not software it probably has to be wearable.
+
+*Obtrusiveness* When the method isn't being used it shouldn't impede the operator's normal actions.
+Again this is easy to achieve if it's a software based method which can appear when needed, but if it's some form of hardware it needs to be as small as possible.
+There's a particular cost to hand-mounted devices, as small amounts of extra weight can add up will be noticed more.
+
+*Extra functionality* This isn't strictly necessary, but it's easier to justify extra hardware if it does more than just text entry.
+For example, rings could track fingers as well as tracking blood oxygen, or a forearm-mounted device could have tap-to-pay functionality.
+While this dissertation focuses on typing, there are plenty of other interfaces that are better served by hand tracking such as video games or CAD software, if a system already has hand tracking then a text entry method can use the tracking and thus justify the upfront cost and complexity.

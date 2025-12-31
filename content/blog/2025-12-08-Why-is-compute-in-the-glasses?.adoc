@@ -1,5 +1,5 @@
 ---
-title: Is your face really the best place for a computer?
+title: Is Your Face Really the Best Place for a Computer?
 date: 2025-12-08
 summary: Why does every company insist on cramming everything into a tiny headset, rather than having another part? There are so many issues, which I outline here.
 tags: 
