@@ -99,7 +99,7 @@
 	<div id="title-container">
 		<h1 class="glitch" content="Inside the Vic Debsoc Website"
 		style="
-				font-size:13vmin
+				font-size:11vmin
 			"
 		>Inside the Vic Debsoc Website</h1>
 	</div>
@@ -108,51 +108,14 @@
 		
 		
 	<div id="content">
-		<div class="paragraph">
-<p>A while back I took it upon myself to design a new <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I know others have, and I think I’ve found the best solution, at time of writing.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.</p>
-</li>
-<li>
-<p>Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.</p>
-</li>
-<li>
-<p>Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
+		<p>A while back I took it upon myself to design a new <a href="https://www.vicdebsoc.org.nz">website</a> for my debating society. I had a number of constraints that I know others have, and I think I’ve found the best solution, at time of writing.</p>
+<div class="olist arabic"><ol class="arabic"><li>Low technical complexity for authors. For most members of the society they have never heard of git. So it needs to have something like a WYSIWYG editor.</li><li>Low Cost. This is for a cash strapped charity, there are other, more important places to spend the money. In the end I was able to make it free to run, which is extra good as it saves the treasurer time.</li><li>Low technical complexity. I’m not going to be around forever, and I don’t want for whoever takes over to have a huge maintenance burden.</li></ol></div>
 <p>Luckily this is a fairly small website, and modern tools have made this easy.
 The stack consists of <a href="https://docs.gitlab.com/ee/user/project/pages">Gitlab Pages</a>, <a href="https://gohugo.io">Hugo</a>, and <a href="https://www.staticcms.org">StaticCMS</a>. If you just want to see an example you can find the repo <a href="https://gitlab.com/Cynosure-North/Debsoc-Website">here</a>. All of these tools are open source, which should make any future migrations substantially easier.</p>
-</div>
-<div class="sect1">
-<h2 id="_gitlab">Gitlab</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The obvious solution in this space is GitHub Pages, and that’s what I use for this website. But one of the needs of StaticCMS is an authorisation. The details are beyond this post (and me), but what’s important is that GitHub doesn’t support PKCE for OAuth apps. That means I’d need to rely on an external service like Netlify identity to handle the login flow. That’s an unattractive solution due to the extra complexity. Fortunately, Gitlab does support it. Gitlab provides all the other services of GitHub, so it was an easy replacement.<br/>
-I have found GitLab’s time to first byte to be higher than Github’s, but that may just be a consequence of living in NZ.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_hugo">Hugo</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>I’ve tried other static site generators in the past, but I haven’t found any as easy or powerful as Hugo. It also has a lot of useful features like minifcation built in. It being quick to build was a bonus in the development process. It is the most replaceable part of this stack though, so whatever works for you.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_staticcms">StaticCMS</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is the core of the admin interface, and the tool that enables the whole static architecture. It provides the easy interface for content authors,  I found it extremely easy to get started. It runs as a client-side SPA, which is ideal. While I did find a few spots that need work, it does the basics well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren’t huge, but they’re appreciated. They’re things updating react, dropping backends I’m not using, and cleaning up options. The community also seems more active.</p>
-</div>
-</div>
-</div>
+<section class="doc-section level-1"><h2 id="_gitlab">Gitlab</h2><p>The obvious solution in this space is GitHub Pages, and that’s what I use for this website. But one of the needs of StaticCMS is an authorisation. The details are beyond this post (and me), but what’s important is that GitHub doesn’t support PKCE for OAuth apps. That means I’d need to rely on an external service like Netlify identity to handle the login flow. That’s an unattractive solution due to the extra complexity. Fortunately, Gitlab does support it. Gitlab provides all the other services of GitHub, so it was an easy replacement.<br/>
+I have found GitLab’s time to first byte to be higher than Github’s, but that may just be a consequence of living in NZ.</p></section>
+<section class="doc-section level-1"><h2 id="_hugo">Hugo</h2><p>I’ve tried other static site generators in the past, but I haven’t found any as easy or powerful as Hugo. It also has a lot of useful features like minifcation built in. It being quick to build was a bonus in the development process. It is the most replaceable part of this stack though, so whatever works for you.</p></section>
+<section class="doc-section level-1"><h2 id="_staticcms">StaticCMS</h2><p>This is the core of the admin interface, and the tool that enables the whole static architecture. It provides the easy interface for content authors,  I found it extremely easy to get started. It runs as a client-side SPA, which is ideal. While I did find a few spots that need work, it does the basics well. The big alternative in the space is DecapCMS, which StaticCMS forked off of. The changes aren’t huge, but they’re appreciated. They’re things updating react, dropping backends I’m not using, and cleaning up options. The community also seems more active.</p></section>
 
 	</div>
 

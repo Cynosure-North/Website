@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+	<head>
+		
+				<title>Cynosure - Attempts at Typing in XR</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="North">
+	<meta name="description" content="">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="/Icons/Minimal-Compass-Black.svg" type="image/gif">
+
+	<link rel="stylesheet" type="text/css" href="/Styles/hacker.css"/>
+	<link rel="stylesheet" type="text/css" href="/Styles/glitch.css"/>
+	
+	<link rel="preload" href="/Fonts/FiraCode-VF.woff2" as="font" type="font/woff2" crossorigin>
+	
+	<link rel="stylesheet" type="text/css" href="/Styles/highlight.css"/>
+	
+		
+	</head>
+	<body>
+		<div id="column">
+		
+			<header>
+	<a href="/index.html" id="logo" aria-label="Compass Logo">
+	<svg id="compass" aria-hidden="true" class="glitch-shadow" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 760 760">
+		<circle cx="380" cy="380" r="200" style="fill:transparent;stroke-width:10px" />
+		<circle cx="380" cy="380" r="175" style="fill:transparent;stroke-width:10px" />
+		<g transform="translate(355 35)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(45 135.3 726)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(90 160 475)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-45 219.7 -131)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(180 177.5 297.5)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-135 184.7 224)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(-90 195 120)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z" style="stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+		<g style="transform-origin:25px 65px" transform="rotate(135 170.3 371)">
+			<path d="m25 0 25 130-25-2-25 2L25 0Z"
+				style="fill:transparent;stroke-width:10px;stroke-linejoin:round" />
+			<path d="M0 130 25 0l25 130" style="fill:transparent;stroke-width:10px;stroke-miterlimit:5.5" />
+		</g>
+	</svg>
+	<svg id="needle" aria-hidden="true" width="70" height="70" viewBox="0 0 120 600" xmlns="http://www.w3.org/2000/svg">
+		  <path d="M 60 0 L 120 300 L 0 300 L 60 0 Z M 60.001 600 L 120 300 L 0 300 L 60.001 600 Z"></path>
+	</svg>
+</a> 
+
+<style>
+	#logo {
+		display: flex;
+		justify-content: center;
+		fill: var(--text-color);
+		stroke: var(--text-color);
+	}
+	
+	#compass{
+		height: 100%;
+		position: absolute;
+	}
+	
+	#needle{
+		height: 100%;
+		position: absolute;
+		transform: rotate(-45deg);
+		transition: transform 1.5s ease-in-out;
+	}
+	
+	@media (prefers-reduced-motion: no-preference) {
+		#logo:hover > #needle{
+			transform: rotate(135deg);
+		}
+	}	
+</style>
+
+	<div id="title-container">
+		<h1 class="glitch" content="Attempts at Typing in XR"
+		style="
+				font-size:12vmin
+			"
+		>Attempts at Typing in XR</h1>
+	</div>
+</header>
+
+		
+		
+	<div id="content">
+		<p>It seems all the effort is going into developing headsets for Mixed Reality (XR), and very little is going into figuring out how to interact with these systems. It’s particularly shocking when you see people talking about using XR headsets as a laptop replacement, or a phone replacement. Is anyone going to do serious work on any of the devices available today (without using any external devices)? The activity that is done most on computers, for decades, is typing. But it seems the creators of current devices expect people to passively absorb what others create.</p>
+<p>At the moment there are three main interaction methods: controllers, midair gestures, and gaze. Controllers are great for games, but they suck for text entry. If you doubt me try writing a novel with an controller, or just the wifi password. They’re also another thing to carry around and lose.
+Midair gestures seems futuristic, but they get old quickly. Your arms get tired if you hold them up all the time. It’s difficult to be fast and precise when you’re relying on your large upper arm muscles and moving your whole arm. It’s difficult to use large gestures in confined space like an airplane seat, and you look dumb. If you care privacy you now have to obfuscate your motions to avoid someone reading your password from across the room.
+Gaze detection is perhaps the most convenient, as long you’re passively consuming. For anything else it seems irritating. It’s slow, nausea-inducing, and you can’t look at anything else while you type which makes it useless in lots of situations. This is speculation, but I bet a study will come out saying something along the lines of &#34;People find it weird to use their eyes to press buttons&#34;, we’re used to observing with our eyes and interacting with our hands. Of course people with disabilities can manage, but the fact these systems haven’t taken off shows they’re not worth the hassle.</p>
+<p>Seeing this failure, there are two alternatives.
+Some people have taken to carrying around a bluetooth keyboard to type. This is what failure looks like. Keyboards have all the issues of controllers, and they are even worse for 3d interaction.
+Alternatively, there are products like the <a href="https://www.tapwithus.com/product/tap-strap-2">Tap Strap</a>, but they’re only good for typing, and the average person is unwilling to learn a whole new system to type. I ordered one, mainly out of curiosity and they’re a fun toy, but they’re bulky, uncomfortable, and the gestures made my hands start to hurt after 45 minutes. However, the learning process was thrilling. I was locked in and I could feel my entire brain working on it. It was like the feeling of a perfect workout, runners high from my brain. After my first two sessions, each about 45 minutes long, I was so exhausted I had to have a nap.</p>
+<p>If AR is the next big thing, if it’s going to replace all our devices, we need better options. We need to be able to type. Of course people will make do if they have to, people have written novels on mobile phones. No one buys a phone to write but when they have one they’ll make do. XR is different, unless someone finds a killer app better than desktop replacement XR needs a good typing method.
+Perhaps we could look to the past? Except they suck too, for different reasons.
+There’s a long history of people trying to fix typing, from DVORAK, to chording keyboards, to KALQ. Yet QWERTY reigns supreme. Some of those options actually faster and more comfortable, so why QWERTY?</p>
+<p>The average person does not care enough about typing to learn a new typing method, they have better things to do. If a system seems weird or complicated they won’t try it. If a system seems easy they’ll put up with limitations.
+Stenotypes, as use by court typists are an example of the former. They allow the operator to type faster and more accurately than a traditional keyboard with reduced muscle strain. Unfortunately they require specialised hardware and hundreds of hours of practice to get any good. The hardware issue can be solved with macro layers for traditional keyboards, but it’s hard to get started when it seems intimidating. Traditional keyboards are easy to get started with, press the letter and it gets displayed, over time typists get faster, and if they ever forget where a key is they can just look down. Chording keyboards look confusing and require practice which makes them nonstarters for most.
+Mobile phone keyboards are an example of the latter, they don’t look too bad and being able to text and browse from anywhere is enough of a selling point for people to learn. There has been a huge amount of work making mobile keyboards better, with tools like autocorrect and predictive text, despite this typing on a mobile with autocorrect is still slower, and predictive text only works for predictable text (of which there is more than enough already in the world).</p>
+<p>If we broaden our horizons, the real problem we’re trying to solve isn’t typing, it’s text entry. Input Method Editors (IME) are mainly used for typing Chinese, Japanese, and Korean scripts. The operator types a few letters which are used to filter down a list of all possible characters to a handful the operator can select between. Existing IMEs use letters from a keyboard (mobile or traditional) to filter down the list, but it’s conceivable there could be some alternative system. However the fact that people don’t use IMEs for English suggests they’re not worth the hassle. People would need to learn a new system, which seems unlikely. And then there would need to be some system for typing the words that aren’t in the dictionary.</p>
+<p>So that’s the state of things. Approximately everything sucks, and we’re all doomed.
+Part of me feels conspiratorial about all this. All of the existing ways to interact with XR are fine if you just need to swipe and press buttons. They’re fine if you’re using someone else’s tool to do a limited number of actions. The only time they become a problem is when you try to create something. When you need access to more tools than tapping and swiping. Programming on a phone is painful experience, XR looks to be going down the same path. At the moment plenty of people, or whole families, own a single mobile phone. These people are shut out of creation. They don’t have startups in Silicon Valley competing to solve their problems, and because of inadequate tools they can’t make their own. How can you liberate yourself when the only tools you have are the tools someone else wants you to have? It is fundamentally undemocratic. It’s a world of consumers, not of creators.</p>
+
+	</div>
+
+		
+			<footer>
+	<hr>
+	
+		
+		
+		<p> Posted: <time datetime="2025-12-27"> 27 December 2025</time></p>
+		
+			<p> Edited: <time datetime="2026-01-01"> 1 January 2026</time></p>
+		
+		
+			
+				<a href="/tags/AR">AR</a>
+			
+				<a href="/tags/Typing">Typing</a>
+			
+		
+	
+</footer>
+		
+		</div>
+	</body>
+</html>

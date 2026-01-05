@@ -6,14 +6,35 @@
     <description>Recent content in AR on Cynosure</description>
     <generator>Hugo</generator>
     <language>en-nz</language>
-    <lastBuildDate>Mon, 08 Dec 2025 11:34:05 +1300</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jan 2026 14:11:51 +1300</lastBuildDate>
     <atom:link href="https://Cynosure.page/tags/ar/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Is your face really the best place for a computer?</title>
+      <title>First Principles for XR Typing</title>
+      <link>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</guid>
+      <description>&lt;p&gt;Some proposed keyboards are so dumb they never needed to be built to know they wouldn’t work&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Attempts at Typing in XR</title>
+      <link>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</guid>
+      <description>&lt;p&gt;The 2000s called, T9 typing is a pain&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Is Your Face Really the Best Place for a Computer?</title>
       <link>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</link>
       <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</guid>
-      <description>Why does every company insist on cramming everything into a tiny headset, rather than having another part? There are so many issues, which I outline here.</description>
+      <description>&lt;p&gt;Why does every company insist on cramming everything into a tiny headset, rather than having another part? There are so many issues, which I outline here.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Predictions for the Future-Future of XR</title>
+      <link>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</link>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</guid>
+      <description>&lt;p&gt;I have little experience, and a lot of thoughts.&lt;/p&gt;&#xA;</description>
     </item>
   </channel>
 </rss>

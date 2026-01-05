@@ -99,7 +99,7 @@
 	<div id="title-container">
 		<h1 class="glitch" content="How the Glitch Effect Works"
 		style="
-				font-size:13vmin
+				font-size:11vmin
 			"
 		>How the Glitch Effect Works</h1>
 	</div>
@@ -206,25 +206,15 @@
 		#editable.rainbow.wobble.clipper::before { animation: rainbow-text 650ms infinite alternate, wobble 1000ms infinite, clipper 1538ms linear -1500ms infinite alternate-reverse; }
 
 	</style>
-<div class="paragraph">
 <p>I’m kinda proud of the effect. It’s pretty dumb, and could definitely induce motion sickness if you stare at it for too long. But…​ It looks cool. It works through a combination of relatively simple animations layered together.
 If there’s no animation on the title, you may have reduced-motion set, or animations disabled on your device. Amusingly, I turn off animations on my phone so I can’t see the effect.</p>
-</div>
-<div class="paragraph">
 <p>Also, after far, far too long I am (just about) ready to say this site is at version 1.0. Hurrah.
 <br/>
 <br/>
 <br/></p>
-</div>
-<div class="sect1">
-<h2 id="_html">HTML</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>There are 2 things to see here.
+<section class="doc-section level-1"><h2 id="_html">HTML</h2><p>There are 2 things to see here.
 Firstly, I set the content attribute to be equal to the title.
 Secondly and unrelatedly, I vary the font size to make the title take up a reasonable amount of the page.</p>
-</div>
-<div class="paragraph">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line hl"><span class="ln" id="html-1"><a class="lnlinks" href="#html-1"> 1</a></span><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;glitch&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ title .Title }}&#34;</span>
 </span></span><span class="line"><span class="ln" id="html-2"><a class="lnlinks" href="#html-2"> 2</a></span><span class="cl"><span class="na">style</span><span class="o">=</span><span class="s">&#34;
 </span></span></span><span class="line"><span class="ln" id="html-3"><a class="lnlinks" href="#html-3"> 3</a></span><span class="cl"><span class="s">	{{ if lt (len .Title) 20 }}
@@ -234,21 +224,10 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 </span></span></span><span class="line"><span class="ln" id="html-7"><a class="lnlinks" href="#html-7"> 7</a></span><span class="cl"><span class="s">	{{ else }}
 </span></span></span><span class="line"><span class="ln" id="html-8"><a class="lnlinks" href="#html-8"> 8</a></span><span class="cl"><span class="s">		font-size:{{ len .Title | math.Log | mul -7 | add 37 | math.Floor  }}vmin
 </span></span></span><span class="line"><span class="ln" id="html-9"><a class="lnlinks" href="#html-9"> 9</a></span><span class="cl"><span class="s">	{{end}}&#34;</span>
-</span></span><span class="line"><span class="ln" id="html-10"><a class="lnlinks" href="#html-10">10</a></span><span class="cl"><span class="p">&gt;</span>{{ title .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_css">CSS</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This is largely unremarkable, just a load of animation keyframes.</p>
-</div>
-<div class="paragraph">
+</span></span><span class="line"><span class="ln" id="html-10"><a class="lnlinks" href="#html-10">10</a></span><span class="cl"><span class="p">&gt;</span>{{ title .Title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span></span></span></code></pre></div></section>
+<section class="doc-section level-1"><h2 id="_css">CSS</h2><p>This is largely unremarkable, just a load of animation keyframes.</p>
 <p>Do pay attention to the content and animation delay attributes though. <code>content: attr(content)</code> is the trick that allows me to easily set the overlay text to match. This is important because I can easily set html content on a per page basis with Hugo (the static site generator I use), but it’s substantially harder to have unique CSS per page.
 <code>animation-delay</code> isn’t useful for the majority of titles, but for the homepage I have each letter as its own separate animation. I’ve manually set a unique animation delay on each and that ensures the wandering clip paths don’t all line up in an obvious way.</p>
-</div>
-<div class="paragraph">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="ln" id="css-1"><a class="lnlinks" href="#css-1">  1</a></span><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">prefers-reduced-motion</span><span class="o">:</span> <span class="nt">no-preference</span><span class="o">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln" id="css-2"><a class="lnlinks" href="#css-2">  2</a></span><span class="cl">	<span class="p">.</span><span class="nc">glitch</span> <span class="p">{</span>
 </span></span><span class="line"><span class="ln" id="css-3"><a class="lnlinks" href="#css-3">  3</a></span><span class="cl">		<span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
@@ -373,10 +352,7 @@ Secondly and unrelatedly, I vary the font size to make the title take up a reaso
 </span></span><span class="line"><span class="ln" id="css-122"><a class="lnlinks" href="#css-122">122</a></span><span class="cl">			<span class="k">clip-path</span><span class="p">:</span> <span class="nb">polygon</span><span class="p">(</span><span class="mi">0</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="kt">%</span> <span class="mi">5</span><span class="kt">%</span><span class="p">,</span> <span class="mi">0</span> <span class="mi">75</span><span class="kt">%</span><span class="p">);</span>
 </span></span><span class="line"><span class="ln" id="css-123"><a class="lnlinks" href="#css-123">123</a></span><span class="cl">		<span class="p">}</span>
 </span></span><span class="line"><span class="ln" id="css-124"><a class="lnlinks" href="#css-124">124</a></span><span class="cl">	<span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="css-125"><a class="lnlinks" href="#css-125">125</a></span><span class="cl"><span class="p">}</span></span></span></code></pre></div>
-</div>
-</div>
-</div>
+</span></span><span class="line"><span class="ln" id="css-125"><a class="lnlinks" href="#css-125">125</a></span><span class="cl"><span class="p">}</span></span></span></code></pre></div></section>
 
 	</div>
 
