@@ -21,13 +21,37 @@ elif [ "$1" = "new" ]; then
 
 	if [ "$1" = "find" ]; then
 		shift
-		# if [[ $1 =~ ";" || $2 =~ ";" ]] echo "A string contains a semicolon"; exit;
-		# TODO
-		archive_url="$("$HOME"/.local/bin/waybackpy --newest --url "$2" | sed "1d")"
-		if [[ "$archive_url" != 'https://web.archive.org/web'* ]]; then
-			echo "No archive url exists, saving now"
-			archive_url=$("$HOME"/.local/bin/waybackpy --save --url "$2" | sed -n "2p")
-			echo "$archive_url"
+		if [[ $1 =~ ";" || $2 =~ ";" ]]; then
+			echo "A string contains a semicolon"
+			exit 1
+		fi
+		if [[ "$1" == "$2" ]]; then
+			echo "Title and URL are the same"
+			exit 1
+		fi
+		if [[ -z "$1" || -z "$2" ]]; then
+			echo "Title or URL is empty"
+			exit 1
+		fi
+
+		# Check if URL is a YouTube video
+		if [[ "$2" =~ (youtube\.com/watch|youtu\.be/) ]]; then
+			echo "YouTube video detected, archiving with tubeup"
+			# tubeup uploads to archive.org and returns the archive.org URL
+			archive_url=$(tubeup "$2" 2>&1 | grep -oP 'https://archive.org/details/[^\s]+' | head -1)
+			if [[ -z "$archive_url" ]]; then
+				echo "Failed to archive video, falling back to original URL"
+				archive_url="$2"
+			else
+				echo "Video archived at: $archive_url"
+			fi
+		else
+			archive_url="$("$HOME"/.local/bin/waybackpy --newest --url "$2" | sed "1d")"
+			if [[ "$archive_url" != 'https://web.archive.org/web'* ]]; then
+				echo "No archive url exists, saving now"
+				archive_url=$("$HOME"/.local/bin/waybackpy --save --url "$2" | sed -n "2p")
+				echo "$archive_url"
+			fi
 		fi
 		echo "$1;$2;$archive_url" >> content/finds/finds.csv
 		git commit -m "new find: $1" "content/finds/finds.csv"
