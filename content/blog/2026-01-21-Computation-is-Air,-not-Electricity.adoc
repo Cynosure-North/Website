@@ -1,0 +1,12 @@
+---
+draft: true
+title: Computation is Air, not Electricity
+date: 2026-01-21
+summary: 
+tags: 
+  - 
+---
+
+I dislike Dynamicland
+
+AR glasses make everything networked

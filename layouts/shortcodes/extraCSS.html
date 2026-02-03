@@ -1,0 +1,8 @@
+<style>
+{{/* Sometimes I need to inject CSS into one page, and this is the easiest way to do it, not sure how safe it is */}}
+	{{ if .Get 0 }}
+		{{ .Get 0 | safeCSS }}
+	{{ else }}
+		{{ .Inner | safeCSS }}
+	{{ end }}
+</style>

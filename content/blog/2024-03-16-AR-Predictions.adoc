@@ -87,3 +87,10 @@ When I get the time I plan to make these, I don't think they'll be too difficult
 It's going to be extremely difficult to condense everything into a glasses form factor, even if the glasses are chunky.
 What I think is much more likely is tethered compute pucks.
 I think someone will try making the puck into a neckband as with some earbuds, and if I were to guess, they'll call them Halos.
+
+
+'''
+
+== Other's Ideas
+
+https://taylor.town/banana-phone[Bananas Will Become Smartphones]

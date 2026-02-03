@@ -7,7 +7,7 @@
 			{{ else if gt (len .Title) 40 }}
 				font-size:8vmin
 			{{ else }}
-				font-size:{{ len .Title | math.Log | mul -7 | add 35 | math.Floor }}vmin
+				font-size:{{ len .Title | math.Log | mul -7 | add 32 | math.Floor }}vmin
 			{{end}}"
 		>{{ title .Title }}</h1>
 	</div>

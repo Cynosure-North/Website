@@ -1,0 +1,10 @@
+---
+draft: true
+title: A Post-Copyright World
+date: 2026-02-02
+summary: 
+tags: 
+  - 
+---
+
+The fundamental property of computers is to copy data. That's what makes digital systems so good.
