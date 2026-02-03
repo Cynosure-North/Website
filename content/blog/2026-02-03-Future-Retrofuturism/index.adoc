@@ -1,7 +1,6 @@
 ---
 title: Future Retrofuturism
 date: 2026-02-03
-summary: 
 tags: 
   - AR
   - Art
