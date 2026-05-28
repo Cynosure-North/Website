@@ -10,3 +10,6 @@ tags:
 I dislike Dynamicland
 
 AR glasses make everything networked
+
+
+Will need a joint attention protocol

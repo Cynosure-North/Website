@@ -1,0 +1,28 @@
+---
+title: Masters Pitch
+date: 2026-05-28
+summary: 
+tags: 
+  - HCI
+  - Personal
+---
+
+It strikes me as ridiculous that companies talk about AR replacing laptops when they fail at the most basic task we do on a computer: typing.
+Of course people https://xrtexttrove.github.io/[have tried], but they are overwhelmingly slow, irritating, and gimmicky.
+The techniques that actually work look a lot like typing, and that's obvious from first principles.
+A good text entry method should be fast, accurate, easy to use, and easy to learn.
+
+There's an https://dl.acm.org/doi/10.1145/3379337.3415816[awesome paper] which converts finger motion into keystrokes, essentially converting any table into a keyboard.
+In many ways it's a step above a regular keyboard because it's matched to the size of your hands and it's always in a comfortable position.
+They tell us it's designed for AR but that forgets that AR is about adding to the outside world, on the go.
+It's unlikely people will carry a table around with them, so a solution needs to work with whatever surface is available.
+This is where my proposal comes in.
+
+I plan to extend existing virtual keyboards to let people type on their legs (or anything else).
+My vision is that you can sit down, splay your fingers across a surface to define a keyboard, and start typing.
+This means handling two challenges: curved surfaces, and soft surfaces.
+I think it's possible, but I'll need to teach myself machine learning to get this working.
+
+I feel intimidated but excited by the amount I've bitten off, which I think is how it's supposed to feel.
+I finish in February 2027, I will report back then.
+If anyone is reading this with questions or ideas (or job offers) get in touch contact@cynosure.page
