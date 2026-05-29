@@ -1,88 +1,99 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on Cynosure</title>
-    <link>https://Cynosure.page/blog/</link>
-    <description>Recent content in Blog on Cynosure</description>
-    <generator>Hugo</generator>
-    <language>en-nz</language>
-    <atom:link href="https://Cynosure.page/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Future Retrofuturism</title>
-      <link>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</link>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</guid>
-      <description>&lt;p&gt;Is pixel art is back? No, this is an unrelated aesthetic.&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>First Principles for XR Typing</title>
-      <link>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</guid>
-      <description>&lt;p&gt;Some proposed keyboards are so dumb they never needed to be built to know they wouldn’t work&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Attempts at Typing in XR</title>
-      <link>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</link>
-      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</guid>
-      <description>&lt;p&gt;The 2000s called, T9 typing is a pain&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Is Your Face Really the Best Place for a Computer?</title>
-      <link>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</link>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</guid>
-      <description>&lt;p&gt;Why does every company insist on cramming everything into a tiny headset, rather than having another part? There are so many issues, which I outline here.&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>My Information Diet</title>
-      <link>https://Cynosure.page/blog/2025-12-08/my-information-diet/</link>
-      <pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2025-12-08/my-information-diet/</guid>
-      <description>&lt;p&gt;You are what you read, so here I am&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Predictions for the Future-Future of XR</title>
-      <link>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</guid>
-      <description>&lt;p&gt;I have little experience, and a lot of thoughts.&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Inside the Vic Debsoc website</title>
-      <link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
-      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
-      <description>&lt;p&gt;Zero cost, low maintenance static sites for the non-technical&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Crabs 🦀</title>
-      <link>https://Cynosure.page/blog/2023-11-24/crabs/</link>
-      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2023-11-24/crabs/</guid>
-      <description>&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Crossbow Cat</title>
-      <link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
-      <description>&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>https://Cynosure.page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/about/</guid>
-      <description>&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>How the Glitch Effect Works</title>
-      <link>https://Cynosure.page/blog/1-01-01/how-the-glitch-effect-works/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/1-01-01/how-the-glitch-effect-works/</guid>
-      <description>&lt;p&gt;TLDR, stacked animations&lt;/p&gt;&#xA;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Blog on Cynosure</title>
+		<link>https://Cynosure.page/blog/</link>
+		<description>Recent content in Blog on Cynosure</description>
+		<generator>Hugo</generator>
+		<language>en-nz</language>
+		
+		
+		
+		
+			<atom:link href="https://Cynosure.page/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Masters Pitch</title>
+				<link>https://Cynosure.page/blog/2026-05-28/masters-pitch/</link>
+				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-05-28/masters-pitch/</guid>
+				<description>&lt;p&gt;It strikes me as ridiculous that companies talk about AR replacing laptops when they fail at the most basic task we do on a computer: typing.&#xA;Of course people &lt;a href=&#34;https://xrtexttrove.github.io/&#34;&gt;have tried&lt;/a&gt;, but they are overwhelmingly slow, irritating, and gimmicky.&#xA;The techniques that actually work look a lot like typing, and that’s obvious from first principles.&#xA;A good text entry method should be fast, accurate, easy to use, and easy to learn.&lt;/p&gt;&#xA;&lt;p&gt;There’s an &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3379337.3415816&#34;&gt;awesome paper&lt;/a&gt; which converts finger motion into keystrokes, essentially converting any table into a keyboard.&#xA;In many ways it’s a step above a regular keyboard because it’s matched to the size of your hands and it’s always in a comfortable position.&#xA;They tell us it’s designed for AR but that forgets that AR is about adding to the outside world, on the go.&#xA;It’s unlikely people will carry a table around with them, so a solution needs to work with whatever surface is available.&#xA;This is where my proposal comes in.&lt;/p&gt;&#xA;&lt;p&gt;I plan to extend existing virtual keyboards to let people type on their legs (or anything else).&#xA;My vision is that you can sit down, splay your fingers across a surface to define a keyboard, and start typing.&#xA;This means handling two challenges: curved surfaces, and soft surfaces.&#xA;I think it’s possible, but I’ll need to teach myself machine learning to get this working.&lt;/p&gt;&#xA;&lt;p&gt;I feel intimidated but excited by the amount I’ve bitten off, which I think is how it’s supposed to feel.&#xA;I finish in February 2027, I will report back then.&#xA;If anyone is reading this with questions or ideas (or job offers) get in touch &lt;a href=&#34;mailto:contact@cynosure.page&#34;&gt;contact@cynosure.page&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Future Retrofuturism</title>
+				<link>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</link>
+				<pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</guid>
+				<description>&lt;p&gt;Is pixel art is back? No, this is an unrelated aesthetic.&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>First Principles for XR Typing</title>
+				<link>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</guid>
+				<description>&lt;p&gt;Some proposed keyboards are so dumb they never needed to be built to know they wouldn’t work&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Attempts at Typing in XR</title>
+				<link>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</link>
+				<pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</guid>
+				<description>&lt;p&gt;The 2000s called, T9 typing is a pain&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Is Your Face Really the Best Place for a Computer?</title>
+				<link>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</link>
+				<pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2025-12-08/is-your-face-really-the-best-place-for-a-computer/</guid>
+				<description>&lt;p&gt;Why does every company insist on cramming everything into a tiny headset, rather than having another part? There are so many issues, which I outline here.&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>My Information Diet</title>
+				<link>https://Cynosure.page/blog/2025-12-08/my-information-diet/</link>
+				<pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2025-12-08/my-information-diet/</guid>
+				<description>&lt;p&gt;You are what you read, so here I am&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Predictions for the Future-Future of XR</title>
+				<link>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</link>
+				<pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</guid>
+				<description>&lt;p&gt;I have little experience, and a lot of thoughts.&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Inside the Vic Debsoc website</title>
+				<link>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</link>
+				<pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2024-02-05/inside-the-vic-debsoc-website/</guid>
+				<description>&lt;p&gt;Zero cost, low maintenance static sites for the non-technical&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Crabs 🦀</title>
+				<link>https://Cynosure.page/blog/2023-11-24/crabs/</link>
+				<pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2023-11-24/crabs/</guid>
+				<description>&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Crossbow Cat</title>
+				<link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
+				<pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
+				<description>&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>About Me</title>
+				<link>https://Cynosure.page/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/about/</guid>
+				<description>&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>How the Glitch Effect Works</title>
+				<link>https://Cynosure.page/blog/1-01-01/how-the-glitch-effect-works/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/1-01-01/how-the-glitch-effect-works/</guid>
+				<description>&lt;p&gt;TLDR, stacked animations&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
 </rss>

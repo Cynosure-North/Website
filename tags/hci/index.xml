@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Personal on Cynosure</title>
-		<link>https://Cynosure.page/tags/personal/</link>
-		<description>Recent content in Personal on Cynosure</description>
+		<title>HCI on Cynosure</title>
+		<link>https://Cynosure.page/tags/hci/</link>
+		<description>Recent content in HCI on Cynosure</description>
 		<generator>Hugo</generator>
 		<language>en-nz</language>
 		
@@ -12,27 +12,13 @@
 		
 			<lastBuildDate>Thu, 28 May 2026 19:42:15 +1200</lastBuildDate>
 		
-			<atom:link href="https://Cynosure.page/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://Cynosure.page/tags/hci/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Masters Pitch</title>
 				<link>https://Cynosure.page/blog/2026-05-28/masters-pitch/</link>
 				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
 				<guid>https://Cynosure.page/blog/2026-05-28/masters-pitch/</guid>
 				<description>&lt;p&gt;It strikes me as ridiculous that companies talk about AR replacing laptops when they fail at the most basic task we do on a computer: typing.&#xA;Of course people &lt;a href=&#34;https://xrtexttrove.github.io/&#34;&gt;have tried&lt;/a&gt;, but they are overwhelmingly slow, irritating, and gimmicky.&#xA;The techniques that actually work look a lot like typing, and that’s obvious from first principles.&#xA;A good text entry method should be fast, accurate, easy to use, and easy to learn.&lt;/p&gt;&#xA;&lt;p&gt;There’s an &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3379337.3415816&#34;&gt;awesome paper&lt;/a&gt; which converts finger motion into keystrokes, essentially converting any table into a keyboard.&#xA;In many ways it’s a step above a regular keyboard because it’s matched to the size of your hands and it’s always in a comfortable position.&#xA;They tell us it’s designed for AR but that forgets that AR is about adding to the outside world, on the go.&#xA;It’s unlikely people will carry a table around with them, so a solution needs to work with whatever surface is available.&#xA;This is where my proposal comes in.&lt;/p&gt;&#xA;&lt;p&gt;I plan to extend existing virtual keyboards to let people type on their legs (or anything else).&#xA;My vision is that you can sit down, splay your fingers across a surface to define a keyboard, and start typing.&#xA;This means handling two challenges: curved surfaces, and soft surfaces.&#xA;I think it’s possible, but I’ll need to teach myself machine learning to get this working.&lt;/p&gt;&#xA;&lt;p&gt;I feel intimidated but excited by the amount I’ve bitten off, which I think is how it’s supposed to feel.&#xA;I finish in February 2027, I will report back then.&#xA;If anyone is reading this with questions or ideas (or job offers) get in touch &lt;a href=&#34;mailto:contact@cynosure.page&#34;&gt;contact@cynosure.page&lt;/a&gt;&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Crossbow Cat</title>
-				<link>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</link>
-				<pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-				<guid>https://Cynosure.page/blog/2021-09-13/crossbow-cat/</guid>
-				<description>&lt;p&gt;I’m playing the cat&lt;/p&gt;&#xA;</description>
-			</item>
-			<item>
-				<title>About Me</title>
-				<link>https://Cynosure.page/about/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://Cynosure.page/about/</guid>
-				<description>&lt;p&gt;Here are some facts and a lovely dithered image&lt;/p&gt;&#xA;</description>
 			</item>
 	</channel>
 </rss>

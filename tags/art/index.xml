@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Art on Cynosure</title>
-    <link>https://Cynosure.page/tags/art/</link>
-    <description>Recent content in Art on Cynosure</description>
-    <generator>Hugo</generator>
-    <language>en-nz</language>
-    <lastBuildDate>Tue, 03 Feb 2026 19:32:07 +1300</lastBuildDate>
-    <atom:link href="https://Cynosure.page/tags/art/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Future Retrofuturism</title>
-      <link>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</link>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</guid>
-      <description>&lt;p&gt;Is pixel art is back? No, this is an unrelated aesthetic.&lt;/p&gt;&#xA;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Art on Cynosure</title>
+		<link>https://Cynosure.page/tags/art/</link>
+		<description>Recent content in Art on Cynosure</description>
+		<generator>Hugo</generator>
+		<language>en-nz</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 03 Feb 2026 19:32:07 +1300</lastBuildDate>
+		
+			<atom:link href="https://Cynosure.page/tags/art/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Future Retrofuturism</title>
+				<link>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</link>
+				<pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-02-03/future-retrofuturism/</guid>
+				<description>&lt;p&gt;Is pixel art is back? No, this is an unrelated aesthetic.&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
 </rss>

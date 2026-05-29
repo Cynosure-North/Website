@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tech on Cynosure</title>
-    <link>https://Cynosure.page/tags/tech/</link>
-    <description>Recent content in Tech on Cynosure</description>
-    <generator>Hugo</generator>
-    <language>en-nz</language>
-    <lastBuildDate>Tue, 03 Feb 2026 17:01:49 +1300</lastBuildDate>
-    <atom:link href="https://Cynosure.page/tags/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Predictions for the Future-Future of XR</title>
-      <link>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</guid>
-      <description>&lt;p&gt;I have little experience, and a lot of thoughts.&lt;/p&gt;&#xA;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tech on Cynosure</title>
+		<link>https://Cynosure.page/tags/tech/</link>
+		<description>Recent content in Tech on Cynosure</description>
+		<generator>Hugo</generator>
+		<language>en-nz</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 03 Feb 2026 17:01:49 +1300</lastBuildDate>
+		
+			<atom:link href="https://Cynosure.page/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Predictions for the Future-Future of XR</title>
+				<link>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</link>
+				<pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2024-03-16/predictions-for-the-future-future-of-xr/</guid>
+				<description>&lt;p&gt;I have little experience, and a lot of thoughts.&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
 </rss>

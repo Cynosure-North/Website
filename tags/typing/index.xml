@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Typing on Cynosure</title>
-    <link>https://Cynosure.page/tags/typing/</link>
-    <description>Recent content in Typing on Cynosure</description>
-    <generator>Hugo</generator>
-    <language>en-nz</language>
-    <lastBuildDate>Thu, 01 Jan 2026 11:55:37 +1300</lastBuildDate>
-    <atom:link href="https://Cynosure.page/tags/typing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>First Principles for XR Typing</title>
-      <link>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</guid>
-      <description>&lt;p&gt;Some proposed keyboards are so dumb they never needed to be built to know they wouldn’t work&lt;/p&gt;&#xA;</description>
-    </item>
-    <item>
-      <title>Attempts at Typing in XR</title>
-      <link>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</link>
-      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</guid>
-      <description>&lt;p&gt;The 2000s called, T9 typing is a pain&lt;/p&gt;&#xA;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Typing on Cynosure</title>
+		<link>https://Cynosure.page/tags/typing/</link>
+		<description>Recent content in Typing on Cynosure</description>
+		<generator>Hugo</generator>
+		<language>en-nz</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 01 Jan 2026 11:55:37 +1300</lastBuildDate>
+		
+			<atom:link href="https://Cynosure.page/tags/typing/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>First Principles for XR Typing</title>
+				<link>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-01-01/first-principles-for-xr-typing/</guid>
+				<description>&lt;p&gt;Some proposed keyboards are so dumb they never needed to be built to know they wouldn’t work&lt;/p&gt;&#xA;</description>
+			</item>
+			<item>
+				<title>Attempts at Typing in XR</title>
+				<link>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</link>
+				<pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2025-12-27/attempts-at-typing-in-xr/</guid>
+				<description>&lt;p&gt;The 2000s called, T9 typing is a pain&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
 </rss>

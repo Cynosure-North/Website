@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Scripts on Cynosure</title>
-    <link>https://Cynosure.page/tags/scripts/</link>
-    <description>Recent content in Scripts on Cynosure</description>
-    <generator>Hugo</generator>
-    <language>en-nz</language>
-    <lastBuildDate>Thu, 17 Jul 2025 11:54:41 +1200</lastBuildDate>
-    <atom:link href="https://Cynosure.page/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Crabs 🦀</title>
-      <link>https://Cynosure.page/blog/2023-11-24/crabs/</link>
-      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://Cynosure.page/blog/2023-11-24/crabs/</guid>
-      <description>&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Scripts on Cynosure</title>
+		<link>https://Cynosure.page/tags/scripts/</link>
+		<description>Recent content in Scripts on Cynosure</description>
+		<generator>Hugo</generator>
+		<language>en-nz</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 17 Jul 2025 11:54:41 +1200</lastBuildDate>
+		
+			<atom:link href="https://Cynosure.page/tags/scripts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Crabs 🦀</title>
+				<link>https://Cynosure.page/blog/2023-11-24/crabs/</link>
+				<pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2023-11-24/crabs/</guid>
+				<description>&lt;p&gt;A play about crabs, coconuts, and bromance.&lt;/p&gt;&#xA;</description>
+			</item>
+	</channel>
 </rss>
