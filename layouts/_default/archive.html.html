@@ -1,0 +1,89 @@
+{{ define "head" }}
+{{partial "head.html" . }}
+<style>
+  video {
+    max-width: 100%
+      /* I'll probably need to do podcasts as well */
+  }
+
+  #_description~p {
+    white-space: pre-line;
+  }
+
+  #_comments~p {
+    white-space: pre-wrap;
+    line-height: 2;
+    vertical-align: middle;
+  }
+
+  .comment {
+    :marker {
+      display: none;
+    }
+
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.4;
+    margin-top: 5px;
+    max-width: 60%;
+  }
+</style>
+
+{{end}}
+
+{{ define "main" }}
+
+<article class="media-archive">
+  {{ $media := .Resources.Get .Params.media_file }}
+  {{ $thumb := .Resources.Get .Params.thumbnail }}
+  {{ $subs := .Resources.GetMatch "*.vtt" }}
+
+  {{ if eq .Params.media_type "video" }}
+  {{ with $media }}
+  <video controls preload="metadata" {{ with $thumb }}poster="{{ .RelPermalink }}" {{ end }}>
+    <source src="{{ .RelPermalink }}" type="video/mp4">
+    {{ with $subs }}
+    <track kind="subtitles" src="{{ .RelPermalink }}" srclang="en" label="English">
+    {{ end }}
+    Your browser does not support HTML video.
+  </video>
+  {{ end }}
+  {{ else }}
+  {{ with $thumb }}
+  <img src="{{ .RelPermalink }}" alt="{{ $.Title }} cover art" class="podcast-art">
+  {{ end }}
+  {{ with $media }}
+  <audio controls preload="metadata">
+    <source src="{{ .RelPermalink }}">
+    Your browser does not support HTML audio.
+  </audio>
+  {{ end }}
+  {{ end }}
+
+  <div class="media-meta">
+    <span>By
+      {{ if .Params.channel_url }}
+      <a href="{{ .Params.channel_url }}" rel="noopener noreferrer">{{ .Params.uploader }}</a>
+      {{ else }}
+      {{ .Params.uploader }}
+      {{ end }}
+    </span>
+    · <span>{{ .Date.Format "2 January 2006" }}</span>
+    {{ with .Params.duration }}· <span>{{ . }}</span>{{ end }}
+    {{ with .Params.view_count }}· <span>{{ . }} views</span>{{ end }}
+    {{ with .Params.like_count }}· <span>{{ . }} likes</span>{{ end }}
+    · <span>Archived {{ .Params.archived }}</span>
+  </div>
+
+  <div class="media-links">
+    <a href="{{ .Params.original_url }}" rel="noopener noreferrer">Original link</a>
+    {{ with $media }}· <a href="{{ .RelPermalink }}" download>Download</a>{{ end }}
+  </div>
+
+  {{ with .Content }}
+  <div class="media-description">{{ . }}</div>
+  {{ end }}
+</article>
+{{ end }}
+
+{{ define "footer" }}<!-- No footer -->{{ end }}

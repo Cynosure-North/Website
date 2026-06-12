@@ -7,77 +7,34 @@ cd "$(dirname "$0")" || exit # Always run from same location
 if [ "$1" = "serve" ]; then
 	shift
 	firefox --devtools "$IP:1313" &
-	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture $@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture $*"
 elif [ "$1" = "run" ]; then
 	shift
-	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture $@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture $*"
 elif [ "$1" = "build" ]; then
 	shift
-	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo" "$@"
+	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo" "$*"
 elif [ "$1" = "sh" ]; then
 	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh
 elif [ "$1" = "new" ]; then
 	shift
-
-	if [ "$1" = "find" ]; then
-		shift
-		if [[ -z "$1" || -z "$2" ]]; then
-			echo "Title or URL is empty"
-			exit 1
-		fi
-		if [[ $1 =~ ";" || $2 =~ ";" ]]; then
-			echo "A string contains a semicolon"
-			exit 1
-		fi
-		if [[ "$1" == "$2" ]]; then
-			echo "Title and URL are the same"
-			exit 1
-		fi
-
-		# Use third argument as archive URL if provided
-		if [[ -n "$3" ]]; then
-			archive_url="$3"
-			echo "Using provided archive URL: $archive_url"
-		# Check if URL is a YouTube video
-		elif [[ "$2" =~ (youtube\.com/watch|youtu\.be/) ]]; then
-			echo "YouTube video detected, archiving with tubeup"
-			# tubeup uploads to archive.org and returns the archive.org URL
-			archive_url=$(tubeup "$2" 2>&1 | grep -oP 'https://archive.org/details/[^\s]+' | head -1)
-			if [[ -z "$archive_url" ]]; then
-				echo "Failed to archive video, falling back to original URL"
-				archive_url="$2"
-			else
-				echo "Video archived at: $archive_url"
-			fi
-		else
-			archive_url="$("$HOME"/.local/bin/waybackpy --newest --url "$2" | sed "1d")"
-			if [[ "$archive_url" != 'https://web.archive.org/web'* ]]; then
-				echo "No archive url exists, saving now"
-				archive_url=$("$HOME"/.local/bin/waybackpy --save --url "$2" | sed -n "2p")
-				echo "$archive_url"
-			fi
-		fi
-		echo "$1;$2;$archive_url" >> content/finds/finds.csv
-		git commit -m "new find: $1" "content/finds/finds.csv"
-	else
-		if [ ! -d "content/$1" ]; then
-			mkdir "content/$1"
-			echo "Made new directory: $1"
-		fi
-
-		filename="content/$1/$DATE-${2// /-}.adoc"
-		echo "$filename"
-		{
-			echo "---"
-			echo "draft: true"
-			echo "title: ${2//-/ }"
-			echo "date: $DATE"
-			echo "summary: "
-			echo "tags: "
-			echo "  - "
-			echo "---"
-		} | nvim - +"file $filename"
+	if [ ! -d "content/$1" ]; then
+		mkdir "content/$1"
+		echo "Made new directory: $1"
 	fi
+
+	filename="content/$1/$DATE-${2// /-}.adoc"
+	echo "$filename"
+	{
+		echo "---"
+		echo "draft: true"
+		echo "title: ${2//-/ }"
+		echo "date: $DATE"
+		echo "summary: "
+		echo "tags: "
+		echo "  - "
+		echo "---"
+	} | nvim - +"file $filename"
 else
 	docker run -it -v "$PWD:/hugo":z -p 1313:1313 -u "$(id -u):$(id -g)" website sh -c "hugo serve --bind 0.0.0.0 --baseURL=$IP --buildFuture" "$@"
 fi
