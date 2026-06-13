@@ -94,9 +94,10 @@ def archive_podcast(url: str) -> tuple[str, Path]:
         ],
     })
 
-    generate_page(info, bundle_dir, "podcast")
-    return f"/finds/archive/{info['id'].lower()}/", bundle_dir
+    _fetch_show_artwork(url, bundle_dir, info["id"])  # overwrites yt-dlp's thumbnail
 
+    generate_page(info, bundle_dir, "podcast")
+    return f"/finds/archive/{info['id']}/", bundle_dir
 
 def archive_web(url: str) -> str:
     import waybackpy
@@ -142,6 +143,7 @@ def generate_page(info: dict, bundle_dir: Path, media_type: str) -> None:
     media_id     = info["id"]
     title        = info.get("title") + " [archive]" or "Unknown"
     uploader     = info.get("uploader") or info.get("channel") or ""
+    series       = info.get("series") or ""
     channel_url  = info.get("channel_url") or ""
     original_url = info.get("webpage_url") or ""
     description  = info.get("description") or ""
@@ -177,24 +179,24 @@ def generate_page(info: dict, bundle_dir: Path, media_type: str) -> None:
         # handles all escaping (backslashes, quotes, control characters, etc.)
         f.write("---\n")
         f.write(f"title: {json.dumps(title)}\n")
-        f.write('layout: "archive"\n')
+        f.write(f'media_id: " {media_id}"\n')
         f.write(f'media_type: "{media_type}"\n')
+        f.write('layout: "archive"\n')
+        f.write(f'archived: "{date.today()}"\n')
         if upload_date:
             f.write(f'date: "{upload_date}"\n')
-        f.write(f'archived: "{date.today()}"\n')
         if uploader:
             f.write(f"uploader: {json.dumps(uploader)}\n")
+        if series:
+            f.write(f"series: {json.dumps(series)}\n")
         if channel_url:
             f.write(f'channel_url: "{channel_url}"\n')
-        f.write(f'media_id: " {media_id}"\n')
         if original_url:
             f.write(f'original_url: "{original_url}"\n')
         if media_file:
             f.write(f'media_file: "{media_file}"\n')
         if thumbnail:
             f.write(f'thumbnail: "{thumbnail}"\n')
-        if duration:
-            f.write(f'duration: "{duration}"\n')
         if vc := info.get("view_count"):
             f.write(f"view_count: {vc}\n")
         if lc := info.get("like_count"):
@@ -223,6 +225,12 @@ def _write_comment_tree(f, comments: list) -> None:
         if lc := c.get("like_count", 0):
             s += f" · {lc} likes"
         return s
+    
+    def format(c: dict, prefix_len=0) -> str:
+        text = re.sub(r'\n+', '\n', (c.get("text") or "").strip()).replace("\n", " ")
+        head = header(c)
+        return f"{head}: [.comment{'.narrow' if (len(head) + prefix_len > 40) else ''}]##{text.strip()}##\n"
+        
 
     def render(parent_id: str, prefix: str = "") -> None:
         children = by_parent.get(parent_id, [])
@@ -230,14 +238,13 @@ def _write_comment_tree(f, comments: list) -> None:
             last = i == len(children) - 1
             arm  = "└── " if last else "├── "
             cont = "    " if last else "│   "
-            text = (c.get("text") or "").strip().replace("\n", " ")
-            f.write(f"{prefix}{arm}{header(c)}: [.comment]#{text.strip()}#\n")
+            body = format(c,4 + len(prefix))
+            f.write(f"{prefix}{arm}{body}")
             if cid := c.get("id"):
                 render(cid, prefix + cont)
 
     for root in by_parent.get("root", []):
-        f.write(f"{header(root)}: ")
-        f.write(f"[.comment]#{(root.get("text") or "").strip()}#\n")
+        f.write(format(root))
         if root.get("id") in by_parent:
             render(root["id"])
         f.write("\n\n")
@@ -245,6 +252,35 @@ def _write_comment_tree(f, comments: list) -> None:
     if (len(comments) == 300):
         f.write("pass:[[comments truncated]]")
 
+def _fetch_show_artwork(url: str, bundle_dir: Path, media_id: str) -> None:
+    """Replace yt-dlp's episode thumbnail with clean show artwork from the iTunes API.
+    Apple composites a small show-art badge onto episode images server-side, so the
+    thumbnail yt-dlp downloads always has that inset. The lookup API returns the
+    original artwork without it."""
+    import urllib.request
+
+    match = re.search(r"/id(\d+)", url)
+    if not match:
+        return
+
+    try:
+        api = f"https://itunes.apple.com/lookup?id={match.group(1)}&entity=podcast"
+        with urllib.request.urlopen(api) as resp:
+            results = json.loads(resp.read()).get("results", [])
+
+        artwork_url = results[0].get("artworkUrl600", "") if results else ""
+        if not artwork_url:
+            return
+
+        # Apple's CDN accepts arbitrary sizes — ask for 3000x3000
+        artwork_url = re.sub(r"\d+x\d+bb", "3000x3000bb", artwork_url)
+
+        with urllib.request.urlopen(artwork_url) as resp:
+            (bundle_dir / f"{media_id}.jpg").write_bytes(resp.read())
+
+        print("Downloaded clean show artwork from iTunes API")
+    except Exception as e:
+        print(f"Warning: could not fetch iTunes artwork: {e}", file=sys.stderr)
 
 # ---------------------------------------------------------------------------
 # Git

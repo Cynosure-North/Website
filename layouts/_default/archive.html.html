@@ -1,9 +1,16 @@
 {{ define "head" }}
 {{partial "head.html" . }}
 <style>
-  video {
-    max-width: 100%
-      /* I'll probably need to do podcasts as well */
+  video,
+  audio {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .podcast {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
   }
 
   #_description~p {
@@ -25,8 +32,12 @@
     vertical-align: top;
     line-height: 1.4;
     margin-top: 5px;
-    max-width: 60%;
+    width: 60%;
   }
+  .comment.narrow {
+    width: 50%;
+  }
+
 </style>
 
 {{end}}
@@ -38,46 +49,52 @@
   {{ $thumb := .Resources.Get .Params.thumbnail }}
   {{ $subs := .Resources.GetMatch "*.vtt" }}
 
-  {{ if eq .Params.media_type "video" }}
-  {{ with $media }}
-  <video controls preload="metadata" {{ with $thumb }}poster="{{ .RelPermalink }}" {{ end }}>
-    <source src="{{ .RelPermalink }}" type="video/mp4">
-    {{ with $subs }}
-    <track kind="subtitles" src="{{ .RelPermalink }}" srclang="en" label="English">
-    {{ end }}
-    Your browser does not support HTML video.
-  </video>
-  {{ end }}
-  {{ else }}
-  {{ with $thumb }}
-  <img src="{{ .RelPermalink }}" alt="{{ $.Title }} cover art" class="podcast-art">
-  {{ end }}
-  {{ with $media }}
-  <audio controls preload="metadata">
-    <source src="{{ .RelPermalink }}">
-    Your browser does not support HTML audio.
-  </audio>
-  {{ end }}
-  {{ end }}
-
-  <div class="media-meta">
-    <span>By
-      {{ if .Params.channel_url }}
-      <a href="{{ .Params.channel_url }}" rel="noopener noreferrer">{{ .Params.uploader }}</a>
-      {{ else }}
-      {{ .Params.uploader }}
+  <div class="{{ .Params.media_type }}">
+    {{ if eq .Params.media_type "video" }}
+    {{ with $media }}
+    <video controls preload="metadata" {{ with $thumb }}poster="{{ .RelPermalink }}" {{ end }}>
+      <source src="{{ .RelPermalink }}" type="video/mp4">
+      {{ with $subs }}
+      <track kind="subtitles" src="{{ .RelPermalink }}" srclang="en" label="English">
       {{ end }}
-    </span>
-    · <span>{{ .Date.Format "2 January 2006" }}</span>
-    {{ with .Params.duration }}· <span>{{ . }}</span>{{ end }}
-    {{ with .Params.view_count }}· <span>{{ . }} views</span>{{ end }}
-    {{ with .Params.like_count }}· <span>{{ . }} likes</span>{{ end }}
-    · <span>Archived {{ .Params.archived }}</span>
-  </div>
+      Your browser does not support HTML video.
+    </video>
+    {{ end }}
+    {{ else }}
+    {{ with $thumb }}
+    <img src="{{ .RelPermalink }}" alt="{{ $.Title }} cover art" class="podcast-art">
+    {{ end }}
+    {{ with $media }}
+    <audio controls preload="metadata">
+      <source src="{{ .RelPermalink }}">
+      Your browser does not support HTML audio.
+    </audio>
+    {{ end }}
+    {{ end }}
 
-  <div class="media-links">
-    <a href="{{ .Params.original_url }}" rel="noopener noreferrer">Original link</a>
-    {{ with $media }}· <a href="{{ .RelPermalink }}" download>Download</a>{{ end }}
+    <div class="media-meta">
+      <span>
+        {{ if .Params.uploader}}
+        By
+        {{ if .Params.channel_url }}
+        <a href="{{ .Params.channel_url }}" rel="noopener noreferrer">{{ .Params.uploader }}</a> ·
+        {{ else }}
+        {{ .Params.uploader }} ·
+        {{ end }}
+        {{ else if .Params.series }}
+        {{ .Params.series }} ·
+        {{ end }}
+      </span>
+      <span>Uploaded {{ .Date.Format "2006-01-02" }}</span>
+      · <span>Archived {{ .Params.archived }}</span>
+      {{ with .Params.view_count }}· <span>{{ . }} views</span>{{ end }}
+      {{ with .Params.like_count }}· <span>{{ . }} likes</span>{{ end }}
+    </div>
+
+    <div class="media-links">
+      <a href="{{ .Params.original_url }}" rel="noopener noreferrer">Original link</a>
+      {{ with $media }}· <a href="{{ .RelPermalink }}" download>Download</a>{{ end }}
+    </div>
   </div>
 
   {{ with .Content }}
