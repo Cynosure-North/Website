@@ -10,15 +10,29 @@
 		
 		
 		
-			<lastBuildDate>Mon, 22 Jun 2026 12:28:25 +1200</lastBuildDate>
+			<lastBuildDate>Sun, 28 Jun 2026 08:29:59 +1000</lastBuildDate>
 		
 			<atom:link href="https://Cynosure.page/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>I Made an App</title>
+				<link>https://Cynosure.page/blog/2026-06-22/i-made-an-app/</link>
+				<pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/blog/2026-06-22/i-made-an-app/</guid>
+				<description>&lt;p&gt;The app I use to time debates was removed from the play store a long time ago, so I have recreated it.&#xA;This was partly an exercise to teach myself app development but I hope others find it useful.&#xA;I focused on simplicity, as the existing apps are unnecessarily complicated, I hope the minimalism is appreciated.&lt;/p&gt;&#xA;&lt;section class=&#34;doc-section level-1&#34;&gt;&lt;h2 id=&#34;_links&#34;&gt;Links&lt;/h2&gt;&lt;p&gt;The play store link is here: TODO&#xA;And the F-Droid is here: TODO&#xA;I was planning on developing an IOS version but I refuse to pay NZD$200/year to publish a free app.&lt;/p&gt;&lt;/section&gt;&#xA;&lt;section class=&#34;doc-section level-1&#34;&gt;&lt;h2 id=&#34;_privacy_policy&#34;&gt;Privacy Policy&lt;/h2&gt;&lt;p&gt;I don’t collect any data.&lt;/p&gt;&lt;/section&gt;</description>
+			</item>
 			<item>
 				<title>Masters Pitch</title>
 				<link>https://Cynosure.page/blog/2026-05-28/masters-pitch/</link>
 				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
 				<guid>https://Cynosure.page/blog/2026-05-28/masters-pitch/</guid>
 				<description>&lt;p&gt;It strikes me as ridiculous that companies talk about AR replacing laptops when they fail at the most basic task we do on a computer: typing.&#xA;Of course people &lt;a href=&#34;https://xrtexttrove.github.io/&#34;&gt;have tried&lt;/a&gt;, but they are overwhelmingly slow, irritating, and gimmicky.&#xA;The techniques that actually work look a lot like typing, and that’s obvious from first principles.&#xA;A good text entry method should be fast, accurate, easy to use, and easy to learn.&lt;/p&gt;&#xA;&lt;p&gt;There’s an &lt;a href=&#34;https://dl.acm.org/doi/10.1145/3379337.3415816&#34;&gt;awesome paper&lt;/a&gt; which converts finger motion into keystrokes, essentially converting any table into a keyboard.&#xA;In many ways it’s a step above a regular keyboard because it’s matched to the size of your hands and it’s always in a comfortable position.&#xA;They tell us it’s designed for AR but that forgets that AR is about adding to the outside world, on the go.&#xA;It’s unlikely people will carry a table around with them, so a solution needs to work with whatever surface is available.&#xA;This is where my proposal comes in.&lt;/p&gt;&#xA;&lt;p&gt;I plan to extend existing virtual keyboards to let people type on their legs (or anything else).&#xA;My vision is that you can sit down, splay your fingers across a surface to define a keyboard, and start typing.&#xA;This means handling two challenges: curved surfaces, and soft surfaces.&#xA;I think it’s possible, but I’ll need to teach myself machine learning to get this working.&lt;/p&gt;&#xA;&lt;p&gt;I feel intimidated but excited by the amount I’ve bitten off, which I think is how it’s supposed to feel.&#xA;I finish in February 2027, I will report back then.&#xA;If anyone is reading this with questions or ideas (or job offers) get in touch &lt;a href=&#34;mailto:contact@cynosure.page&#34;&gt;contact@cynosure.page&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Disappearance of Tween Fashion [Archive Pull] [archive]</title>
+				<link>https://Cynosure.page/finds/archive/1000756180670/</link>
+				<pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://Cynosure.page/finds/archive/1000756180670/</guid>
+				<description>&lt;section class=&#34;doc-section level-1&#34;&gt;&lt;h2 id=&#34;_description&#34;&gt;Description&lt;/h2&gt;&lt;p&gt;Originally published in our first episode I’m Mad, You’re Mad, We’re All Mad Here on January 31, 2024, enjoy Georgia’s segment talking to Professor Elizabeth Wissinger about how the social internet helped erase an entire fashion demographic — namely, tween fashion for girls.&#xA;Listen to the original episode here: &lt;a class=&#34;bare&#34; href=&#34;https://www.neverpo.st/never-post-2/&#34;&gt;https://www.neverpo.st/never-post-2/&lt;/a&gt;&#xA;–&#xA;Become a Never Post member at &lt;a class=&#34;bare&#34; href=&#34;https://www.neverpo.st/&#34;&gt;https://www.neverpo.st/&lt;/a&gt; for an ad-free version of the show and bonus content&#xA;–&#xA;Find Elizabeth Wissinger: Her website This Year’s Model: Fashion, Media, and the Making of Glamour – Call us at 651 615 5007 to leave a voicemail Drop us a voice memo via airtable  Or email us at theneverpost at gmail dot com –&#xA;Never Post’s producers are Audrey Evans, Georgia Hampton and The Mysterious Dr. Firstname Lastname. Our senior producer is Hans Buetow. Our executive producer is Jason Oberholtzer. The show’s host is Mike Rugnetta.&#xA;–&#xA;Never Post is a production of Charts &amp;amp; Leisure and is distributed by Radiotopia&lt;/p&gt;&lt;/section&gt;</description>
 			</item>
 			<item>
 				<title>Future Retrofuturism</title>
