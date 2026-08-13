@@ -1,0 +1,16 @@
+---
+draft: false
+title: Sculpture is the New Graphic Design
+date: 2026-08-13
+summary: Moving to 3d means looking elsewhere for guidelines
+tags: 
+  - AR
+  - Design
+  - half-thought thoughts
+---
+
+For decades now, UI designers have cribbed from graphic design's homework, but with the move to 3d it's time to find a new target.
+Until recently, all digital interfaces have been designed for flat screens, and in this world the tools of poster and print are a perfect fit. Principles of layout (scanning pages in an F-shape), color, texture, all translated smoothly to the web. There was a rough patch at the start, when it was only the engineers designing the websites and the tools used to make them, but we got through that.
+However, technology is moving ever forwards, or I suppose out. VR headsets have been commercially available for a decade, and AR glasses seem closer than ever. Because they have one display per eye they can display 3d content. So far, most mixed reality software has replicated existing software with little thought; there's reams of floating rectangles. This is to be expected as people get used to things, but I find it disappointing.
+There are exciting new challenges. We need to learn how to design interfaces when you can position them anywhere around you, and in the world, and all that relative to other interfaces; how to use distance; how proximity affects people; more things as well. And all of that is only for static placement in an internal space.
+I'm excited for the new flood of inspiration we'll see. Sculpture is directly relevant, it's all about objects in space, but I think we'll also see valuable contributions from dance (objects in space and time), graffiti (images in public), cockpit/car design, architecture, interior design, pottery. There's so much to learn from how machining tools are operated, and how carvers work. In part I'm mad about using 2d inputs for CAD, but I'm also frustrated that my thinking is locked to rectangles inside rectangles. This future can't come soon enough.
