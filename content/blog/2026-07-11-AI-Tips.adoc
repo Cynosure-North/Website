@@ -1,0 +1,31 @@
+---
+draft: true
+title: AI Tips
+date: 2026-07-11
+summary: 
+tags: 
+  - 
+---
+
+Ask for hints, not answers: People who ask AI to directly answer their questions suffer severe declines in motivation and ability. But people who ask AI for background thinking or clarifications do not.
+Start with a blank page: Before you go to the bot, start with a blank piece of paper and write up your own analysis and conclusions. Then ask AI to challenge your thinking, not produce it.
+Rotate tasks: Every time you do a task with AI, follow it with a task that doesn’t involve AI. That will keep your creative-effort muscles alive.
+Redesign the bots: General chatbot use undermines learning. But as the writer Alberto Romero notes, AI tutors actually improve learning and motivation. That’s because although chatbots mostly answer questions, tutors lead students on structured learning journeys. It should be possible to redesign the normal bots so that they function less like encyclopedias and more like personal trainers whose jobs are designed to build mental muscles, rather than replace them.
+Make a sharp distinction between rote work and creative work: Let AI write functional emails. Don’t let it write your essays or your memos. Shame people who do.
+Ask for thinkers, not thinking: My favorite trick when using Claude is to never ask it to think through a problem for me. I ask it to summarize the thinkers who have already addressed a given problem. If I’m trying to understand child development, I ask it to imagine a debate between Jean Piaget and Erik Erikson. What would these two great psychologists say to each other about the problem I’m wrestling with? Then I ask it what books by these thinkers I should read if I want to understand their work. I get much better results from AI when I treat it as a brilliant librarian rather than as an oracle. 
+- Often a good teacher matters more than an interesting topic. If you find an author you like read their other works, rather than other books on the same topic.
+- Contrastingly, it can be good to read multiple books on the same topic to get a more well-rounded perspective, and to understand the gaps better.
+
+
+	Editing
+"Are there any glaring omissions?"
+"Is there anything I should cut?"
+
+Ask them to critique from a specific personality/perspective
+- grammarian
+- subject matter expert
+- novice
+- skeptical reader (what are they most skeptical of)
+- agreeing reader (what do they want more of)
+
+https://www.refine.ink/pricing

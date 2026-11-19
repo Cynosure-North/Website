@@ -9,3 +9,14 @@ tags:
 
 https://theanarchistlibrary.org/library/tech-learning-collective-the-internet-was-always-anarchist-so-anarchists-must-learn-to-become-r
 https://anarchistnews.org/index.php/content/internet-was-always-anarchist
+
+The fundamental property of computers is to copy data. That's what makes digital systems so good.
+
+Computation is air, not electricity
+
+By making technology we can change the rules of the game, change what is possible. This is quicker and easier than changing people's minds, and they will follow later once they see what is possible. Even if they don't it will be hard for them to undo it, and so the world is made better for people like us
+
+
+
+Design guidelines?
+https://design.ncsu.edu/research/center-for-universal-design/
